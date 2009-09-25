@@ -1,0 +1,60 @@
+- Contents of all static paths is dumped on output into _static
+
+- Symlinks in static paths are resolved and copied out rather than kept as
+  symlinks, including nested directories (a symlink pointing to a directory
+  causes the whole dir to be recursively copied).
+
+- How to do
+.. image:: pycachegrind.png
+  :target: pycachegrind.png
+
+  ?  I want to click on a figure to get the full-res version, but the final
+  image ends up copied to ../../_images/, which is not what I need (I need it
+  locally, or for the :target: link to resolve to the right link as well).
+
+  It works if I do
+
+  .. image:: pycachegrind.png
+   :target: ../../_images/pycachegrind.png
+
+   but this is annoying and means I have to keep updating these relative paths
+   if I move things around.
+
+   My solution for now: my copy_trees script copies back all these images so
+   local links work.
+
+- Make linkcheck throws too many warnings.  I have a lot of links of the form
+  `some text <file.pdf>`_  and with my copy_trees script, file.pdf will in fact
+  be there in the target.  But linkcheck complains that these are 'malformed'
+  links:
+
+  WARNING: 0811_baypig_scipy.pdf - malformed!
+
+  Even though the files are actually there.  Is there a way to avoid these
+  warnings, so that only truly broken links are not displayed?
+
+  I get the same warnings for links that come from the toctree entries:
+
+  WARNING: talks - malformed!
+
+  Where talks is a directory that was linked in a toctree as 'talks/index', but
+  referred in a sentence like:
+
+  * Some `<talks>`_.
+
+- For linkcheck, it would be nice if it printed first which file it's checking
+  with full path, and then all the warnings/errors for that file (indented a
+  few spaces), so that one can more easily go back to the sources to fix the
+  problems (right now, it's basically a matter of grepping the tree).
+
+  Note: I see this is stored in the linkcheck output file, so ok for now.
+
+- linkcheck: this link is valid:
+  
+   https://calmail.berkeley.edu/manage/list/listinfo/py4science@lists.berkeley.edu
+   but linkcheck reports it a 403:
+
+      38 : py4science/starter_kit.rst:220: [broken] https://calmail.berkeley.edu/manage/list/listinfo/py4science@lists.berkeley.edu: HTTP Error 403: Forbidden
+
+   Why?
+

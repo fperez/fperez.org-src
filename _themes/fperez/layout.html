@@ -1,0 +1,37 @@
+{% extends "!basic/layout.html" %}
+
+{#  {% block header %} #}
+
+{#
+  
+{% block relbar1 %}
+<div style="background-color: black; text-align: center;
+    padding: 0px 0px 0px 0px">
+ <a href="{{pathto('index') }}">
+  <img src="{{ pathto("_static/banner_mountains_clouds.jpg", 1) }}"
+	alt="Fernando Pérez"  border="0" /></a>
+</div>
+  {{ super() }}
+{% endblock %}
+
+#}
+  
+{% block sidebar1 %}{{ sidebar() }}{% endblock %}
+{% block sidebar2 %}{% endblock %}
+
+{%- block sidebarsearch %}
+{%- if pagename != "search" %}
+<div id="searchbox" style="display: none">
+  <h3>{{ _('Quick search') }}</h3>
+    <form class="search" action="{{ pathto('search') }}" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="{{ _('Go') }}" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+{%- endif %}
+{%- endblock %}
