@@ -1,16 +1,18 @@
-# Makefile for building a website using sphinx
+# Makefile for building a website using sphinx.
+# This Makefile has been heavily modified from the original that
+# sphinx-quickstart automatically creates
 
 # You can set these variables from the command line.
-WWW = cirl:www
-STATIC_CSS = _themes/fperez/static
-
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 BUILDDIR      = _build
 SOURCEDIR     = .
-STATICDIR     = _static
 
-SITE = $(BUILDDIR)/html
+# Other variables for site management, css updating, etc.
+STATICDIR   = _static
+STATIC_CSS  = _themes/fperez/static
+SITE        = $(BUILDDIR)/html
+WWW         = cirl:www
 
 # Internal variables.
 ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(SPHINXOPTS) $(SOURCEDIR)
@@ -30,9 +32,6 @@ clean:
 	-rm -rf $(BUILDDIR)/*
 	-rm -f *~
 
-site: html
-	./copy_trees.py
-
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
@@ -50,6 +49,8 @@ doctest:
 	@echo "Testing of doctests in the sources finished, look at the " \
 	      "results in $(BUILDDIR)/doctest/output.txt."
 
+# fperez - new targets I've added after sphinx-quickstart
+
 # Update target to push to live site
 upload: site
 	chmod -R uog+r $(SITE)
@@ -58,3 +59,7 @@ upload: site
 # Update only css files
 css:
 	rsync -av --exclude=~ $(STATIC_CSS)/ $(SITE)/$(STATICDIR)
+
+site: html
+	./copy_trees.py
+
