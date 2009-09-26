@@ -1,24 +1,37 @@
-{% extends "!basic/layout.html" %}
+{# -*- Mode: Jinja -*- #}
+{% extends "!sphinxdoc/layout.html" %}
 
-{#  {% block header %} #}
-
-{#
+{# A header at the beginning of every page, with an image.
+   WARNING: be careful to not use an image with a filename that has the words
+   'banner' or 'ad' in it (even as a sub-word), because it may mysteriously
+   disappear in many browsers that have ad-blocking tools like AdBlock
+  #}
   
-{% block relbar1 %}
-<div style="background-color: black; text-align: center;
-    padding: 0px 0px 0px 0px">
- <a href="{{pathto('index') }}">
-  <img src="{{ pathto("_static/banner_mountains_clouds.jpg", 1) }}"
-	alt="Fernando Pérez"  border="0" /></a>
+{% block header %}
+<div class="header">
+ <a href="{{pathto('index')}}">
+  <img src="{{ pathto('_static/top_mountains_clouds.jpg', 1) }}"
+	alt="Fernando Pérez"></a>
 </div>
   {{ super() }}
 {% endblock %}
 
-#}
-  
-{% block sidebar1 %}{{ sidebar() }}{% endblock %}
-{% block sidebar2 %}{% endblock %}
+{# This block gets put at the top of the sidebar #}
+{% block sidebarlogo %}
+<h4> Navigation </h4>
+  <ul class="simple">
+    <li><a class="reference external"
+	href="{{pathto('research/index')}}">Research</a></li>
+    <li><a class="reference external"
+	href="{{pathto('talks/index')}}">Talks</a></li>
+    <li><a class="reference external"
+	href="{{pathto('code/index')}}">Software</a></li>
+  </ul>
+{% endblock %}
 
+
+{# I had to copy the whole search block just to change the rendered text,
+   so it doesn't mention modules or classes #}
 {%- block sidebarsearch %}
 {%- if pagename != "search" %}
 <div id="searchbox" style="display: none">
@@ -34,4 +47,21 @@
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
 {%- endif %}
+
+{# The sidebarsearch block is the last one available in the default sidebar()
+   macro, so the only way to add something to the bottom of the sidebar is to
+   put it here, at the end of the sidebarsearch block (before it closes).
+   #}
+
+<div class="header">
+     <p> Henry J. Wheeler Brain Imaging Center</p>     
+     <a href="http://bic.berkeley.edu">
+       <img src="{{ pathto('_static/bicbutton.jpg', 1) }}"
+       	alt="Henry J. Wheeler Brain Imaging Center (BIC)"></a>
+     <p> Helen Wills Neuroscience Institute</p>     
+     <a href="http://neuroscience.berkeley.edu">
+       <img src="{{ pathto('_static/hwni.jpg', 1) }}"
+       	alt="Helen Wills Neuroscience Institute (HWNI)"></a>
+</div>
+
 {%- endblock %}

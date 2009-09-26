@@ -26,10 +26,10 @@ the `Python <http://python.org>`_ language.
 * Online `photo album <http://picasaweb.google.com/fdo.perez>`_.
 
 
-Contact information::
+Contact information (the use this map_ if you are coming to visit)::
 
   Fernando Pérez
-  Office: Giannini Hall, Henry H. Wheeler Jr. Brain Imaging Center.
+  Office: 10 Giannini Hall, Henry H. Wheeler Jr. Brain Imaging Center.
   Phone: 510.643.4010
   Fax: 510.643.4952
 
@@ -40,6 +40,8 @@ Contact information::
   University of California, Berkeley
   Berkeley, CA 94720-3192
 
+
+.. _map: http://maps.google.com/maps/place?cid=1511778024603995956&q=cirl&hl=en
 
 .. toctree::
    :hidden:
