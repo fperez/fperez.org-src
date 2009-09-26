@@ -1,3 +1,10 @@
+===========
+ Web notes
+===========
+
+Sphinx for websites
+===================
+
 - Contents of all static paths is dumped on output into _static
 
 - Symlinks in static paths are resolved and copied out rather than kept as
@@ -59,7 +66,6 @@
    Why?
 
 
-
 - The :doc: role renders with <em> its output.  Is there a way to eliminate
   this?  It should render in the normal link style, because it makes doc links
   jarringly stand out from other links that may also be to regular html pages.
@@ -75,3 +81,58 @@
   Basically, I want all links to my locally hosted documents to be normal links
   like any other, without special italics or boldface, as I want to reserve
   that markup for other things.
+
+- In order to be able to use a common links file but with the possibility of
+  `long link targets` in the text, use anonymous targets:
+
+  `long text here`__
+
+__ label_
+
+  As long as label_ is defined in the links file that is included, this works
+  great.
+
+
+Webhosting ideas
+================
+
+From a post online
+------------------
+
+Well this is what I do.
+
+First off I have Dreamhost which allows unlimited domains, space &
+bandwidth. It's not 6-nines, but it works for me. Full SSH, SFTP, etc access.
+
+1) My 'domain' is blank. It points to nothing.
+
+2) Every picture I've ever taken is at pictures.X.org. Password Protected.
+If I want to show someone something I'll open a folder for them using
+htaccess. It's also my off-site backup for my pictures.
+
+2) SVN. Dreamhost lets you easily setup SVN. I honestly just discovered
+version control in the last month (More or less took the time to learn it)
+and absolutely love it. So all my pet projects have an svn.X.org page.
+
+3) Sub domains for where I post the most. Since I post quite a few
+photoshops/images to Fark. I have a fark.X.org that is nothing but pictures.
+I have a vw.X.org for posting pictures of my Dubs to VWVortex and TDICLub. I
+try not to move the directory around at all. I hate digging up a 6 month old
+"how to" and find all the images are broken.
+
+4) Unlimited e-mail. I have catch-all turned on. slashdot@X.org, fark@x.org,
+facebook@X.org, I know exactly when and where spam comes from. (Damn you USA
+Rugby*).
+
+5) Subdomains to my computers. Both my linux desktop and mac laptop have
+scripts to update mac/linux.X.org with the current IP.
+
+6) gallery.X.org for people in my family to upload stuff. (With Gallery2).
+
+7) A few friends have websites at name.X.org. I create a new FTP or SFTP
+user for them
+
+8) If you have SSH access, I route everything through at work. Dynamic proxy
+and I don't go through the work proxy servers.
+
+Half of those blur the line between domain/host but you get the idea.

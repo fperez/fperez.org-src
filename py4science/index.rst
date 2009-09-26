@@ -6,8 +6,8 @@ The Python language is an excellent tool for scientific computing and rapidly
 growing in popularity.  This page gathers some information and resources on
 this topic.
 
-- Some `notes about decorators for controlling execution <decorators.html>`_ from a September 2009 talk at the
-  Berkeley Py4Science group.
+- Some `notes about decorators for controlling execution <decorators.html>`_
+  from a September 2009 talk at the Berkeley Py4Science group.
 
 - A "`Python for scientific computing Starter Kit <starter_kit.html>`_".  I
   often encounter scientists who need resources on where to get quickly started

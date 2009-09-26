@@ -6,20 +6,19 @@ Some talks and presentations, in reverse chronological order:
 
 `The state of IPython <0908_scipy_state_ipython.pdf>`_
     August 2009, a short update on the project, delivered as a lightning talk
-    at the `SciPy'09 conference`_.
-    
+    at the `SciPy'09 conference`__.
+
+__ scipy_conference_
+
 `Data Arrays: Name that axis! <0908_scipy_data_arrays.pdf>`_
     August 2009, a short talk about an idea I am working on, to add named axis
     support to NumPy nd-arrays (another SciPy'09 lightning talk).  The code for
-    this project is available on github_.
+    this project is `available on github`__.
 
-.. _SciPy'09 conference: http://conference.scipy.org/
-.. _github: http://github.com/fperez/datarray
+__ datarray_
 
 `Python and parallel computing: an overview <0904_parlab_scipy.pdf>`_
     April 2009, delivered at the UC Berkeley ParLab_.
-
-.. _ParLab: http://parlab.eecs.berkeley.edu
 
 `Python & Scientific Computing: Leading the charge for open source, high-level tools <0811_baypig_scipy.pdf>`_
     November 2008, presented at the Bay Area Python Interest Group meeting held
@@ -89,3 +88,5 @@ Some talks and presentations, in reverse chronological order:
 `A semi-classical approach for Lyapunov exponents of a quantum mechanical system <9806_qchaos_lyap.pdf>`_
     June 1998,  University of Colorado, Boulder.
     
+
+.. include:: ../links.txt
