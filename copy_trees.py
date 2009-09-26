@@ -39,6 +39,9 @@ skip_trees = set(['.git','sphinxext', 'resources', 'attic','blog'])
 # Always skip source files, since shpinx already copies those
 skip_extensions.add(sphinx_conf.get('source_suffix','.rst'))
 
+# Any top-level files that may need to be copied as well
+top_files = ['links.txt']
+
 #-----------------------------------------------------------------------------
 # Functions
 #-----------------------------------------------------------------------------
@@ -58,6 +61,18 @@ def keep_filename(f, skip_ext=skip_extensions):
         return False
 
     return os.path.splitext(f)[1] not in skip_ext
+    
+
+def copy_files(root, files):
+    did_copy = False
+    for fname in files:
+        target = pjoin(out_dir, root, fname)
+        if not (os.path.isfile(target) or os.path.islink(target)):
+            print(target, end='')
+            os.link(pjoin(root, fname), target)
+            did_copy = True
+    if did_copy:
+        print()
     
 
 def main():
@@ -92,18 +107,9 @@ def main():
         if root == src_dir:
             # Only copy files for subdirs, not for the top-level (so we don't
             # copy makefiles and stuff like that)
-            continue
+            copy_files(root, set(top_files) & set(files))
 
-        did_copy = False
-        for fname in files:
-            target = pjoin(out_dir, root, fname)
-            if not (os.path.isfile(target) or os.path.islink(target)):
-                print(target, end='')
-                os.link(pjoin(root, fname), target)
-                did_copy = True
-        if did_copy:
-            print()
-
+        copy_files(root, files)
 
 #-----------------------------------------------------------------------------
 # Execute as a script
