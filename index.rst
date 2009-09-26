@@ -27,11 +27,7 @@ Contact
 
 If you are coming to visit, this map_ may be useful (we share space with
 Berkeley's CIRL, hence the name in the map).  Our door is the first on the left
-once you enter the East facing doors.
-
-If you need to schedule a meeting, my calendar_ may simplify things, I try to
-keep it updated so pick a free slot (click on the week view for details) and
-there's a chance we'll save a few emails.
+once you enter the East facing building doors at ground level.
 
 ::
 
@@ -47,16 +43,16 @@ there's a chance we'll save a few emails.
   University of California, Berkeley
   Berkeley, CA 94720-3192
 
-
+  
 .. _map: http://maps.google.com/maps/place?cid=1511778024603995956&q=cirl&hl=en
 .. _calendar: http://www.google.com/calendar/embed?src=fdo.perez%40gmail.com
 
 .. toctree::
    :hidden:
 
-   code/index
-   py4science/index
    research/index
    talks/index
+   py4science/index
+   code/index
    personal
    

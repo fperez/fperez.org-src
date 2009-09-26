@@ -19,7 +19,7 @@ The talks I have so far are (listed in the order they were presented):
   in Python <numpy_scipy.ppt>`_.
 
 * Robert Bradshaw - `Sage: A Unified Environment for Mathematical Computation
-  <SIAM___Sage.sws.pdf>`_ (this is just a PDF, the original Sage files can be
+  <SIAM___Sage.sws.pdf>`_ (this is a static PDF, the original Sage files can be
   found `here
   <http://sage.math.washington.edu/home/robertwb/talks/siam-2008/>`_).
 
@@ -30,7 +30,7 @@ The talks I have so far are (listed in the order they were presented):
   <08-07-HartCoopr.ppt>`_.
 
 * Robert Bradshaw - `Cython: A Python to C Compiler <SIAM___Cython.sws.pdf>`_
-  (this is just a PDF, the original Sage files can be found `here
+  (this is a static PDF, the original Sage files can be found `here
   <http://sage.math.washington.edu/home/robertwb/talks/siam-2008/>`_).
 
 * Kyle Mandli - `EagleClaw: Easy Access Graphical Laboratory for Exploring

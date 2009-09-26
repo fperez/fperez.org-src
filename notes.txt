@@ -58,3 +58,20 @@
 
    Why?
 
+
+
+- The :doc: role renders with <em> its output.  Is there a way to eliminate
+  this?  It should render in the normal link style, because it makes doc links
+  jarringly stand out from other links that may also be to regular html pages.
+  Why the difference?
+
+  It's defined in roles.py, at the end, in the specific_docroles dict pointed
+  to xfileref_role.  Perhaps there's a way to change that to avoid the <em>
+  always...
+
+- Similarly, the :download: role produces <strong class="xref">.  Is there a
+  way to disable this too?
+
+  Basically, I want all links to my locally hosted documents to be normal links
+  like any other, without special italics or boldface, as I want to reserve
+  that markup for other things.
