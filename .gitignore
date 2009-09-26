@@ -6,3 +6,6 @@ sphinxext
 
 *.pdf
 *.ppt
+*.odp
+
+mpi4py_ldalcin_bgranger*
