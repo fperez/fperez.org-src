@@ -97,7 +97,7 @@ def main():
         did_copy = False
         for fname in files:
             target = pjoin(out_dir, root, fname)
-            if not os.path.isfile(target):
+            if not (os.path.isfile(target) or os.path.islink(target)):
                 print(target, end='')
                 os.link(pjoin(root, fname), target)
                 did_copy = True

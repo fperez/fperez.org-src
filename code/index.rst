@@ -6,11 +6,11 @@ This page contains a collection of miscellaneous little software tools that
 don't fit into any larger project but could be useful for someone.  Unless
 otherwise specified, they are all released under the terms of the BSD license.
 
-These days, I keep most new public projects available at my github_ repository,
-which makes for a convenient download system and lets you send me back all the
-great improvements you'll undoubtedly make.
+These days, I keep most new public projects available at my `github
+repository`__, which makes for a convenient download system and lets you send
+me back all the great improvements you'll undoubtedly make.
 
-.. _github: http://github.com/fperez
+__ github_fperez_
 
 
 Python tools for Mathematica and Fortran
@@ -40,8 +40,6 @@ in version 5.0, was hideous beyond redemption).  If you ever need to generate
 Fortran (77) from data you have in Python, then `py2fortran.py`_ may come in
 handy.
   
-.. _Sage: http://sagemath.org
-.. _Sympy: http://code.google.com/p/sympy
 .. _math2python.nb: math2python.nb
 .. _py2mathematica.py: py2mathematica.py
 .. _py2fortran.py: py2fortran.py
@@ -88,4 +86,5 @@ looks awful today, even for the dubious standards of Perl code.
    :hidden:
 
    lyxport/index
-   
+
+.. include:: links.txt

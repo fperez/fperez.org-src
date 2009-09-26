@@ -26,6 +26,8 @@ Links
 
 - Downloads_.
 
-.. _LyX: http://lyx.org
+.. _LyX: http://www.lyx.org
 .. _documentation: lyxport.html
 .. _downloads: dist
+
+.. include:: links.txt

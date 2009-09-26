@@ -2,24 +2,24 @@
  Welcome
 =========
 
-I am a research scientist at the `Helen Wills Neuroscience Institute
-<http://neuroscience.berkeley.edu/>`_ at U.C. Berkeley.  My work involves the
-development and implementation of new algorithms and tools for neuroimaging,
-with a special interest in functional MRI.  I am also actively involved with
-the development of new tools for high-level scientific computing, mostly using
-the `Python <http://python.org>`_ language.
+I am a research scientist at the `Helen Wills Neuroscience Institute`__ at
+U.C. Berkeley.  My work involves the development and implementation of new
+algorithms and tools for neuroimaging, with a special interest in functional
+MRI.  I am also actively involved with the development of new tools for
+high-level scientific computing, mostly using the Python_ language.
+
+__ hwni_
 
 * `Research <research>`_.
 
 * Some `<talks>`_.
 
-* `Scientific computing in Python <py4science>`_, `IPython
-  <http://ipython.scipy.org>`_ and related matters.
+* `Scientific computing in Python <py4science>`_, IPython_ and related matters.
 
 * Other `software tools <code>`_.
 
-* A `blog <http://fdoperez.blogspot.com>`_, where I post items of interest
-  related to IPython, SciPy and scientific computing in Python.
+* A blog_, where I post items of interest related to IPython, SciPy and
+  scientific computing in Python.
 
   
 Contact
@@ -44,9 +44,6 @@ once you enter the East facing building doors at ground level.
   Berkeley, CA 94720-3192
 
   
-.. _map: http://maps.google.com/maps/place?cid=1511778024603995956&q=cirl&hl=en
-.. _calendar: http://www.google.com/calendar/embed?src=fdo.perez%40gmail.com
-
 .. toctree::
    :hidden:
 
@@ -55,4 +52,5 @@ once you enter the East facing building doors at ground level.
    py4science/index
    code/index
    personal
-   
+
+.. include:: links.txt

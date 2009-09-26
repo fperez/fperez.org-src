@@ -11,13 +11,17 @@
    NOTE: Some of these were taken from the nipy links compendium.
 
 .. fperez
+.. _blog: http://fdoperez.blogspot.com
 .. _github_fperez: http://github.com/fperez
 .. _datarray: http://github.com/fperez/datarray
+.. _map: http://maps.google.com/maps/place?cid=1511778024603995956&q=cirl&hl=en
+.. _calendar: http://www.google.com/calendar/embed?src=fdo.perez%40gmail.com
 
 .. Berkeley
 .. _bic: http://bic.berkeley.edu
 .. _hwni: http://neuroscience.berkeley.edu
 .. _ParLab: http://parlab.eecs.berkeley.edu
+.. _py4science_ucb: https://cirl.berkeley.edu/view/Py4Science
 
 .. nipy
 .. _nipy: http://nipy.sourceforge.net
@@ -31,6 +35,7 @@
 .. _`Sphinx reST`: http://sphinx.pocoo.org/rest.html
 .. _reST: http://docutils.sourceforge.net/rst.html
 .. _docutils: http://docutils.sourceforge.net
+.. _lyx: http://www.lyx.org
 
 .. Licenses
 .. _GPL: http://www.gnu.org/licenses/gpl.html
@@ -49,6 +54,7 @@
 .. _python: http://www.python.org
 .. _mayavi: http://mayavi.sourceforge.net
 .. _sympy: http://code.google.com/p/sympy
+.. _sage: http://sagemath.org
 
 .. Python imaging projects
 .. _PyMVPA: http://www.pymvpa.org

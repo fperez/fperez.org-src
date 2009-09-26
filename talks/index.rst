@@ -89,4 +89,4 @@ __ datarray_
     June 1998,  University of Colorado, Boulder.
     
 
-.. include:: ../links.txt
+.. include:: links.txt
