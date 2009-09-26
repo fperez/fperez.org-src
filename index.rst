@@ -9,8 +9,6 @@ with a special interest in functional MRI.  I am also actively involved with
 the development of new tools for high-level scientific computing, mostly using
 the `Python <http://python.org>`_ language.
 
-*Note:* this site is perenially incomplete, that should be no surprise...
-
 * `Research <research>`_.
 
 * Some `<talks>`_.
@@ -26,7 +24,7 @@ the `Python <http://python.org>`_ language.
 * Online `photo album <http://picasaweb.google.com/fdo.perez>`_.
 
 
-Contact information (the use this map_ if you are coming to visit)::
+Contact information (a map_, if you are coming to visit)::
 
   Fernando Pérez
   Office: 10 Giannini Hall, Henry H. Wheeler Jr. Brain Imaging Center.

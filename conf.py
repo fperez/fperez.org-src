@@ -70,7 +70,7 @@ unused_docs = []
 
 # List of directories, relative to source directory, that shouldn't be searched
 # for source files.
-exclude_trees = ['_build','s','resources','attic','blog']
+exclude_trees = ['_build','s','resources','attic','blog','code/lyxport/dist']
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
