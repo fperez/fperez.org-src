@@ -28,7 +28,6 @@ clean:
 	-rm -rf $(BUILDDIR)/*
 	-rm -f *~
 
-
 site: html
 	./copy_trees.py
 
@@ -52,4 +51,4 @@ doctest:
 # Update target to push to live site
 upload: site
 	chmod -R uog+r $(SITE)
-	rsync -avrzH --copy-links --delete -e ssh  $(SITE)/ $(WWW)
+	rsync -avrzH --copy-links --delete -e ssh  --exclude=.git $(SITE)/ $(WWW)

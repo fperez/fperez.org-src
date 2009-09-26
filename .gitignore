@@ -1,0 +1,8 @@
+_build
+attic
+papers
+resources
+sphinxext
+
+*.pdf
+*.ppt

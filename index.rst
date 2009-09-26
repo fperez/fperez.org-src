@@ -21,10 +21,19 @@ the `Python <http://python.org>`_ language.
 * A `blog <http://fdoperez.blogspot.com>`_, where I post items of interest
   related to IPython, SciPy and scientific computing in Python.
 
-* Online `photo album <http://picasaweb.google.com/fdo.perez>`_.
+  
+Contact
+=======
 
+If you are coming to visit, this map_ may be useful (we share space with
+Berkeley's CIRL, hence the name in the map).  Our door is the first on the left
+once you enter the East facing doors.
 
-Contact information (a map_, if you are coming to visit)::
+If you need to schedule a meeting, my calendar_ may simplify things, I try to
+keep it updated so pick a free slot (click on the week view for details) and
+there's a chance we'll save a few emails.
+
+::
 
   Fernando Pérez
   Office: 10 Giannini Hall, Henry H. Wheeler Jr. Brain Imaging Center.
@@ -40,6 +49,7 @@ Contact information (a map_, if you are coming to visit)::
 
 
 .. _map: http://maps.google.com/maps/place?cid=1511778024603995956&q=cirl&hl=en
+.. _calendar: http://www.google.com/calendar/embed?src=fdo.perez%40gmail.com
 
 .. toctree::
    :hidden:
@@ -48,4 +58,5 @@ Contact information (a map_, if you are coming to visit)::
    py4science/index
    research/index
    talks/index
+   personal
    
