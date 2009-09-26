@@ -26,9 +26,18 @@ div.header {
     /* padding: 5px 0px 0px; */
 }
 
+
+div.related ul li a:hover {
+    background-color: #e0e0e0;
+}
+
 div.document {
     background-color: white;
 }
+
+div.sphinxsidebar a:hover {
+    background-color: #e0e0e0;
+    }
 
 div.sphinxsidebar h4, div.sphinxsidebar h3 {
     background-color: #2F83C8;
@@ -43,7 +52,14 @@ div.body {
     background-color: white;
 }
 
+/* -- body styles ----------------------------------------------------------- */
 
+/*
+a:hover {
+    color: #2491CF;
+    background-color: #e0e0e0;
+}
+*/
 cite, code, tt {
     font-size: 0.8em;
 }

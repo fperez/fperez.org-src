@@ -2,11 +2,13 @@
 
 # You can set these variables from the command line.
 WWW = cirl:www
+STATIC_CSS = _themes/fperez/static
 
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 BUILDDIR      = _build
 SOURCEDIR     = .
+STATICDIR     = _static
 
 SITE = $(BUILDDIR)/html
 
@@ -52,3 +54,7 @@ doctest:
 upload: site
 	chmod -R uog+r $(SITE)
 	rsync -avrzH --copy-links --delete -e ssh  $(SITE)/ $(WWW)
+
+# Update only css files
+css:
+	rsync -av --exclude=~ $(STATIC_CSS)/ $(SITE)/$(STATICDIR)
