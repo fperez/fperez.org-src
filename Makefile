@@ -10,7 +10,7 @@ SOURCEDIR     = .
 
 # Other variables for site management, css updating, etc.
 STATICDIR   = _static
-STATIC_CSS  = _themes/fperez/static
+STATIC_CSS  = themes/fperez/static
 SITE        = $(BUILDDIR)/html
 WWW         = cirl:www
 
