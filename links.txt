@@ -12,22 +12,32 @@
 
 .. fperez
 .. _blog: http://fdoperez.blogspot.com
+.. _picasa_fperez: http://picasaweb.google.com/fdo.perez
 .. _github_fperez: http://github.com/fperez
 .. _datarray: http://github.com/fperez/datarray
 .. _map: http://maps.google.com/maps/place?cid=1511778024603995956&q=cirl&hl=en
 .. _calendar: http://www.google.com/calendar/embed?src=fdo.perez%40gmail.com
+.. _siam_news_cse09: http://www.siam.org/news/news.php?id=1595
+.. _fisica_udea: http://fisica.udea.edu.co
+.. _amath_cu: http://amath.colorado.edu
+.. _beylkin: http://amath.colorado.edu/faculty/beylkin
 
 .. Berkeley
 .. _bic: http://bic.berkeley.edu
 .. _hwni: http://neuroscience.berkeley.edu
 .. _ParLab: http://parlab.eecs.berkeley.edu
 .. _py4science_ucb: https://cirl.berkeley.edu/view/Py4Science
+.. _despolab: http://bic.berkeley.edu/despolab
+.. _silverlab: http://argentum.ucbso.berkeley.edu
+.. _arokem: http://argentum.ucbso.berkeley.edu/ariel.html
 
 .. nipy
 .. _nipy: http://nipy.sourceforge.net
 .. _nipy2: http://nipy.sourceforge.net/nipy2
 .. _nitime: http://nipy.sourceforge.net/nitime
 .. _nipype: http://nipy.sourceforge.net/nipype
+.. _neurospin: http://meteoreservice.com/neurospin
+
 
 .. Documentation tools
 .. _graphviz: http://www.graphviz.org

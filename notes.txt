@@ -89,10 +89,31 @@ Sphinx for websites
 
 __ label_
 
-  As long as label_ is defined in the links file that is included, this works
-  great.
+  Use these sparingly though as the __ definition must be kept close to the
+  source paragraph.  To resolve more than one phrase to the same target, simply
+  use indirect hyperlink targets, for example::
+
+  text `foo bar`_ and `foo 2`_ can go
+
+  .. _foo bar: target_
+  .. _foo 2: target_
+  
+
+- Note, when the reference name contains any colons, either:
+
+    * the phrase must be enclosed in backquotes:
+
+      .. _`FAQTS: Computers: Programming: Languages: Python`:
+         http://python.faqts.com/
+
+    * or the colon(s) must be backslash-escaped in the link target:
+
+      .. _Chapter One\: "Tadpole Days":
+
+      It's not easy being green...
 
 
+  
 Webhosting ideas
 ================
 

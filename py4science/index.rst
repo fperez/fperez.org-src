@@ -1,3 +1,5 @@
+.. _py4science:
+
 =================================
  Python for scientific computing
 =================================
@@ -5,6 +7,9 @@
 The Python language is an excellent tool for scientific computing and rapidly
 growing in popularity.  This page gathers some information and resources on
 this topic.
+
+- A blog_, where I post items of interest related to IPython, SciPy and
+  scientific computing in Python.
 
 - Some `notes about decorators for controlling execution <decorators.html>`_
   from a September 2009 talk at the Berkeley Py4Science group.
@@ -56,4 +61,5 @@ __ http://www.archive.org/search.php?query=Fernando+Perez+scientific+python
    pymvpa_nipy_sprint_200904
    numpy-pep225/README
    numpy-pep225/numpy-pep225
-   
+
+.. include:: links.txt
