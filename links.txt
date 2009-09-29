@@ -61,6 +61,7 @@
 .. _matplotlib: http://matplotlib.sourceforge.net
 .. _pythonxy: http://www.pythonxy.com
 .. _ETS: http://code.enthought.com/projects/tool-suite.php
+.. _EPD: http://www.enthought.com/products/epd.php
 .. _python: http://www.python.org
 .. _mayavi: http://mayavi.sourceforge.net
 .. _sympy: http://code.google.com/p/sympy
@@ -79,7 +80,9 @@
 .. _FSL: http://www.fmrib.ox.ac.uk/fsl
 .. _FreeSurfer: http://surfer.nmr.mgh.harvard.edu
 .. _voxbo: http://www.voxbo.org
+.. _VTK: http://vtk.org
 
 .. Other organizations
 .. _enthought: http://www.enthought.com
 .. _kitware: http://www.kitware.com
+.. _netlib: http://netlib.org

@@ -65,9 +65,10 @@ alternatives, partly depending on your operating system of choice:
   particularly appealing for Windows and Mac OSX, and it also exists for
   several Linux distributions and Solaris.
 
-- `Python(x,y)`_ provides a single-click installer for Windows of a similar set
-  of libraries to EPD (though not exactly the same), as well as Ubuntu
-  repositories.
+- `Python(x,y)`_ provides a single-click installer for Windows of a number of
+  useful libraries, though unfortunately it does not ship the very useful
+  Enthought tools (that include the powerful Mayavi 3d visualizer, the 2d
+  plotting library Chaco and much more).
 
 As an alternative approach, the Sage_ project also ships most of these tools,
 and then adds others (like GMP and Pari) to provide a new numerical foundation,
@@ -92,20 +93,9 @@ keep an updated Sage installation available and use it as needed.  Sage is
 available in source and binary form for many different Unix-like operating
 systems, and can be used in Windows as a VMWare Linux image.
 
-.. _Sage: http://sagemath.org
-.. _BSD: http://en.wikipedia.org/wiki/BSD_licenses
-.. _GPL: http://en.wikipedia.org/wiki/GNU_General_Public_License
-
-.. _IPython: http://ipython.scipy.org
-.. _NumPy: http://numpy.scipy.org
-.. _SciPy: http://www.scipy.org
-.. _Matplotlib: http://matplotlib.sourceforge.net
-.. _Mayavi: http://code.enthought.com/projects/mayavi
-.. _Enthought Python Distribution: http://www.enthought.com/products/epd.php
-.. _netlib: http://netlib.org
-.. _VTK: http://vtk.org
+.. _Enthought Python Distribution: _EPD
 .. _community maintained page: http://www.scipy.org/Topical_Software
-.. _Python(x,y): http://www.pythonxy.com/foreword.php
+.. _Python(x,y): _pythonxy
 
 
 What to read and view
@@ -135,8 +125,9 @@ useful:
 - The `IPython documentation <http://ipython.scipy.org/moin/Documentation>`_:
   handy resources about making the most of your interactive environment.
 
-- The `SciPy documentation page <http://www.scipy.org/Additional_Documentation>`_ contains
-  links to many more documentation resources, especially for scientific work.
+- The `SciPy documentation page
+  <http://www.scipy.org/Additional_Documentation>`_ contains links to many more
+  documentation resources, especially for scientific work.
 
 - `Interactive data analysis
   <http://www.scipy.org/wikis/topical_software/Tutorial>`_: a tutorial with an
@@ -144,6 +135,15 @@ useful:
   *excellent resource* which you can download for reading but also with
   examples you can execute.
 
+These are a few good links about Python and computational literacy:
+  
+- `Code Like a Pythonista: Idiomatic Python <http://python.net/%7Egoodger/projects/pycon/2007/idiomatic/handout.html>`_.
+
+- `The Importance of Programming Literacy (PyCon 2007)
+  <http://advocacy.python.org/podcasts/pycon/PyCon2007-ProgrammingLiteracy.mp3>`_
+  (this is an audio file in MP3).
+
+  
 Books
 -----
 
@@ -157,6 +157,19 @@ In terms of books for scientists, I recommend the following:
   scientific computing contexts, available online from the author (`Amazon
   link`_).
 
+  
+These books are of general value and freely available online, though they can
+also be purchased in paper form
+
+- `Dive into Python`_: an outstanding book, if you only read one general python
+  book, make it this one.
+
+- `Building Python Skills`_: a series, in particular the second book has been
+  very well recommended to me.
+
+.. _Dive into Python: http://diveintopython.org
+.. _Building Python Skills: http://homepage.mac.com/s_lott/books/index.html
+  
 The following Python books are freely available to UC Berkeley via the O'Reilly
 Safari system.  These are books I have personally found to be useful and can
 recommend; they are general-purpose books without content specific to
@@ -175,9 +188,12 @@ scientific use.
   <http://proquest.safaribooksonline.com/0596007973>`_ by Alex Martelli; Anna
   Martelli Ravenscroft; David Ascher.
 
-Note to Berkeley users: to access Safari for free, you need to be either on
-campus or browsing with the `Berkeley Library Proxy
-<http://lib.berkeley.edu/Help/proxy.html>`_.
+.. note::
+
+   U.C. Berkeley users can access Safari for free.  For this you need to be
+   either on campus or browsing with the `Berkeley Library Proxy
+   <http://lib.berkeley.edu/Help/proxy.html>`_.
+
 
 Videos and webinars
 -------------------
@@ -190,6 +206,61 @@ available`_.  They were kindly videotaped and put online by Jeff Teeters.
 
 Enthought offers a `webinar series`_ that is open to the public, and recordings
 of past ones are available as well.
+
+MIT's famous `6.00 Introduction to Computer Science and Programming`__ course
+is now using Python and the whole course is available online on their
+OpenCourseware system.  In particular, `lecture 18`_ covers Matplotlib.
+
+__ http://ocw.mit.edu/OcwWeb/Electrical-Engineering-and-Computer-Science/6-00Fall-2008/CourseHome/index.htm
+.. _lecture 18: http://ocw.mit.edu/OcwWeb/Electrical-Engineering-and-Computer-Science/6-00Fall-2008/LectureVideos/detail/embed18.htm
+
+These are a few extra video lectures you may find useful:
+
+**Scientific-computing oriented**
+
+- SciPy 2009 conference: the entire tutorial series and conference videos_ are
+  online, as well as the slides_ for all presentations.
+
+- `A Demonstration of the 'IPython' Interactive Shell
+  <http://video.google.com/videoplay?docid=3D2025411588241625522>`_.
+
+- `Matplotlib by John D. Hunter
+  <http://videolectures.net/mloss08_hunter_mat/>`_, a talk at NIPS'08.
+
+- `Scientific Computing with Python <http://nanohub.org/resources/99>`_: a full
+  day workshop presented by Eric Jones and Travis Oliphant, from Enthought_.
+
+- Sage_: Unifying Mathematical Software: `I
+  <http://wstein.org/edu/2009/sd16/00021-stein-unifying_open_source_math_software-part1.m4v>`_,
+  `II
+  <http://wstein.org/edu/2009/sd16/00022-stein-unifying_open_source_math_software-part2.m4v>`_
+
+.. _videos: http://www.archive.org/search.php?query=%22SciPy%202009%22
+.. _slides: http://conference.scipy.org/slides
+  
+**General Python lectures**
+  
+- PyCon: `a selection from the annual Python conference <http://pycon.blip.tv>`_:
+
+  - Python 101: `I <http://blip.tv/file/1999483/>`_, `II
+    <http://blip.tv/file/1999358/>`_.
+  - Python 102: `I <http://blip.tv/file/1999205/>`_, `II
+    <http://blip.tv/file/1999063>`_, `III <http://blip.tv/file/1998921>`_.
+  - Python 401: Some Advanced Topics: `I <http://www.blip.tv/file/2023288>`_,
+    `II <http://www.blip.tv/file/2023093>`_, `III
+    <http://www.blip.tv/file/2023307>`_ 
+  - An Introduction to Object-Oriented Programming: `I
+    <http://www.blip.tv/file/2022419/>`_, `II
+    <http://www.blip.tv/file/2022629/>`_, `III
+    <http://www.blip.tv/file/2022478/>`_ 
+
+- `Advanced Python
+  <http://video.google.com/videoplay?docid=3D7760178035196894549>`_: a Google
+  Tech Talk by Thomas Wouters.
+
+- Google I/O 2008, 'Painless Python': `I
+  <http://www.youtube.com/watch?v=3DbDgD9whDfEY&feature=3Dchannel>`_, `II
+  <http://www.youtube.com/watch?v=3Dy7vwZ20SDzc&feature=3Dchannel>`_. 
 
 .. _User Guide:      http://docs.scipy.org/doc/numpy/user
 .. _Reference Guide: http://docs.scipy.org/doc/numpy/reference
@@ -232,7 +303,8 @@ Acknowledgments
 ===============
 
 Thanks to Chris Burns from UC Berkeley for a useful set of links and resources,
-and to Stefan van der Walt from U. Stellenbosch for notes on Sage and numerics.
+to Stefan van der Walt from U. Stellenbosch for notes on Sage and numerics, and
+to Gokhan Sever for a number of useful links.
 
 
 --------------
@@ -244,3 +316,4 @@ and to Stefan van der Walt from U. Stellenbosch for notes on Sage and numerics.
        that includes a mix of BSD and GPL tools, the combined Sage entity is
        necessarily also a GPL'd project.
        
+.. include:: links.txt
