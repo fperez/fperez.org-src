@@ -31,11 +31,13 @@ common with such documents, it is probably a decent summary of many techniques
 and ideas in the lattice QCD field, so hopefully it may be of use to students
 entering this domain):
 
-F. Pérez, `Instanton Correlations in the Finite Temperature QCD Vacuum`__,
-Ph.D. dissertation, Department of Physics, University of Colorado at Boulder,
-2002.
+.. admonition:: Thesis
 
-__ /papers/thesis_fperez.pdf
+   F. Pérez, `Instanton Correlations in the Finite Temperature QCD Vacuum`__,
+   Ph.D. dissertation, Department of Physics, University of Colorado at
+   Boulder, 2002.
+
+__ ../papers/thesis_fperez.pdf
 
 .. _Anna Hasenfratz: http://www-hep.colorado.edu/~anna
 
@@ -51,9 +53,11 @@ yields quantitative agreement with kinetic simulations. Furthermore, the theory
 predicts that the vibrations can become unstable when resonantly coupled to
 electrostatic whistlers — also in agreement with simulations.
 
-M.V. Goldman, D.L. Newman and F. Pérez. `Dynamics and Instability of Electron
-Phase-Space Tubes </papers/etubes01_go-new-pe_prl.pdf>`_, Phys. Rev. Lett. 86,
-1239-1242 (2001).
+.. admonition:: Paper
+
+   M.V. Goldman, D.L. Newman and F. Pérez. `Dynamics and Instability of
+   Electron Phase-Space Tubes <../papers/etubes01_go-new-pe_prl.pdf>`_,
+   Phys. Rev. Lett. 86, 1239-1242 (2001).
 
 
 Semi-classical chaos
@@ -69,9 +73,11 @@ dynamics of the quantum system. In this manner, we find non trivial corrections
 to the classical dynamics arising from quantum information: the chaotic
 behavior is suppressed although not entirely eliminated.
 
-J. Mahecha and F. Pérez, `A semi-classical approach for Lyapunov exponents of a
-quantum mechanical system </papers/quantum_lyap_short.pdf>`_, Universidad de
-Antioquia preprint, 2002.
+.. admonition:: Paper
+
+   J. Mahecha and F. Pérez, `A semi-classical approach for Lyapunov exponents
+   of a quantum mechanical system <../papers/quantum_lyap_short.pdf>`_,
+   Universidad de Antioquia preprint, 2002.
 
 
 Hamiltonian chaos in 3-body systems
@@ -91,12 +97,16 @@ If you happen to be interested in the sources, drop me a line (fairly clean C
 code though I haven't run it for years so it may need some updates for modern
 compilers, but it was purely numerical code so there are no dependencies).
 
-A. Santander, J. Mahecha and F. Pérez, `Rigid Rotator and Fixed shape solutions
-to the Coulomb Three-Body Problem </papers/rigid_coul3d97_sa-ma-pe.pdf>`_. Few
-Body Systems, 22:1, 37-60 (1997).
+.. admonition:: Papers
 
-F. Pérez and J. Mahecha. `Classical trajectories in Coulomb three body systems
-</papers/traj_coul3d96_pe-ma.pdf>`_. Rev. Mex. Física 42:6, 1070-1086 (1996).
+   A. Santander, J. Mahecha and F. Pérez, `Rigid Rotator and Fixed shape
+   solutions to the Coulomb Three-Body Problem
+   <../papers/rigid_coul3d97_sa-ma-pe.pdf>`_. Few Body Systems, 22:1, 37-60
+   (1997).
+
+   F. Pérez and J. Mahecha. `Classical trajectories in Coulomb three body
+   systems <../papers/traj_coul3d96_pe-ma.pdf>`_. Rev. Mex. Física 42:6,
+   1070-1086 (1996).
 
 
 Fractals and iterated function systems
@@ -121,9 +131,11 @@ have interest in this type of code archeology, grab the full archive (in zip_
 or tgz_ format) that contains the original TurboPascal sources (in Spanish!)
 and a DOS binary.  The paper is also in Spanish:
 
-F. Pérez. `Los fractales: una alternativa interactiva para la enseñanza de la
-matemática </papers/fraclin_ense92_pe.pdf>`_. Informática Educativa, 5:1, 35-42
-(1992).
+.. admonition:: Paper
+
+   F. Pérez. `Los fractales: una alternativa interactiva para la enseñanza de
+   la matemática <../papers/fraclin_ense92_pe.pdf>`_. Informática Educativa, 5:1,
+   35-42 (1992).
 
 .. _Iterated Function Systems: http://en.wikipedia.org/wiki/Iterated_function_system
 .. _zip: /code/fraclin.zip

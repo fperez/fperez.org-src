@@ -31,7 +31,17 @@ developing new software tools that will be made available as part of the
 open-source NiPy_ project.  I also collaborate with `Michael Silver's lab`_,
 and currently `Ariel Rokem`_ is leading the effort on the development of a
 library for the analysis of time-series data.  This is the nitime_ project,
-another component of nipy.
+another component of nipy.  The following is a preprint of our recent paper on
+this topic from the SciPy'09 conference (you can also see the slides_ of
+Ariel's talk):
+
+.. admonition:: Preprint
+
+   A. Rokem, M. Trumpis, F. Pérez, `Nitime: time-series analysis for
+   neuroimaging data <../papers/nitime09_ro-tr-pe.pdf>`_, Proceedings of the 2009
+   SciPy Conference (2009 - submitted).
+
+.. _slides: http://conference.scipy.org/static/wiki/rokem_timeseries.pdf
 
 These computational projects are part of my interest in the development of
 modern, high-quality tools for scientific computing that take advantage of the
@@ -60,17 +70,17 @@ I was accustomed to as a physicist, especially Mathematica and IDL.  I'e also
 contributed in various forms to NumPy_, SciPy_, matplotlib_ and Mayavi_, all
 tools that combined give us today an amazing array of computational
 functionality based on the excellent qualities of Python as a programming
-language.
+language.  Here are two publications on this topic:
 
-Here are two publications on this topic:
+.. admonition:: Papers
 
-F. Pérez, H-P. Langtangen and R. LeVeque, `Python for Scientific Computing at
-CSE09 </papers/py4science09_siam_news.pdf>`_, SIAM News, 42:5, 4 (2009). (An
-`html version`_ is available at the SIAM site).
+   F. Pérez, H-P. Langtangen and R. LeVeque, `Python for Scientific Computing
+   at CSE09 <../papers/py4science09_siam_news.pdf>`_, SIAM News, 42:5, 4
+   (2009). (An `html version`_ is available at the SIAM site).
 
-F. Pérez and B. E. Granger. `IPython: a System for Interactive Scientific
-Computing </papers/ipython07_pe-gr_cise.pdf>`_, Comput. Sci. Eng. 9:3, 21-23
-(2007).
+   F. Pérez and B. E. Granger. `IPython: a System for Interactive Scientific
+   Computing <../papers/ipython07_pe-gr_cise.pdf>`_, Comput. Sci. Eng. 9:3, 21-23
+   (2007).
 
 You can find `more details </py4science>`_  on the use of Python for scientific
 computing and my work on this front.
@@ -104,18 +114,21 @@ theoretical an numerical progress on this front as well.
 .. _Applied Mathematics:  amath_cu_
 .. _Martin Mohlenkamp: http://www.math.ohiou.edu/~mjm
 
-G. Beylkin, M. J. Mohlenkamp and F. Pérez, `Approximating a Wavefunction as an
-Unconstrained Sum of Slater Determinants </papers/freeslater08_be-mo-pe.pdf>`_,
-Journal of Mathematical Physics, 49, (2008)
+.. admonition:: Papers
 
-G. Beylkin, V. Cheruvu and F. Pérez, `Fast adaptive algorithms in the
-non-standard form for multidimensional problems
-</papers/nsform08_be-ch-pe.pdf>`_, Applied and Computational Harmonic Analysis,
-24 (2008) 354--377
+   G. Beylkin, M. J. Mohlenkamp and F. Pérez, `Approximating a Wavefunction as
+   an Unconstrained Sum of Slater Determinants
+   <../papers/freeslater08_be-mo-pe.pdf>`_, Journal of Mathematical Physics, 49,
+   (2008).
 
-G. Beylkin, M. J. Mohlenkamp and F. Pérez, `Preliminary results on
-approximating a wavefunction as an unconstrained sum of Slater determinants
-<freeslater07_be-mo-pe.pdf>`_, Proc. Appl. Math. Mech., 7, (2007)
+   G. Beylkin, V. Cheruvu and F. Pérez, `Fast adaptive algorithms in the
+   non-standard form for multidimensional problems
+   <../papers/nsform08_be-ch-pe.pdf>`_, Applied and Computational Harmonic
+   Analysis, 24 (2008) 354--377.
+
+   G. Beylkin, M. J. Mohlenkamp and F. Pérez, `Preliminary results on
+   approximating a wavefunction as an unconstrained sum of Slater determinants
+   <freeslater07_be-mo-pe.pdf>`_, Proc. Appl. Math. Mech., 7, (2007).
 
 The attic
 =========

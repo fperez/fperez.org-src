@@ -1,6 +1,9 @@
 {# -*- Mode: Jinja -*- #}
 {% extends "!sphinxdoc/layout.html" %}
 
+{# Any other information in the <head> part goes here: #}
+{%- block extrahead %} {% endblock %}
+
 {# A header at the beginning of every page, with an image.
    WARNING: be careful to not use an image with a filename that has the words
    'banner' or 'ad' in it (even as a sub-word), because it may mysteriously
