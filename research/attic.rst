@@ -112,31 +112,51 @@ compilers, but it was purely numerical code so there are no dependencies).
 Fractals and iterated function systems
 --------------------------------------
 
+.. image:: fig/fraclin_tree.png
+   :target: fig/fraclin_tree.png
+   :alt: FracLin Screenshot - Fractal Tree
+   :align: center
+   :width: 250
+
+   
 As an undergraduate student in `Physics at the Universidad de Antioquia
 (Colombia)`__, I developed under the supervision of professor `Manuel J. Páez`_
 my first reasonably complex computational project using the tools of the day.
 Like many undergraduates in physics and math at the time, I decided to program
 the creation of fractals via `Iterated Function Systems`_ using the "chaos
-game" algorithm.  The code was written in Turbo Pascal on a 386 PC, initially
-with monochrome EGA graphics, later in glorious 16-color VGA.  This little
-project actually grew a fair bit, and eventually it was awarded a national
-educational software award and commercialized for a few years in Colombia (I
-didn't know anything about the Internet or open source software at the time).
+game" algorithm.  The code was initially written in Turbo Pascal on a PC XT
+clone with monochrome Hercules graphics, later upgraded to a 386 with glorious
+16-color VGA.  This little project actually grew a fair bit, and eventually it
+was awarded a national educational software award and commercialized for a few
+years in Colombia (I didn't know anything about the Internet or open source
+software at the time).
 
 __ fisica_udea_
 
+.. figure:: fig/fraclin_snails.png
+   :target: fig/fraclin_snails.png
+   :alt: FracLin Screenshot - Fractal Tree
+   :align: center
+   :width: 250
+   :figwidth: 350
+
+   Even a simple IFS defined by only two affine transforms can produce
+   surprisingly complex patterns, like these 'snails'.
+   
 Remarkably, you can still run it under Windows XP. I use Linux for all my work,
-but I have tested this in a VirtualBox XP machine, and it runs fine.  If you
-have interest in this type of code archeology, grab the full archive (in zip_
-or tgz_ format) that contains the original TurboPascal sources (in Spanish!)
-and a DOS binary.  The paper is also in Spanish:
+but I have tested this in a VirtualBox XP machine (that's how these screenshots
+were taken).  If you have interest in this type of code archeology, grab the
+full archive (in zip_ or tgz_ format) that contains the original TurboPascal
+sources (in Spanish!)  and a DOS binary.  This paper describing the software
+and its uses for teaching interesting mathematical ideas is also in Spanish:
 
 .. admonition:: Paper
 
    F. Pérez. `Los fractales: una alternativa interactiva para la enseñanza de
-   la matemática <../papers/fraclin_ense92_pe.pdf>`_. Informática Educativa, 5:1,
-   35-42 (1992).
+   la matemática <../papers/fraclin_ense92_pe.pdf>`_. Informática Educativa,
+   5:1, 35-42 (1992).
 
+   
 .. _Manuel J. Páez: http://fisica.udea.edu.co/~mpaez
 .. _Iterated Function Systems: http://en.wikipedia.org/wiki/Iterated_function_system
 .. _zip: /code/fraclin.zip

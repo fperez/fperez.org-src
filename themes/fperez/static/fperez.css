@@ -26,6 +26,13 @@ div.header {
     /* padding: 5px 0px 0px; */
 }
 
+img {
+    padding: 5px 15px;
+}
+
+div.figure {
+    float: right;
+    }
 
 div.related ul li a:hover {
     background-color: #e0e0e0;
