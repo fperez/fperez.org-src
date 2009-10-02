@@ -73,7 +73,7 @@ dynamics of the quantum system. In this manner, we find non trivial corrections
 to the classical dynamics arising from quantum information: the chaotic
 behavior is suppressed although not entirely eliminated.
 
-.. admonition:: Paper
+.. admonition:: Preprint
 
    J. Mahecha and F. Pérez, `A semi-classical approach for Lyapunov exponents
    of a quantum mechanical system <../papers/quantum_lyap_short.pdf>`_,
@@ -91,7 +91,7 @@ interesting configurations of this system, both chaotic and regular.  This
 system is of interest in the study of semi-classical chaotic behavior of
 doubly-excited atoms.
 
-.. _Jorge Mahecha: http://pegasus.udea.edu.co/~undheim
+.. _Jorge Mahecha: http://leucippus.udea.edu.co/portal
 
 If you happen to be interested in the sources, drop me a line (fairly clean C
 code though I haven't run it for years so it may need some updates for modern
@@ -113,8 +113,8 @@ Fractals and iterated function systems
 --------------------------------------
 
 As an undergraduate student in `Physics at the Universidad de Antioquia
-(Colombia)`__, I developed under the supervision of professor Manuel J. Páez my
-first reasonably complex computational project using the tools of the day.
+(Colombia)`__, I developed under the supervision of professor `Manuel J. Páez`_
+my first reasonably complex computational project using the tools of the day.
 Like many undergraduates in physics and math at the time, I decided to program
 the creation of fractals via `Iterated Function Systems`_ using the "chaos
 game" algorithm.  The code was written in Turbo Pascal on a 386 PC, initially
@@ -137,6 +137,7 @@ and a DOS binary.  The paper is also in Spanish:
    la matemática <../papers/fraclin_ense92_pe.pdf>`_. Informática Educativa, 5:1,
    35-42 (1992).
 
+.. _Manuel J. Páez: http://fisica.udea.edu.co/~mpaez
 .. _Iterated Function Systems: http://en.wikipedia.org/wiki/Iterated_function_system
 .. _zip: /code/fraclin.zip
 .. _tgz: /code/fraclin.tgz
