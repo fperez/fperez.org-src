@@ -23,7 +23,9 @@ sys.path.append(os.path.abspath('sphinxext'))
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = ['sphinx.ext.doctest',
-              'sphinx.ext.intersphinx',
+              # Don't turn on intersphinx by default, as it crawls the net on
+              # each initial build to build its cross-references.
+              #'sphinx.ext.intersphinx',
               'sphinx.ext.todo',
               'sphinx.ext.pngmath',
               'sphinx.ext.ifconfig',
