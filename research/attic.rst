@@ -167,6 +167,11 @@ and its uses for teaching interesting mathematical ideas is also in Spanish:
    5:1, 35-42 (1992).
 
    
+**NB** I see that Prof. Páez has actually created modern versions of this type
+of tool, for example the fractal tree above can now be `rendered in your
+browser`_ (the implementation is a Java applet).
+
+.. _rendered in your browser: http://fisica.udea.edu.co/~mpaez/JTree/Tree.html
 .. _Manuel J. Páez: http://fisica.udea.edu.co/~mpaez
 .. _Iterated Function Systems: http://en.wikipedia.org/wiki/Iterated_function_system
 .. _zip: /code/fraclin.zip
