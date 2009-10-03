@@ -14,14 +14,14 @@
 <div class="header">
  <a href="{{pathto('index')}}">
   <img src="{{ pathto('_static/top_mountains_clouds.jpg', 1) }}"
-	alt="Fernando Pérez"></a>
+	class="tight" alt="Fernando Pérez"></a>
 </div>
   {{ super() }}
 {% endblock %}
 
 {# This block gets put at the top of the sidebar #}
 {% block sidebarlogo %}
-<h4> Navigation </h4>
+<h4> Site Navigation </h4>
   <ul class="simple">
     <li><a class="reference external"
 	href="{{pathto('research/index')}}">Research</a></li>

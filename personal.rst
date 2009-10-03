@@ -13,7 +13,7 @@ the computer or a book.  If not there, you may find me climbing (hopefully
 outdoors!) and probably with a camera.  Mostly of interest to friends and
 family, I keep my pictures online at a `picasa album`__.
 
-__ _picasa_fperez
+__ picasa_fperez_
 
 I also have a blog_, where I mostly post items of interest related to IPython,
 SciPy and scientific computing in Python.  I haven't been able to really get

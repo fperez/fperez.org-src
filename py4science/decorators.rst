@@ -471,9 +471,8 @@ gives on execution:
 
    ... etc.
 
-This shows how trivial, small decorators can be used to control code
-execution.  For example, if you are a fan of Robert's fabulous
-line_profiler (http://packages.python.org/line_profiler/), using this
+This shows how trivial, small decorators can be used to control code execution.
+For example, if you are a fan of Robert's `fabulous line profiler`_, using this
 trivial trick you can profile arbitrarily small chunks of code inline::
 
    def profiled(func):
@@ -493,6 +492,9 @@ trivial trick you can profile arbitrarily small chunks of code inline::
               results[i] = do_work(data, i)
 
       return summarize(results, count)
+
+.. _fabulous line profiler: http://packages.python.org/line_profiler
+
 
 When run, you get:
 
@@ -593,8 +595,6 @@ exclusive rights):
   management, which they are doing a lot of with Enthought_'s context library
   (BlockCanvas, I think?).
 
-.. _Enthought: http://enthought.com
-  
 - In March 2008, William Stein implemented for Sage_ the ``@interact``
   decorator at the sprint at Enthought, using the 'call and consume' approach
   to the decorated function.  This was the first time I saw this pattern used,
@@ -604,8 +604,6 @@ exclusive rights):
   nasty that I never really pursued it further (it involved brittle stack
   manipulations and source introspection).
 
-.. _Sage: http://sagemath.org
-  
 - In September 2008 at Scipy'08 I had a long talk about the problem with Alex
   Martelli on whether extending the ``with`` context manager protocol with an
   ``__execute__`` method to control the actual execution of the code would be
@@ -622,6 +620,8 @@ exclusive rights):
   thing click, leading to the IPython-dev thread mentioned above and ultimately
   these notes.
 
+.. _Enthought: http://enthought.com
+.. _Sage: http://sagemath.org
 .. _John Siracusa's review of Snow Leopard: http://arstechnica.com/apple/reviews/2009/08/mac-os-x-10-6.ars/10
 
 

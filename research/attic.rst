@@ -138,10 +138,10 @@ __ fisica_udea_
    :alt: FracLin Screenshot - Fractal Tree
    :align: center
    :width: 250
-   :figwidth: 350
+   :figwidth: 100%
 
-   Even a simple IFS defined by only two affine transforms can produce
-   surprisingly complex patterns, like these 'snails'.
+   A simple IFS defined by only two affine transforms produces surprisingly
+   rich patterns, like these 'snails'.
    
 Remarkably, you can still run it under Windows XP. I use Linux for all my work,
 but I have tested this in a VirtualBox XP machine (that's how these screenshots
