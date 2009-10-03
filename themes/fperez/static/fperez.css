@@ -24,6 +24,20 @@ body {
     min-width: 720px;
 }
 
+/* this is the box around the sphinxsidebar, I don't know why the name */
+div.bodywrapper {
+    /* The width should be equal to the sidebar width + padding */
+    margin: 0 200px 0 0;
+}
+
+/* I want a smaller sidebar than sphinxdoc, and with smaller fonts */
+div.sphinxsidebar {
+    padding: 0.5em 15px 15px 0;
+    width: 170px;
+    font-size: 0.9em;
+}
+
+/* Used for the banner/logo atop each page */
 div.header {
     text-align: center;
     /* 2-value padding is top/bottom, left/right */
@@ -31,6 +45,7 @@ div.header {
     padding: 0px;
 }
 
+/* Some image padding styles so text doesn't run into figures */
 img.align-right {
     /* margins are read clockwise: top right bottom left */
     margin: 5px 0px 5px 10px;
@@ -50,6 +65,7 @@ div.figure {
     font-size: 0.9em;
     }
 
+/* These are mostly color scheme changes from sphinxdoc to my colors */
 div.related ul li a {
     color: #B46621;
 }
@@ -67,7 +83,6 @@ div.sphinxsidebar a:hover {
     }
 
 div.sphinxsidebar h4, div.sphinxsidebar h3 {
-    /*background-color: #2F83C8;*/
     background-color: #1d406c;
 }
 
@@ -81,15 +96,7 @@ div.body {
 }
 
 /* -- body styles ----------------------------------------------------------- */
-
-/*
-a:hover {
-    color: #2491CF;
-    background-color: #e0e0e0;
-}
-*/
 a {
-    /* color: #CA7900;*/
     color: #b46621;
 }
 
@@ -101,28 +108,12 @@ cite, code, tt, pre {
     letter-spacing: 0.0em;
 }
 
-/*
-pre {
-    font-family: 'Consolas', 'Lucida Console', 'Deja Vu Sans Mono',
-                 'Bitstream Vera Sans Mono', monospace;
-  font-size: 0.8em;  
-}
-*/
-
 div.admonition p.admonition-title,
 div.warning p.admonition-title {
     background-color: #42708F;
 }
 
-
-/* this is the box around the sidebar, it should be ~ 30 wider */
-div.bodywrapper {
-    margin: 0 200px 0 0;
-}
-
-
-div.sphinxsidebar {
-    padding: 0.5em 15px 15px 0;
-    width: 170px;
-    font-size: 0.9em;
+/* I want reST definition-lists to boldface their heading term */
+dl.docutils dt {
+    font-weight: bold;
 }

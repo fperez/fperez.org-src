@@ -9,3 +9,6 @@ sphinxext
 *.odp
 
 mpi4py_ldalcin_bgranger*
+
+*_thumb*.png
+*_thumb*.jpg

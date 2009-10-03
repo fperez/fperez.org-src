@@ -14,7 +14,7 @@ structure of the QCD vacuum at finite temperature, as modeled by lattice
 simulations where space-time is discretized into a finite four-dimensional grid
 where the Feynman path integral for the QCD Lagrangian can be approximated (the
 finite spacing of the grid acts as an ultraviolet regulator for the continuum
-theory).  This work was conducted under the supervision of prof. `Anna
+theory).  This work was conducted under the supervision of professor `Anna
 Hasenfratz`_, one of the most remarkable combinations of raw intellectual
 talent and human kindness I've had the pleasure to meet.
 
@@ -95,10 +95,10 @@ behavior is suppressed although not entirely eliminated.
 Hamiltonian chaos in 3-body systems
 -----------------------------------
 
-I worked under the direction of prof. `Jorge Mahecha`_ on developing numerical
-tools for the accurate integration of the general (Coulomb) 3-body problem, by
-regularizing the two-body collisions with the introduction of a new time
-variable in the Hamiltionan.  This was then used them to study a number of
+I worked under the direction of professor `Jorge Mahecha`_ on developing
+numerical tools for the accurate integration of the general (Coulomb) 3-body
+problem, by regularizing the two-body collisions with the introduction of a new
+time variable in the Hamiltionan.  This was then used them to study a number of
 interesting configurations of this system, both chaotic and regular.  This
 system is of interest in the study of semi-classical chaotic behavior of
 doubly-excited atoms.
@@ -170,7 +170,7 @@ and its uses for teaching interesting mathematical ideas is also in Spanish:
    5:1, 35-42 (1992).
 
    
-**NB** I see that Prof. Páez has actually created modern versions of this type
+**NB** I see that prof. Páez has actually created modern versions of this type
 of tool, for example the fractal tree above can now be `rendered in your
 browser`_ (the implementation is a Java applet).
 

@@ -53,53 +53,88 @@ contributors to jump in and help in areas that genuinely require improvement.
 Please  `email me <Fernando.Perez@berkeley.edu>`_ with corrections, ideas for
 working on any of this, or your own favorite problem.
 
-Off the top of my head, here are a few of Python's "warts" for scientific work
-that annoy me regularly:
+Off the top of my head, here are a few of Python's "warts" for scientific work.
+Some of these are fixable, others are hurdles that only impact the beginning
+user who comes from Matlab or IDL.
 
-- For purely linear-algebra based problems, matlab's syntax can be cleaner than
+I should add that almost all of these are points that I often mention as
+*advantages* of Python (e.g. incremental optimization).  The solution to the
+apparent contradiction is that I think we can still do much, much better, and
+the fact that Python in some of these issues is better than everything else
+that exists (not in all) should be no excuse to still improve things.
+
+Linear algebra syntax
+  For purely linear-algebra based problems, matlab's syntax can be cleaner than
   numpy's (multiplication, \ operator, array creation, etc).
 
-- Numpy's core object is the n-dimensional array, which is far more powerful
+Numpy ndarray is a complex object
+  Numpy's core object is the n-dimensional array, which is far more powerful
   than matlab's arrays, but can be more complex to master.
 
-- Being a general language, it has multiple container types (sets, tuples,
+More complex core types in the language
+  Being a general language, it has multiple container types (sets, tuples,
   lists, n-dimensional arrays).  This flexibility can be daunting for the
   beginner and intermediate user who sometimes misuses them, though it is a
   huge benefit for more advanced algorithmic development.
 
-- The machinery for distributing python packages is brittle, buggy and
+Lack of native rationals
+  I *really* wish Python had native rationals and that integer division
+  produced rational results as needed.  Python's native numerical types are
+  pretty good for a general purpose language, as it includes out of the box
+  arbitrary-length integers, floats, complex numbers (over the 'field' of the
+  floats) and even arbitrary-precision decimals_.  But the integers divide into
+  the floats (they used to do integer truncating division, a la C).  Since this
+  is part of the very core of the language, no amount of GMP wrappers will make
+  it easier (this is why Sage_ has to preparse its input and convert input like
+  ``1+2`` into ``ZZ(1)+ZZ(2)``, so that all integer operations are done in a
+  proper manner without burdening the user with that syntax all the time).
+
+Array multiplication operator
+  I also wish that `PEP 225`_ or something like it were accepted, so that we
+  could have at least a second multiplication operator to express constructs
+  like matrix or vector products in addition to element-wise operations.  See
+  :ref:`this page <pep-225-discussion>` for background on this matter.
+
+Packaging and distribution is a mess
+  The machinery for distributing python packages is brittle, buggy and
   generally a major pain to use and extend.  There is currently (summer 2009)
   active work to address this; the core ideas are listed in Python's `PEP 376`_
   and Tarek Ziadé (the person leading much of this effort) recently put up a
   `post on his blog`_ about it all.
-  
-- The automated testing systems for python are currently a bit fragmented.
+
+Automatic testing
+  The automated testing systems for python are currently a bit fragmented.
   Python ships with two (unittest_ and doctest_) but these lack critical
   functionality and ease of use, which has led to third-party systems like
   nose_, which isn't well integrated in the core.  It would be great to see a
   merge of the good ideas of nose into the core in a robust and stable way.
-  
-- The transition to Python 3 will cause some pain for a while, as the new
+  *Note*: progress is being made on this front for Python 2.7/3.2.
+
+Growing pains with Python 3
+  The transition to Python 3 will cause some pain for a while, as the new
   version is not backwards compatible.
 
-- There is no single-point-of-entry set of tools with unified documentation and
-  help system for Python.  The remarkable Sage project (http://sagemath.org)
-  does offer something like this and is an extremely valuable piece of this
-  puzzle (I use it myself). Sage is a viable solution to this problem, though
-  it actually goes beyond the pure python language by extending its syntax and
-  modifying Python's core numerical type hierarchy.  But in pure python, there
-  is nothing that currently integrates execution, development, debugging and
-  documentation with the polish of Mathematica or Matlab.
+Integrated help and docs
+  There is no single-point-of-entry set of tools with unified documentation and
+  help system for Python.  The remarkable Sage_ project does offer something
+  like this and is an extremely valuable piece of this puzzle (I use it
+  myself). Sage is a viable solution to this problem, though it actually goes
+  beyond the pure python language by extending its syntax and modifying
+  Python's core numerical type hierarchy.  But in pure python, there is nothing
+  that currently integrates execution, development, debugging and documentation
+  with the polish of Mathematica or Matlab.
 
-- The main python implementation in C has a global lock that prevents
-  multithreaded code from modifying python data structures.  So while python
-  does support threads, they can only be used effectively for i/o bound tasks,
-  not for cpu-bound ones.  Google's `Unladen Swallow`_ project aims to correct
-  this, but we'll have to wait a few more months to see if it succeeds.  In the
-  meantime, all parallel python code must use multiple processes, which can be
-  a pain for certain valid use cases.
-  
-- There is currently no seamless way to get fast execution for numerical code
+The infamous GIL
+  The main python implementation in C has a global lock (the GIL, short for
+  Global Interpreter Lock) that prevents multithreaded code from modifying
+  python data structures.  So while python does support threads, they can only
+  be used effectively for i/o bound tasks, not for cpu-bound ones.  Google's
+  `Unladen Swallow`_ project aims to correct this, but we'll have to wait a few
+  more months to see if it succeeds.  In the meantime, all parallel python code
+  must use multiple processes, which can be a pain for certain valid use cases.
+
+Very easy incremental optimization
+  There is currently no seamless way to get fast execution for numerical code
   that manually loops over arrays and does indexing operations on individual
   elements.  In recent years, Matlab has developed JIT technology to support
   this, and currently no seamless equivalent exists for Python.  Cython helps
@@ -107,10 +142,13 @@ that annoy me regularly:
   machinery (though rapid progress is being made).
 
 
-
-.. _PEP 376: http://www.python.org/dev/peps/pep-0376/
+.. _PEP 225: http://www.python.org/dev/peps/pep-0225
+.. _PEP 376: http://www.python.org/dev/peps/pep-0376
 .. _post on his blog: http://tarekziade.wordpress.com/2009/07/24/words-on-distribute-distutils-pep-376-pep-386-pep-345/
 .. _unittest: http://docs.python.org/library/unittest.html#module-unittest
 .. _doctest: http://docs.python.org/library/doctest.html#module-doctest
 .. _nose: http://somethingaboutorange.com/mrl/projects/nose
 .. _Unladen Swallow: http://code.google.com/p/unladen-swallow
+.. _decimals: http://docs.python.org/library/decimal.html
+
+.. include:: links.txt
