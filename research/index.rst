@@ -142,6 +142,6 @@ some of these topics that I actually hold very dear.
 
 .. toctree::
 
-   attic
+   Old projects: <attic>
 
 .. include:: links.txt
