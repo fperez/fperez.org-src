@@ -26,6 +26,16 @@ definitive conclusions on the matter; I have not followed more recent research
 on this topic so I don't know what the final word on this question, if there is
 one, is.
 
+.. figure:: fig/mayavi_snapshot.png
+   :target: fig/mayavi_snapshot.png
+   :alt: Gauge field configuration visualized with MayaVi
+   :align: center
+   :width: 250
+   :figwidth: 100%
+
+   Gauge field configuration with instanton-like structures, visualized with
+   MayaVi (the old version).
+
 If you are interested, my dissertation contains all the details (and as is
 common with such documents, it is probably a decent summary of many techniques
 and ideas in the lattice QCD field, so hopefully it may be of use to students

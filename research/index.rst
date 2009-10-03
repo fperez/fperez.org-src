@@ -66,7 +66,7 @@ art on this problem, which I believe to be one of major importance.  Since late
 2001, I have been actively involved in developing tools of this kind based on
 the Python_ programming language.  I started the IPython_ project to build an
 interactive environment I could use for my everyday work, inspired by the tools
-I was accustomed to as a physicist, especially Mathematica and IDL.  I'e also
+I was accustomed to as a physicist, especially Mathematica and IDL.  I've also
 contributed in various forms to NumPy_, SciPy_, matplotlib_ and Mayavi_, all
 tools that combined give us today an amazing array of computational
 functionality based on the excellent qualities of Python as a programming
@@ -108,7 +108,7 @@ now have an efficient way of applying Green's functions.
 
 The long-term goal of this effort is the development of accurate and efficient
 methods to solve the many-electron Schrödinger equation, and we made some
-theoretical an numerical progress on this front as well.
+theoretical and numerical progress on this front as well.
 
 .. _Gregory Beylkin: beylkin_
 .. _Applied Mathematics:  amath_cu_
