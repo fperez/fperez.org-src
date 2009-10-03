@@ -31,16 +31,17 @@ div.header {
     padding: 0px;
 }
 
-/* Defaults for all images */
-img {
-    margin: 5px;
+img.align-right {
+    /* margins are read clockwise: top right bottom left */
+    margin: 5px 0px 5px 10px;
     /*border: 1px solid #666;
     padding: 2px;*/
 }
 
-/* A class for tightly framed images with no border, like that in the header */
-img.tight {
-    margin: 0px;
+img.align-left {
+    margin: 5px 10px 5px 0px;
+    /*border: 1px solid #666;
+    padding: 2px;*/
 }
 
 /* 'figures' are images with a caption */
@@ -48,6 +49,10 @@ div.figure {
     /* Smaller font in captions */
     font-size: 0.9em;
     }
+
+div.related ul li a {
+    color: #B46621;
+}
 
 div.related ul li a:hover {
     background-color: #e0e0e0;
@@ -62,7 +67,8 @@ div.sphinxsidebar a:hover {
     }
 
 div.sphinxsidebar h4, div.sphinxsidebar h3 {
-    background-color: #2F83C8;
+    /*background-color: #2F83C8;*/
+    background-color: #1d406c;
 }
 
 div.footer {
@@ -82,6 +88,10 @@ a:hover {
     background-color: #e0e0e0;
 }
 */
+a {
+    /* color: #CA7900;*/
+    color: #b46621;
+}
 
 cite, code, tt, pre {
     font-family: 'Consolas', 'Lucida Console', 'Deja Vu Sans Mono',
@@ -102,4 +112,17 @@ pre {
 div.admonition p.admonition-title,
 div.warning p.admonition-title {
     background-color: #42708F;
+}
+
+
+/* this is the box around the sidebar, it should be ~ 30 wider */
+div.bodywrapper {
+    margin: 0 200px 0 0;
+}
+
+
+div.sphinxsidebar {
+    padding: 0.5em 15px 15px 0;
+    width: 170px;
+    font-size: 0.9em;
 }

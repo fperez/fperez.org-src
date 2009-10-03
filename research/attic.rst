@@ -28,7 +28,7 @@ definitive conclusions on the matter; I have not followed more recent research
 on this topic so I don't know what the final word on this question, if there is
 one, is.
 
-.. figure:: fig/mayavi_snapshot.png
+.. figure:: fig/mayavi_snapshot_thumb.png
    :target: fig/mayavi_snapshot.png
    :alt: Gauge field configuration visualized with MayaVi
    :align: center
@@ -124,10 +124,10 @@ compilers, but it was purely numerical code so there are no dependencies).
 Fractals and iterated function systems
 --------------------------------------
 
-.. image:: fig/fraclin_tree.png
+.. image:: fig/fraclin_tree_thumb.png
    :target: fig/fraclin_tree.png
    :alt: FracLin Screenshot - Fractal Tree
-   :align: center
+   :align: right
    :width: 250
 
    
@@ -146,7 +146,7 @@ anything about the Internet or open source software at the time).
 
 __ fisica_udea_
 
-.. figure:: fig/fraclin_snails.png
+.. figure:: fig/fraclin_snails_thumb.png
    :target: fig/fraclin_snails.png
    :alt: FracLin Screenshot - Fractal Tree
    :align: center

@@ -14,7 +14,7 @@
 <div class="header">
  <a href="{{pathto('index')}}">
   <img src="{{ pathto('_static/top_mountains_clouds.jpg', 1) }}"
-	class="tight" alt="Fernando Pérez"></a>
+	       alt="Fernando Pérez"></a>
 </div>
   {{ super() }}
 {% endblock %}
@@ -44,7 +44,7 @@
 <div id="searchbox" style="display: none">
   <h3>{{ _('Search this site') }}</h3>
     <form class="search" action="{{ pathto('search') }}" method="get">
-      <input type="text" name="q" size="18" />
+      <input type="text" name="q" size="13" />
       <input type="submit" value="{{ _('Go') }}" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
