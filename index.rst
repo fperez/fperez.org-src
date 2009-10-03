@@ -42,8 +42,8 @@ once you enter the East facing building doors at ground level.
   Fernando Pérez
   Office: 10 Giannini Hall
           Henry H. Wheeler Jr. Brain Imaging Center.
-  Phone: 510.643.4010
-  Fax: 510.643.4952
+  Phone : 510.643.4010
+  Fax   : 510.643.4952
 
   Mailing Address:
   Henry H. Wheeler, Jr. Brain Imaging Center
