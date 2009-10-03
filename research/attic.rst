@@ -14,7 +14,9 @@ structure of the QCD vacuum at finite temperature, as modeled by lattice
 simulations where space-time is discretized into a finite four-dimensional grid
 where the Feynman path integral for the QCD Lagrangian can be approximated (the
 finite spacing of the grid acts as an ultraviolet regulator for the continuum
-theory).  This work was conducted under the supervision of `Anna Hasenfratz`_.
+theory).  This work was conducted under the supervision of prof. `Anna
+Hasenfratz`_, one of the most remarkable combinations of raw intellectual
+talent and human kindness I've had the pleasure to meet.
 
 We looked for signs that could confirm a hypothesis posited by Shuryak and
 others, where instantons and anti-instantons (particular configurations of the
@@ -136,10 +138,11 @@ Like many undergraduates in physics and math at the time, I decided to program
 the creation of fractals via `Iterated Function Systems`_ using the "chaos
 game" algorithm.  The code was initially written in Turbo Pascal on a PC XT
 clone with monochrome Hercules graphics, later upgraded to a 386 with glorious
-16-color VGA.  This little project actually grew a fair bit, and eventually it
-was awarded a national educational software award and commercialized for a few
-years in Colombia (I didn't know anything about the Internet or open source
-software at the time).
+16-color VGA.  This little project actually grew a fair bit, mostly thanks to
+prof. Páez's combination of an unrelenting stream of new ideas and requirements
+backed with steady support.  Eventually it was awarded a national educational
+software award and commercialized for a few years in Colombia (I didn't know
+anything about the Internet or open source software at the time).
 
 __ fisica_udea_
 

@@ -99,6 +99,10 @@ __ label_
   .. _foo 2: target_
   
 
+- Is it possible to set the class of an image or div?  I'd like to be able to
+  create images and figures with a special class, so that I can then write CSS
+  to control their alignment, for example.
+  
 - Note, when the reference name contains any colons, either:
 
     * the phrase must be enclosed in backquotes:
