@@ -91,6 +91,7 @@ computing and my work on this front.
 .. _Ariel Rokem: arokem_
 .. _html version: _siam_news_cse09
 
+.. _fast_algorithms:
 
 New algorithms for PDEs and the Schrödinger equation
 ====================================================

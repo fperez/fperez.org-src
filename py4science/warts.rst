@@ -50,8 +50,8 @@ After a recent such discussion took place over email, I decided to make this
 little page to track this question.  This is meant to serve both as a reminder
 to myself of these problems, and hopefully also as a list of ideas for new
 contributors to jump in and help in areas that genuinely require improvement.
-Please  `email me <Fernando.Perez@berkeley.edu>`_ with corrections, ideas for
-working on any of this, or your own favorite problem.
+Please `email me`_ with corrections, ideas for working on any of this, or your
+own favorite problem.
 
 Off the top of my head, here are a few of Python's "warts" for scientific work.
 Some of these are fixable, others are hurdles that only impact the beginning
@@ -61,7 +61,7 @@ I should add that almost all of these are points that I often mention as
 *advantages* of Python (e.g. incremental optimization).  The solution to the
 apparent contradiction is that I think we can still do much, much better, and
 the fact that Python in some of these issues is better than everything else
-that exists (not in all) should be no excuse to still improve things.
+that exists (not in all) should be no excuse to avoid improving things.
 
 Linear algebra syntax
   For purely linear-algebra based problems, matlab's syntax can be cleaner than

@@ -6,10 +6,12 @@ The research attic
 These are projects I have worked on in the past, sometimes just paper abstracts
 and links to their full text.
 
+.. _instantons:
+
 The topology of the QCD vacuum
 ------------------------------
 
-The topic of my physics PhD dissertation at CU Boulder was the topological
+The topic of my physics PhD dissertation at `CU Boulder`_ was the topological
 structure of the QCD vacuum at finite temperature, as modeled by lattice
 simulations where space-time is discretized into a finite four-dimensional grid
 where the Feynman path integral for the QCD Lagrangian can be approximated (the
@@ -23,10 +25,9 @@ others, where instantons and anti-instantons (particular configurations of the
 gauge background known to play an important dynamical role in several aspects
 of QCD) should pair up in 'molecules' that would be preferentially aligned
 along the time axis of space-time.  While we did find some tell-tale signs of
-these signatures, it was unfortunately never a strong enough signal to draw
-definitive conclusions on the matter; I have not followed more recent research
-on this topic so I don't know what the final word on this question, if there is
-one, is.
+these configurations, it was unfortunately never a strong enough signal to draw
+definitive conclusions on the matter.  I have not followed more recent research
+on this topic so I don't know what the final word on this question is, if any.
 
 .. figure:: fig/mayavi_snapshot_thumb.png
    :target: fig/mayavi_snapshot.png
@@ -51,6 +52,7 @@ entering this domain):
 
 __ ../papers/thesis_fperez.pdf
 
+.. _CU Boulder: physics_cu_
 .. _Anna Hasenfratz: http://www-hep.colorado.edu/~anna
 
 Plasma physics

@@ -11,6 +11,7 @@
    NOTE: Some of these were taken from the nipy links compendium.
 
 .. fperez
+.. _email me: Fernando.Perez@berkeley.edu
 .. _blog: http://fdoperez.blogspot.com
 .. _picasa_fperez: http://picasaweb.google.com/fdo.perez
 .. _github_fperez: http://github.com/fperez
@@ -19,6 +20,7 @@
 .. _calendar: http://www.google.com/calendar/embed?src=fdo.perez%40gmail.com
 .. _siam_news_cse09: http://www.siam.org/news/news.php?id=1595
 .. _fisica_udea: http://fisica.udea.edu.co
+.. _physics_cu: http://physics.colorado.edu
 .. _amath_cu: http://amath.colorado.edu
 .. _beylkin: http://amath.colorado.edu/faculty/beylkin
 
@@ -66,6 +68,7 @@
 .. _mayavi: http://mayavi.sourceforge.net
 .. _sympy: http://code.google.com/p/sympy
 .. _sage: http://sagemath.org
+.. _pydy: http://code.google.com/p/pydy
 
 .. Python imaging projects
 .. _PyMVPA: http://www.pymvpa.org
