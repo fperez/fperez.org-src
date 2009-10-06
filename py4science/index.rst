@@ -11,23 +11,26 @@ this topic.
 Resources
 =========
 
-`Py4Science meeting series`_ at UC Berkeley
+`Py4Science meeting series at UC Berkeley`_
   An open, informal series open to anyone interested in using, learning about
   or contributing to Python-based tools for scientific research.
 
 `Why Python? <why_python.html>`_
   A short page you may find useful if you are wondering why you should consider
-  the Python language as a research tool.
+  the Python language as a research tool [ This needs work at the moment...]
   
-A `Python for scientific computing Starter Kit <starter_kit.html>`_
+`A "Starter Kit" <starter_kit.html>`_
   If either I or someone else convinced you with a "why python?" discussion,
   and you are asking "OK, now what?", this may be useful.
 
-`Python warts <warts.html>`_ for scientific work
+`Warts <warts.html>`_
   No tool is perfect, this is the summary of my annoyances.
   
-A blog_
+Blog_
   I (occasionally) post items related to this topic.
+
+
+.. _Py4Science meeting series at UC Berkeley: py4science_ucb_
 
   
 News and events
@@ -35,6 +38,13 @@ News and events
 
 In reverse chronological order, links to meetings, discussions or other items
 of interest on this topic.
+
+September 2009, PyDy
+  At our meeting series, Luke Peterson from UC Davis gave a very interesting
+  talk on PyDy_, a project under the SymPy_ umbrella to symbolically describe
+  mechanical systems and derive their equations of motion.  Many thanks to Jeff
+  Teeters for his continued work of `videotaping the lectures
+  <http://www.archive.org/details/ucb_py4science_2009_09_30_Luke_Peterson>`_.
 
 September 2009, decorators
   Some `notes about decorators for controlling execution <decorators.html>`_
@@ -69,7 +79,6 @@ June 2008, Python and Sage at the annual SIAM meeting
   I have posted `the slides I have <2008_siam>`_ from the Python/Sage
   minisymposium at the 2008 SIAM annual meeting.
 
-.. _Py4Science meeting series: py4science_ucb_
 __ http://www.archive.org/search.php?query=Fernando+Perez+scientific+python
 .. _review here: expert_python_programming_review.html
 .. _posted: http://fdoperez.blogspot.com/2009/03/python-at-siam-cse09-meeting.html
