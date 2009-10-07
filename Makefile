@@ -13,6 +13,7 @@ STATICDIR   = _static
 STATIC_CSS  = themes/fperez/static
 SITE        = $(BUILDDIR)/html
 WWW         = cirl:www
+WWW2        = fdo_perez@fperez.org:fperez.org
 
 # Internal variables.
 ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(SPHINXOPTS) $(SOURCEDIR)
@@ -55,6 +56,10 @@ doctest:
 upload: site
 	chmod -R uog+r $(SITE)
 	rsync -avrzH --copy-links --delete -e ssh  $(SITE)/ $(WWW)
+
+upload2: site
+	chmod -R uog+r $(SITE)
+	rsync -avrzH --copy-links --delete -e ssh  $(SITE)/ $(WWW2)
 
 # Update only css files
 css:
