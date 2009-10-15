@@ -56,9 +56,6 @@ doctest:
 upload: site
 	chmod -R uog+r $(SITE)
 	rsync -avrzH --copy-links --delete -e ssh  $(SITE)/ $(WWW)
-
-upload2: site
-	chmod -R uog+r $(SITE)
 	rsync -avrzH --copy-links --delete -e ssh  $(SITE)/ $(WWW2)
 
 # Update only css files
