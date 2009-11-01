@@ -10,9 +10,22 @@ one we had `last year`_, and we had again good attendance and lively discussions
 See a short `blog post`_ of mine for some more thoughts on the event, this page
 is just for hosting the slides.
 
+.. note:: 
+
+   SIAM News published a full writeup of this event.  Here are both a PDF
+   suitable for printing and the version SIAM put on their site:
+
+   * F. Pérez, H-P. Langtangen and R. LeVeque, `Python for Scientific Computing
+     at CSE09 <../papers/py4science09_siam_news.pdf>`_, SIAM News, 42:5, 4
+     (2009).
+
+   * An `html version`_ from the SIAM site: it contains one less figure and
+     minor text differences arising from the final round of edits by SIAM.
+
 .. _2009 SIAM CSE meeting: http://www.siam.org/meetings/cse09
 .. _last year: http://fdoperez.blogspot.com/2008/07/python-tools-for-science-go-to-siam.html
 .. _blog post: http://fdoperez.blogspot.com/2009/03/python-at-siam-cse09-meeting.html
+.. _html version: siam_news_cse09_
 
 The minisymposium was divided in three parts, and I am posting here links to
 the original program pages as well as all the slides I have so far from the
@@ -78,3 +91,5 @@ Centro Int. de Métodos Computacionales en Ingeniería, Argentina (presentation
 delivered by Brian Granger, as Lisandro could not attend the meeting) .
 *Note:* The previous link points to a locally hosted copy of the slides; `this
 <mpi4py_ldalcin_bgranger_siam_cse09.tgz>`_ is a static tarball.
+
+.. include:: links.txt

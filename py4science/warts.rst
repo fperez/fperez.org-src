@@ -141,6 +141,17 @@ Very easy incremental optimization
   quite a bit on this front, but it's not yet 100% integrated into the system
   machinery (though rapid progress is being made).
 
+Better docstrings in the standard library
+  For those of us who regularly work interactively, good docstrings make an
+  enormous difference in the usability of a library.  It is thus unfortunate
+  that the quality of the docstrings in Python's standard library is so
+  inconsistent (from very good to non-existent).  Furthermore, I think we would
+  all really benefit from having a standard for docstring formatting that
+  included field descriptions for parametrs, return values, etc.  In that view,
+  I think the `numpy docstring standard`_ is in fact a very good starting
+  point, as it does a good job of balancing readability in plain-text
+  (important if you read the docstrings in source form) and expressiveness for
+  postprocessing into HTML or PDF via sphinx.
 
 .. _PEP 225: http://www.python.org/dev/peps/pep-0225
 .. _PEP 376: http://www.python.org/dev/peps/pep-0376
@@ -150,5 +161,6 @@ Very easy incremental optimization
 .. _nose: http://somethingaboutorange.com/mrl/projects/nose
 .. _Unladen Swallow: http://code.google.com/p/unladen-swallow
 .. _decimals: http://docs.python.org/library/decimal.html
+.. _numpy docstring standard: http://projects.scipy.org/numpy/wiki/CodingStyleGuidelines#docstring-standard
 
 .. include:: links.txt

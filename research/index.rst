@@ -89,7 +89,7 @@ computing and my work on this front.
 .. _Mark D'Esposito's lab: despolab_
 .. _Michael Silver's lab: silverlab_
 .. _Ariel Rokem: arokem_
-.. _html version: _siam_news_cse09
+.. _html version: siam_news_cse09_
 
 .. _fast_algorithms:
 
