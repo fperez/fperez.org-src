@@ -16,8 +16,8 @@ is just for hosting the slides.
    suitable for printing and the version SIAM put on their site:
 
    * F. Pérez, H-P. Langtangen and R. LeVeque, `Python for Scientific Computing
-     at CSE09 <../papers/py4science09_siam_news.pdf>`_, SIAM News, 42:5, 4
-     (2009).
+     at CSE09 <../../papers/py4science09_siam_news.pdf>`_, SIAM News, 42:5, 4
+     (2009). `Bibtex entry`_.
 
    * An `html version`_ from the SIAM site: it contains one less figure and
      minor text differences arising from the final round of edits by SIAM.
@@ -26,6 +26,7 @@ is just for hosting the slides.
 .. _last year: http://fdoperez.blogspot.com/2008/07/python-tools-for-science-go-to-siam.html
 .. _blog post: http://fdoperez.blogspot.com/2009/03/python-at-siam-cse09-meeting.html
 .. _html version: siam_news_cse09_
+.. _bibtex entry: ../../papers/py4science09_siam_news.bib
 
 The minisymposium was divided in three parts, and I am posting here links to
 the original program pages as well as all the slides I have so far from the

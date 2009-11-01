@@ -76,7 +76,8 @@ language.  Here are two publications on this topic:
 
    F. Pérez, H-P. Langtangen and R. LeVeque, `Python for Scientific Computing
    at CSE09 <../papers/py4science09_siam_news.pdf>`_, SIAM News, 42:5, 4
-   (2009). (An `html version`_ is available at the SIAM site).
+   (2009). `Bibtex entry`_.  (An `html version`_ is available at the SIAM
+   site).
 
    F. Pérez and B. E. Granger. `IPython: a System for Interactive Scientific
    Computing <../papers/ipython07_pe-gr_cise.pdf>`_, Comput. Sci. Eng. 9:3, 21-23
@@ -90,6 +91,7 @@ computing and my work on this front.
 .. _Michael Silver's lab: silverlab_
 .. _Ariel Rokem: arokem_
 .. _html version: siam_news_cse09_
+.. _bibtex entry: ../papers/py4science09_siam_news.bib
 
 .. _fast_algorithms:
 
