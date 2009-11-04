@@ -15,6 +15,11 @@ Resources
   An open, informal series open to anyone interested in using, learning about
   or contributing to Python-based tools for scientific research.
 
+`Code review meetings <code_reviews.html>`_
+  A topic that bridges research and computing concerns.  The rationale and some
+  guidelines on the why and how of having a discipline of group code reviews as
+  part of our regular research workflow.
+  
 `Why Python? <why_python.html>`_
   A short page you may find useful if you are wondering why you should consider
   the Python language as a research tool [ This needs work at the moment...]
@@ -89,6 +94,7 @@ __ http://www.archive.org/search.php?query=Fernando+Perez+scientific+python
    why_python
    starter_kit
    warts
+   code_reviews
    decorators
    profiling/index
    expert_python_programming_review

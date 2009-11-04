@@ -41,13 +41,15 @@
 .. _neurospin: http://meteoreservice.com/neurospin
 
 
-.. Documentation tools
+.. Documentation tools and related links
 .. _graphviz: http://www.graphviz.org
 .. _Sphinx: http://sphinx.pocoo.org
 .. _`Sphinx reST`: http://sphinx.pocoo.org/rest.html
 .. _reST: http://docutils.sourceforge.net/rst.html
 .. _docutils: http://docutils.sourceforge.net
 .. _lyx: http://www.lyx.org
+.. _pep8: http://www.python.org/dev/peps/pep-0008
+.. _numpy_coding_guide: http://projects.scipy.org/numpy/wiki/CodingStyleGuidelines
 
 .. Licenses
 .. _GPL: http://www.gnu.org/licenses/gpl.html
