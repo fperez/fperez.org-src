@@ -11,7 +11,6 @@ body {
                  'Lucida Sans Unicode','Geneva',
 		 sans-serif;
 
-    /*font-size: 12pt;*/
     font-size: 14px;
     
     letter-spacing: 0.00em;
@@ -19,7 +18,11 @@ body {
     /* Disable the border altogether do it doesn't get drawn around the header,
        because the header is still part of the body. */
     border: 0px;
-    background-color: #42708F;
+    
+    /* Main page background */
+    /*background-color: #4D6879; */
+    background-color: #42708F;  /* Sky blue */
+
     margin: 0px 40px 0px 40px;
     min-width: 720px;
 }

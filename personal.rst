@@ -13,7 +13,8 @@ where I did my undergraduate studies in Physics_ at the Universidad de
 Antioquia.  From there I moved to Boulder, Colorado, where I completed my PhD
 in :ref:`particle physics <instantons>`, before spending a few years as a
 :ref:`post-doc <fast_algorithms>` in Applied Mathematics.  From there I moved
-to the San Francisco Bay Area, where I now live and work.
+to the San Francisco Bay Area, where I now work at UC Berkeley, on research
+involving algorithms and tool development in neuroimaging.
 
 I am a scientist and a geek, and thus I spend much of my time in front of
 either the computer or a book.  If not there, you may find me climbing
@@ -48,5 +49,7 @@ me it's useful, so I may try to post more, we'll see...
 .. _beautiful fall day: http://picasaweb.google.com/fdo.perez/MountTollInTheFall
 .. _little couloir: http://picasaweb.google.com/fdo.perez/MountTollInTheFall#4992668090352730130
 .. _alpine day: http://picasaweb.google.com/fdo.perez/CouloirLittlePawneePeak
+
+.. include:: contact.txt
 
 .. include:: links.txt

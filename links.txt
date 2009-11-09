@@ -26,6 +26,7 @@
 
 .. Berkeley
 .. _bic: http://bic.berkeley.edu
+.. _cirl: http://cirl.berkeley.edu
 .. _hwni: http://neuroscience.berkeley.edu
 .. _ParLab: http://parlab.eecs.berkeley.edu
 .. _py4science_ucb: https://cirl.berkeley.edu/view/Py4Science

@@ -44,6 +44,11 @@ News and events
 In reverse chronological order, links to meetings, discussions or other items
 of interest on this topic.
 
+November 2009, Guido van Rossum at our Py4Science seminar
+  On November 4, we had a very interesting session with Guido van Rossum, the
+  creator of the Python language.  See `this page <2009_guido_ucb/index.html>`_
+  for details.
+
 September 2009, PyDy
   At our meeting series, Luke Peterson from UC Davis gave a very interesting
   talk on PyDy_, a project under the SymPy_ umbrella to symbolically describe
@@ -100,6 +105,7 @@ __ http://www.archive.org/search.php?query=Fernando+Perez+scientific+python
    expert_python_programming_review
    2008_siam/index
    2009_siam_cse/index
+   2009_guido_ucb/index
    workshop_berkeley_2008
    pymvpa_nipy_sprint_200904
    numpy-pep225/README

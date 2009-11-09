@@ -1,7 +1,8 @@
 .. _research_attic:
 
-The research attic
-==================
+====================
+ The research attic
+====================
 
 These are projects I have worked on in the past, sometimes just paper abstracts
 and links to their full text.
@@ -9,7 +10,7 @@ and links to their full text.
 .. _instantons:
 
 The topology of the QCD vacuum
-------------------------------
+==============================
 
 The topic of my physics PhD dissertation at `CU Boulder`_ was the topological
 structure of the QCD vacuum at finite temperature, as modeled by lattice
@@ -56,7 +57,7 @@ __ ../papers/thesis_fperez.pdf
 .. _Anna Hasenfratz: http://www-hep.colorado.edu/~anna
 
 Plasma physics
---------------
+==============
 
 Two-dimensional simulations of beam-driven turbulence in the auroral ionosphere
 have shown the formation and instability of phase-space tubes. These tubes are
@@ -75,7 +76,7 @@ electrostatic whistlers — also in agreement with simulations.
 
 
 Semi-classical chaos
---------------------
+====================
 
 We attempt to construct Lyapunov exponents for quantum mechanical
 systems. Lyapunov exponents have always been a key concept of classical chaotic
@@ -95,7 +96,7 @@ behavior is suppressed although not entirely eliminated.
 
 
 Hamiltonian chaos in 3-body systems
------------------------------------
+===================================
 
 I worked under the direction of professor `Jorge Mahecha`_ on developing
 numerical tools for the accurate integration of the general (Coulomb) 3-body
@@ -124,7 +125,7 @@ compilers, but it was purely numerical code so there are no dependencies).
 
 
 Fractals and iterated function systems
---------------------------------------
+======================================
 
 .. image:: fig/fraclin_tree_thumb.png
    :target: fig/fraclin_tree.png

@@ -20,39 +20,19 @@ tools such as nipy_ (and especially its nitime_ component), and my
 contributions to various projects affiliated with the `scipy stack`_.  The
 `Py4Science <py4science>`_ page contains details and material on this topic.
 
-On campus, I coordinate an informal `meeting series`_ every 2 weeks that is
+On campus, I coordinate an informal seminar_ every 2 weeks that is
 open to all, where we cover topics related to the use and development of Python
 for scientific research.  If you are interested in using Python in your
 research, would like to learn more about it or have developed something you'd
 like feedback on, please stop by!
 
-.. _scipy stack: scipy_
-.. _meeting series: py4science_ucb_
+.. _seminar: py4science_ucb_
 
-  
-Contact
-=======
+.. include:: news.rst
+   :end-before: stop-recent-news
 
-If you are coming to visit, this map_ may be useful (we share space with
-Berkeley's CIRL, hence the name in the map).  Our door is the first on the left
-once you enter the East facing building doors at ground level.
+.. include:: contact.txt
 
-::
-
-  Fernando Pérez
-  Office: 10 Giannini Hall
-          Henry H. Wheeler Jr. Brain Imaging Center.
-  Phone : 510.643.4010
-  Fax   : 510.643.4952
-
-  Mailing Address:
-  Henry H. Wheeler, Jr. Brain Imaging Center
-  Helen Wills Neuroscience Institute
-  132 Barker Hall MC 3190
-  University of California, Berkeley
-  Berkeley, CA 94720-3192
-
-  
 .. toctree::
    :hidden:
 
@@ -61,5 +41,6 @@ once you enter the East facing building doors at ground level.
    py4science/index
    code/index
    personal
+   news
 
 .. include:: links.txt
