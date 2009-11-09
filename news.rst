@@ -18,7 +18,6 @@ September 2009, decorators
   Some `notes about decorators for controlling execution <decorators.html>`_
   from a September 2009 talk at the Berkeley Py4Science group.
 
-  
 .. _scipy stack: scipy_
 .. _py4science seminar: py4science_ucb_
 

@@ -8,12 +8,12 @@
    :alt: Fernando Pérez
    :align: center
 
-A little bit of personal information... I was born in Medellín, Colombia [*]_,
+A brief summary of where I come from... I was born in Medellín, Colombia [*]_,
 where I did my undergraduate studies in Physics_ at the Universidad de
 Antioquia.  From there I moved to Boulder, Colorado, where I completed my PhD
 in :ref:`particle physics <instantons>`, before spending a few years as a
-:ref:`post-doc <fast_algorithms>` in Applied Mathematics.  From there I moved
-to the San Francisco Bay Area, where I now work at UC Berkeley, on research
+:ref:`post-doc <fast_algorithms>` in Applied Mathematics.  In 2008 I moved to
+the San Francisco Bay Area, where I now work at UC Berkeley, on research
 involving algorithms and tool development in neuroimaging.
 
 I am a scientist and a geek, and thus I spend much of my time in front of
@@ -25,8 +25,8 @@ __ picasa_fperez_
 
 I also have a blog_, where I mostly post items of interest related to IPython,
 SciPy and scientific computing in Python.  I haven't been able to really get
-caught up in the whole blogging thing, so it's rather sparse, but people tell
-me it's useful, so I may try to post more, we'll see...
+caught up in the whole blogging thing, so it's rather sparse.  But people tell
+me it's useful so I may try to post more, we'll see...
 
 .. admonition:: Photo note: the mountains
 
@@ -38,11 +38,6 @@ me it's useful, so I may try to post more, we'll see...
   many) that makes the Colorado Front Range the most amazing place to live I've
   known.
 
-
-.. [*] Yes, it's spelled like that, with two 'o's.  Columbia with a 'u' is a
-   university_ in New York City.  It's not that hard: ColOmbia is a cOuntry,
-   ColUmbia is a University.
-
 .. _physics: fisica_udea_
 .. _university: http://www.columbia.edu
 .. _Brainard Lake: http://maps.google.com/maps/place?cid=1317471477502605538&q=brainard+lake,+colorado&hl=en
@@ -51,5 +46,10 @@ me it's useful, so I may try to post more, we'll see...
 .. _alpine day: http://picasaweb.google.com/fdo.perez/CouloirLittlePawneePeak
 
 .. include:: contact.txt
+
+.. [*] Yes, it's spelled like that, with two 'o's.  Columbia with a 'u' is a
+   university_ in New York City.  It's not that hard: ColOmbia is a cOuntry,
+   ColUmbia is a University.
+
 
 .. include:: links.txt

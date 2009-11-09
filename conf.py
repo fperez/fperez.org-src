@@ -100,6 +100,7 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  Major themes that come with
 # Sphinx are currently 'default' and 'sphinxdoc'.
+#html_theme = 'default'
 #html_theme = 'sphinxdoc'
 html_theme = 'fperez'  # inherits from sphinxdoc and modifies it a little
 
@@ -112,6 +113,9 @@ html_theme = 'fperez'  # inherits from sphinxdoc and modifies it a little
 # further.  For a list of options available for each theme, see the
 # documentation.
 #html_theme_options = {}
+
+# Only works with the default theme, makes the sidebar not scroll:
+#html_theme_options = { "stickysidebar": "true" }
 
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = ['themes']

@@ -66,17 +66,16 @@ The full list of presenters/slides for the lightning talks are:
 #. Erin Carson and Armando Fox: `PySKI <erin_carson_PySKIPresentation_11409.pdf>`_.
 #. Bryan Catanzaro and Armando Fox: `Copperhead <cantanzaro_LightningCopperhead.pdf>`_.
 
-Once we had the floor open for discussion, we took a quick hand vote based on
-`these topics <fperez_discussion.pdf>`_ I'd listed as possible topics, and had
-about one hour of conversation with Guido.  You should be able to get the gist
-of it from the video; fortunately even though the questions from the audience
-can't be heard very well, they are short and Guido's replies contain sufficient
-information to understand the context.
+Once we opened for general discussion, we took a quick hand vote based on
+`these topics <fperez_discussion.pdf>`_ I'd listed as possible starting points,
+and we had about one hour of conversation with Guido.  You should be able to
+get the gist of it from the video; fortunately even though the questions from
+the audience can't be heard very well, they are short and Guido's replies
+contain sufficient information to understand the context.
 
 I am very happy with the overall result of this meeting, and I hope it's only
-one part of a longer dialogue between the scientific community and the core
+the start of a longer dialogue between the scientific community and the core
 developers of the language.
-
 
 .. [1] Thanks to Jeff Teeters from the Redwood Institute, we have once again an
    excellent record of the session (Jeff has kindly taped all recent Py4Science
@@ -85,6 +84,4 @@ developers of the language.
 
    .. _video: http://www.archive.org/details/ucb_py4science_2009_11_04_Guido_van_Rossum
 
-
 .. include:: links.txt
-

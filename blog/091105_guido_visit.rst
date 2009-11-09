@@ -2,6 +2,19 @@
  Guido van Rossum at UC Berkeley's Py4Science
 ==============================================
 
+**Update:** Quick links
+
+   * Video_ of the entire session. The talks cover the first 50 minutes, and
+     Guido's part starts at the 54 minute mark.
+   * A `page with all the slides`_ on my site.
+   * Guido also blogged_ his impressions.
+   * Blog posts by `Jarrod Millman`_ and `Matthew Brett`_.
+
+.. _page with all the slides: http://fperez.org/py4science/2009_guido_ucb
+.. _blogged: http://neopythonic.blogspot.com/2009/11/python-in-scientific-world.html
+.. _Jarrod Millman: http://jarrodmillman.blogspot.com/2009/11/visit-from-guido-van-rossum.html
+.. _Matthew Brett: http://nipyworld.blogspot.com/2009/11/guido-van-rossum-talks-about-python-3.html
+
 On November 4 2009, we had a special session of our informal Py4Science_
 seminar where Guido van Rossum visited for an open discussion regarding the
 uses of the Python language in scientific research. Guido had expressed his
