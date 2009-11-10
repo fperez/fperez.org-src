@@ -12,8 +12,8 @@ SOURCEDIR     = .
 STATICDIR   = _static
 STATIC_CSS  = themes/fperez/static
 SITE        = $(BUILDDIR)/html
-WWW         = cirl:www
-WWW2        = fdo_perez@fperez.org:fperez.org
+WWW         = fdo_perez@fperez.org:fperez.org/www
+WWW2        = fperez@cirl.berkeley.edu:www
 
 # Internal variables.
 ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(SPHINXOPTS) $(SOURCEDIR)

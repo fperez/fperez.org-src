@@ -28,15 +28,15 @@ SciPy and scientific computing in Python.  I haven't been able to really get
 caught up in the whole blogging thing, so it's rather sparse.  But people tell
 me it's useful so I may try to post more, we'll see...
 
-.. admonition:: Photo note: the mountains
+Photo note: the mountains
+=========================
 
-  The picture at the top is Colorado's incredible Continental Divide,
-  specifically the Indian Peaks range, shot from `Brainard Lake`_ during a
-  `beautiful fall day`_ in 2004.  On the descent from that hike I spotted a
-  great-looking `little couloir`_ that provided for a very nice `alpine day`_
-  one week later.  Having that terrain 45 minutes from home is one thing (among
-  many) that makes the Colorado Front Range the most amazing place to live I've
-  known.
+The picture at the top is Colorado's incredible Continental Divide,
+specifically the Indian Peaks range, shot from `Brainard Lake`_ during a
+`beautiful fall day`_ in 2004.  On the descent from that hike I spotted a
+great-looking `little couloir`_ that provided for a very nice `alpine day`_ one
+week later.  Having that terrain 45 minutes from home is one thing (among many)
+that makes the Colorado Front Range the most amazing place to live I've known.
 
 .. _physics: fisica_udea_
 .. _university: http://www.columbia.edu
@@ -47,9 +47,10 @@ me it's useful so I may try to post more, we'll see...
 
 .. include:: contact.txt
 
+**Footnotes**
+
 .. [*] Yes, it's spelled like that, with two 'o's.  Columbia with a 'u' is a
    university_ in New York City.  It's not that hard: ColOmbia is a cOuntry,
    ColUmbia is a University.
-
 
 .. include:: links.txt

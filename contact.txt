@@ -1,22 +1,27 @@
-Contact
-=======
+=========
+ Contact
+=========
 
-If you are coming to visit, this map_ may be useful (the Brain Imaging Center
-also houses Berkeley's CIRL_, hence the name in the map).  Our door is the first
-on the left once you enter the East facing building doors at ground level.
+.. admonition:: Fernando Perez
 
-::
+   Email
+     first.last@berkeley.edu
+     
+   Office
+     | 10 Giannini Hall
+     | Henry H. Wheeler Jr. Brain Imaging Center.
+     | +1 510.643.4010 (voice)
+     | +1 510.643.4952 (fax)
+     
+   Map
+     Enter the `West facing building door`_, then ring the first door on the
+     left.
+     
+   Post
+     | Henry H. Wheeler, Jr. Brain Imaging Center
+     | Helen Wills Neuroscience Institute
+     | 132 Barker Hall MC 3190
+     | University of California, Berkeley
+     | Berkeley, CA 94720-3192
 
-  Fernando Pérez
-  Email : fernando DOT perez AT berkeley.edu
-  Office: 10 Giannini Hall
-          Henry H. Wheeler Jr. Brain Imaging Center.
-  Phone : 510.643.4010
-  Fax   : 510.643.4952
-
-  Mailing Address:
-  Henry H. Wheeler, Jr. Brain Imaging Center
-  Helen Wills Neuroscience Institute
-  132 Barker Hall MC 3190
-  University of California, Berkeley
-  Berkeley, CA 94720-3192
+.. _west facing building door: map_
