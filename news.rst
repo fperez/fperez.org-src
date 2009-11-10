@@ -3,6 +3,10 @@
 News
 ====
 
+November 2009, how this site is built
+  I've added a :ref:`section <this_site>` with the tools used to build this
+  site, which several people have inquired about.
+  
 November 2009, a discussion with Guido van Rossum
   At our informal Berkeley `Py4Science seminar`_, the November 4
   session was a very interesting discussion with Guido van Rossum, the creator

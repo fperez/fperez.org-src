@@ -1,6 +1,14 @@
 /*
- * Sphinx stylesheet -- fperez theme, modifies sphinxdoc
- */
+ * Sphinx stylesheet -- fperez theme, modifies sphinxdoc.
+
+  Copyright (C) 2009 Fernando Perez - Fernando.Perez@berkeley.edu.
+
+  You are welcome to use these tools to build your own site, but please do not
+  reuse my color schemes and site images.  This CSS file should make it easy to
+  tweak the defaults in sphinxdoc.css, but you should refer to that one for the
+  full sources and the entire layout machinery.
+
+*/
 
 @import url("sphinxdoc.css");
 

@@ -18,16 +18,17 @@ WWW2        = fperez@cirl.berkeley.edu:www
 # Internal variables.
 ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(SPHINXOPTS) $(SOURCEDIR)
 
-.PHONY: help clean html site linkcheck doctest upload
+.PHONY: help clean html site linkcheck doctest upload dist
 
 default: site
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
-	@echo "  html      to make standalone HTML files"
-	@echo "  linkcheck to check all external links for integrity"
-	@echo "  doctest   to run all doctests embedded in the documentation (if enabled)"
-	@echo "     upload to push the local site build to its public location"
+	@echo "  html     : make standalone HTML files"
+	@echo "  linkcheck: check all external links for integrity"
+	@echo "  doctest  : run all doctests embedded in the documentation (if enabled)"
+	@echo "  upload   : push the local site build to its public location"
+	@echo "  dist     : create a tarball (no .git dir) of site"
 
 clean:
 	-rm -rf $(BUILDDIR)/*
@@ -65,3 +66,11 @@ css:
 site: html
 	./copy_trees.py
 
+# The 'dist' target basically runs this:
+# git archive --prefix=fperez.org/  master | gzip > fperez.org.tgz
+# but via a shell script that sanitizes the exported data to remove things I
+# don't want exposed either for privacy or file size reasons.
+# You can replace the following with the git archive call above and you'll get
+# a functioning site export.
+dist:
+	site-export-clean
