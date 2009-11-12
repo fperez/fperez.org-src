@@ -41,13 +41,6 @@ div.bodywrapper {
     margin: 0 200px 0 0;
 }
 
-/* I want a smaller sidebar than sphinxdoc, and with smaller fonts */
-div.sphinxsidebar {
-    padding: 0.5em 15px 15px 0;
-    width: 170px;
-    font-size: 0.9em;
-}
-
 /* Used for the banner/logo atop each page */
 div.header {
     text-align: center;
@@ -89,6 +82,23 @@ div.document {
     background-color: white;
 }
 
+/* Leave a little space between items for normal bullet lists */
+li {
+     margin: 0 0 0.5em 0;
+}
+
+/* But for the lists in the sidebar, no extra space */
+div.sphinxsidebar li {
+     margin: 0;
+}
+
+/* I want a smaller sidebar than sphinxdoc, and with smaller fonts */
+div.sphinxsidebar {
+    padding: 0.5em 15px 15px 0;
+    width: 170px;
+    font-size: 0.9em;
+}
+
 div.sphinxsidebar a:hover {
     background-color: #e0e0e0;
     }
@@ -128,3 +138,4 @@ div.warning p.admonition-title {
 dl.docutils dt {
     font-weight: bold;
 }
+
