@@ -232,6 +232,14 @@ These are a few extra video lectures you may find useful:
 - `Scientific Computing with Python <http://nanohub.org/resources/99>`_: a full
   day workshop presented by Eric Jones and Travis Oliphant, from Enthought_.
 
+- Python for Scientific and High Performance Computing: a set of 4 videos
+  (several hours total) from a tutorial presented at the Chicago Python User's
+  group, by folks from Argonne National Lab and other Chicago area
+  institutions. `Part 1 <http://carlfk.blip.tv/file/2844247>`_, `Part 2
+  <http://carlfk.blip.tv/file/2844521>`_, `Part 3
+  <http://carlfk.blip.tv/file/2845210>`_,  `Part 4
+  <http://carlfk.blip.tv/file/2845400>`_.
+  
 - Sage_: Unifying Mathematical Software: `I
   <http://wstein.org/edu/2009/sd16/00021-stein-unifying_open_source_math_software-part1.m4v>`_,
   `II
