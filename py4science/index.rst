@@ -11,7 +11,7 @@ this topic.
 Resources
 =========
 
-`Py4Science meeting series at UC Berkeley`_
+`Py4Science meeting series at UC Berkeley <ucb/index.html>`_
   An open, informal series open to anyone interested in using, learning about
   or contributing to Python-based tools for scientific research.
 
@@ -34,8 +34,6 @@ Resources
 Blog_
   I (occasionally) post items related to this topic.
 
-
-.. _Py4Science meeting series at UC Berkeley: py4science_ucb_
 
   
 News and events
@@ -101,6 +99,7 @@ __ http://www.archive.org/search.php?query=Fernando+Perez+scientific+python
    warts
    code_reviews
    decorators
+   ucb/index
    profiling/index
    expert_python_programming_review
    2008_siam/index
