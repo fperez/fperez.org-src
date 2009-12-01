@@ -5,12 +5,16 @@
 =====================================================
 
 This is a set of notes on how to install the InDefero_ project management
-system on a shared host like Dreamhost.  I wanted to have a way of hosting my
-own Git repositories and projects for collaboration with colleagues.  While I
-already use github_ for open source projects, I wanted an easy solution for
-private collaboration.  For this type of work (writing a paper or grant
-proposal together) I don't need all the bells and whistles of Github, my
-requirements are pretty simple:
+system on a shared host like Dreamhost. They should also be useful for any
+other self-contained deployment with minor adjustments, as I've tried to
+explain in detail a number of points that weren't too clear in the original
+documentation.
+
+I wanted to have a way of hosting my own Git repositories and projects for
+collaboration with colleagues.  While I already use github_ for open source
+projects, I wanted an easy solution for private collaboration.  For this type
+of work (writing a paper or grant proposal together) I don't need all the bells
+and whistles of Github, my requirements are pretty simple:
 
 * Hosting multiple git repositories.
 * Open source code I can run on my own server.
@@ -55,18 +59,19 @@ Preliminaries
 
 The key sets of instructions that this document complements are:
 
-* `Indefero general installation
-  <http://projects.ceondo.com/p/indefero/page/Installation>`_ .
-* Installation on `Dreamhost with Mercurial backend
-  <http://projects.ceondo.com/p/indefero/page/Installation-Dreamhost-Mercurial>`_:
-  this comes closest to our needs, but it's missing a few key pieces of
-  information. Still, if something is missing in my notes, see this document.
-* Configuring `the InDefero Git backend
-  <http://projects.ceondo.com/p/indefero/page/InstallationScmGit>`_: another
-  piece of the puzzle.
-* The `Dreamhost notes on Git <http://wiki.dreamhost.com/Git>`_: they may be
+* `InDefero general installation.`_
+* Installation on `Dreamhost with Mercurial backend`_: this comes closest to
+  our needs, but it's missing a few key pieces of information. Still, if
+  something is missing in my notes, see this document.
+* Configuring `the InDefero Git backend`_: another piece of the puzzle.
+* The `Dreamhost notes on Git`_: they may be
   useful to you, though I think all of the pieces regarding git are contained
   here.
+
+.. _indefero general installation.: idf_install_
+.. _dreamhost with Mercurial backend: idf_dream_hg_
+.. _the indefero git backend: idf_git_
+.. _dreamhost notes on git: dream_git_
 
 Hopefully if I missed something, the above should let you figure out the whole
 thing.
@@ -128,15 +133,16 @@ extra ``www`` subdirectory is meant to host the actual public files (akin to
 various files of the InDefero install, git repositories, etc.  Specifically, in
 my case, the layout of ``$HOME/example.com/site`` is::
 
-    drwxrwxr-x 3 fdo_perez 4096 2009-11-30 18:31 git_repos/
-    drwxrwxr-x 2 fdo_perez 4096 2009-11-28 21:51 idf_upload/
-    drwxrwxr-x 2 fdo_perez 4096 2009-11-28 21:51 idf_upload_attach/
-    lrwxrwxrwx 1 fdo_perez   14 2009-11-28 17:14 indefero -> indefero-0.8.8/
-    drwxrwxr-x 8 fdo_perez 4096 2009-11-29 21:38 indefero-0.8.8/
-    lrwxrwxrwx 1 fdo_perez   18 2009-11-28 23:50 pluf -> pluf-master-091126/
-    drwxrwxr-x 7 fdo_perez 4096 2009-11-28 17:14 pluf-master-091126/
-    drwxrwxr-x 2 fdo_perez 4096 2009-11-28 23:37 www/
-    drwxrwxr-x 3 fdo_perez 4096 2009-11-30 18:00 tmp/
+    drwxrwxr-x 3 2009-11-30 18:31 git_repos/
+    drwxrwxr-x 2 2009-11-28 21:51 idf_upload/
+    drwxrwxr-x 2 2009-11-28 21:51 idf_upload_attach/
+    lrwxrwxrwx 1 2009-11-28 17:14 indefero -> indefero-0.8.8/
+    drwxrwxr-x 8 2009-11-29 21:38 indefero-0.8.8/
+    drwxrwxr-x 3 2009-12-01 03:41 mysql-dumps/
+    lrwxrwxrwx 1 2009-11-28 23:50 pluf -> pluf-master-091126/
+    drwxrwxr-x 7 2009-11-28 17:14 pluf-master-091126/
+    drwxrwxr-x 2 2009-11-28 23:37 www/
+    drwxrwxr-x 3 2009-11-30 18:00 tmp/
 
 The ``www/`` directory where files actually get served from only contains::
 
@@ -150,6 +156,9 @@ A local directory is needed for the actual git repositories.  The InDefero
 suggested layout can't be used on a shared host, which is why there is a
 ``git_repos`` subdirectory shown above.  This will be put in the InDefero
 config file later.
+
+The ``mysql-dumps`` directory will be used to store backups of our database, as
+explained below.
 
 .. Note::
 
@@ -174,7 +183,9 @@ database with::
     Host: mysql.site.example.com
     DB  : examplecom_site
 
-For reference, the local login command is::
+For reference, the local login command is:
+
+.. code-block:: bash
 
  mysql -u USER -p -h mysql.site.example.com examplecom_site
 
@@ -190,8 +201,21 @@ As long as this information is given to the proper InDefero config variables,
 the actual name of the user is irrelevant.
 
 In the git user's home directory, don't forget to make the ``.ssh`` directory
-with the proper permissions and make an empty ``authorized_keys`` file.  This
-is explained in the InDefero instructions for the SyncGit plugin.
+with the proper permissions and make an empty ``authorized_keys`` file.  The
+InDefero instructions for the SyncGit plugin explain this, but they assume you
+have sudo access.  On a shared host this isn't the case, so you must do it
+manually by logging in as the new user, and then running the rest of the
+commands.  For reference (substitute ``git2`` with the name of your git user):
+
+.. code-block:: bash
+
+    su - git2  # become the new user manually
+    cd
+    mkdir .ssh
+    touch .ssh/authorized_keys
+    chmod 0700 .ssh
+    chmod 0600 .ssh/authorized_keys
+    exit
 
 .. Note::
 
@@ -212,7 +236,9 @@ extra functionality to the Git we'll build (the one on Dreamhost is very old).
 In my case they may not have been 100% necessary, as right now I don't intend
 to have my InDefero repositories pulling, but it's easy enough to do as part of
 the whole build.  They are perfectly straightforward.  First, the latest
-openssl::
+openssl:
+
+.. code-block:: bash
 
     wget http://www.openssl.org/source/openssl-0.9.8l.tar.gz
     unpack openssl-0.9.8l.tar.gz
@@ -221,7 +247,9 @@ openssl::
     make
     make install
 
-And similarly for Curl::
+And similarly for Curl:
+
+.. code-block:: bash
 
     wget http://curl.haxx.se/download/curl-7.19.7.tar.gz
     unpack curl-7.19.7.tar.gz 
@@ -238,7 +266,9 @@ Git
 The `dreamhost wiki page on git`_ has more details, including the NO_MMAP
 suggestion to prevent dreamhost from killing git processes that access large
 files via mmap (this triggers a false positive on their automatic memory
-police).  In my case, I built v1.6.5.3.  After unpacking the sources, I used::
+police).  In my case, I built v1.6.5.3.  After unpacking the sources, I used:
+
+.. code-block:: bash
 
   ./configure --prefix=$PREFIX --with-openssl=$PREFIX --with-curl=$PREFIX
   make NO_MMAP=1 install
@@ -255,7 +285,9 @@ PEAR and PHP tools
 
 The indefero docs put this later, but to be 100% sure that all subsequent
 pear/php commands run using the proper versions, I think it's safest to first
-set up the environment by putting this into the bashrc file and reloading::
+set up the environment by putting this into the bashrc file and reloading:
+
+.. code-block:: bash
 
     # PEAR/PHP install at dreamhost
     export PHP_PEAR_PHP_BIN=/usr/local/php5/bin/php
@@ -264,7 +296,9 @@ set up the environment by putting this into the bashrc file and reloading::
 Now, we can do a local pear install.  It seems pear also needs some caching
 directories, and I don't know enough about it to be sure it's safe to have the
 caching directories below the root pear path, so I'm keeping them separate.  I
-made the following directories::
+made the following directories:
+
+.. code-block:: bash
 
     mkdir -p ~/usr/var/pear/cache
     mkdir -p ~/usr/var/pear/temp
@@ -275,22 +309,26 @@ temporary directories.  The indefero installation instructions suggest using
 ``~/tmp/pear``, but I don't like keeping anything that I can't simply destroy
 on ``~/tmp``, so I used this layout instead.
 
-Now I can create the pear config::
+Now I can create the pear config:
+
+.. code-block:: bash
 
     pear config-create ~/usr/ ~/.pearrc
     pear config-set download_dir ~/usr/var/pear/cache/
     pear config-set cache_dir ~/usr/var/pear/cache/
     pear config-set temp_dir ~/usr/var/pear/temp/
 
-With this configured, I can now run the install and it all worked fine::
-    
+With this configured, I can now run the install and it all worked fine:
+
+.. code-block:: bash
+
     pear install -o PEAR
     pear install --alldeps Mail
     pear install --alldeps Mail_mime
 
 A quick check gives me::
 
-    fdo_perez@terranova[usr]> pear list
+    [usr]> pear list
     INSTALLED PACKAGES, CHANNEL PEAR.PHP.NET:
     =========================================
     PACKAGE          VERSION STATE
@@ -324,8 +362,10 @@ This is the part where most of the work goes, in editing the configuration of
 the ``conf/idf.php`` file (along with a few changes to ``path.php``)
 
 In the ``conf/idf.php`` file, I created this block of variables that summarizes
-most of my configuration::
-  
+most of my configuration:
+
+.. code-block:: php
+
     # fperez - variables
     $fp = 'example.com';
     $fp_home = '$HOME';
@@ -344,7 +384,9 @@ actual file, minimizing repetition of paths and making the whole thing a bit
 easier to understand (for me).
 
 In particular, don't forget that the MySQL information must then be properly
-put into the php configuration file also::
+put into the php configuration file also:
+
+.. code-block:: php
 
     # Database configuration
     $cfg['db_login'] = $fp_db_login;
@@ -356,7 +398,9 @@ put into the php configuration file also::
     $cfg['db_database'] = $fp_database;
 
 A few other configuration variables that rely on the ones above, and on the
-directory layout previously explained for our site::
+directory layout previously explained for our site:
+
+.. code-block:: php
 
     $cfg['url_upload'] = "http://$fp_proj_url/media/upload";
     $cfg['upload_path'] = "$fp_proj/idf_upload";
@@ -452,6 +496,112 @@ what I did for my actual site.
 If you make changes to the html templates, remember to flush the temporary and
 cache directories to force a refresh of the public pages.     
 
+
+SSH key synchronization and security
+------------------------------------
+
+One small nugget that is stated in the `InDefero Git docs`_ but is not very
+clearly explained is how new users are given permissions to the repositories.
+This requires two things: a little cron job run *by the special git user* and
+understanding how the keys are managed.
+
+.. _indefero git docs: idf_git_
+
+Your InDefero users do not have shell access to your server; in order to use
+the repositories they must upload their SSH public key through the web
+interface.  Every time a user's SSH key is uploaded, InDefero leaves a little
+temporary file (its name is stored as
+``$cf$cfg['idf_plugin_syncgit_sync_file']``) and InDefero ships with a php
+script that detects this file and syncs the SSH key from the database over to
+the ``~/.ssh/authorized_keys`` file of the special git user.  You can run this
+script manually to sync users, and it's a good idea to leave it as a cron job
+in case users update their SSH keys later; the script is
+``indefero/scripts/gitcron.php``.
+
+An important point is that when these keys are uploaded, they do *not* give
+your InDefero users unrestricted login access, as this would defeat the
+isolation between projects that InDefero offers.  Their SSH keys are saved as
+authorized, but *only* to run a single command, a little python script called
+``indefero/scripts/gitserve.py`` that checks that user's permissions in the
+database, and only gives them access to the repositories consistent with those
+permissions.  This ensures that the special git user is not a security hole
+that would allow one user who knew the path to another repository he's normally
+not allowed access, to read it bypassing the web interface.  Many thanks to
+Loic D'Anterroches, the InDefero project lead, for clarifying this point.
+
+
+Backing things up
+=================
+
+OK, you now have a system up and running.  How do you back it up?  Most of the
+state of the project lives on the file system, except for the SQL database.  A
+simple way to handle this is to back it up manually once, and then to store
+this backup into a git repository.  We can then run a cron job on the server
+that periodically runs a backup again, and then commits the changes to the
+repo.  By storing an uncompressed dump of the backup, we make it easy for git
+to compute diffs and to later compress the entire repository efficiently.  We
+start by running a manual backup once:
+
+.. code-block:: bash
+
+    cd mysql-dumps
+    mysqldump --opt -uUSER -pPASSWD -h HOSTNAME DBNAME > DUMPFILE
+
+with this in place, we can now initialize the git repo:
+
+.. code-block:: bash
+
+    git init
+    git add DUMPFILE
+    git ci -m"Initializing: repo to hold backups of SQL database for InDefero site."
+
+And now, we can add a cron job that runs every night a script like:
+
+.. code-block:: bash
+
+    #!/bin/bash
+    # Dump a backup of mysql database and store it in git repo.
+
+    #######################################################
+    # Configure here with your information
+    user=USER
+    hostname=YOUR_SQL_HOSTNAME
+    passwd="????"
+    dbname=YOUR_DB_HOSTNAME
+    outdir=$HOME/example.com/site/mysql-dumps
+
+    # Make sure we use our own git
+    git=$HOME/usr/local/bin/git
+    #######################################################
+    # Code below
+
+    dumpfile=$dbname.sql
+
+    cd $outdir
+    mysqldump --opt -u$user -p$passwd -h $hostname $dbname > $dumpfile
+    # Store the history in git itself.
+    $git commit -a -m"Automated backup"
+    # Run gc every time to compact repo and save space
+    echo "Optimizing repository"
+    $git gc
+
+Since this script has to hold your SQL password in plain text, make it
+read-execute only for your user, and don't use an important password there.
+Alternatively, if you want to play it safer, you can take the password as an
+argument and initiate the backup process remotely over SSH, from a trusted
+host.  For my purposes this is sufficient.
+
+Once the SQL database is nicely backed up in our site directory, the entire
+project state consists of plain files, and we can simply rsync it nightly to a
+remote host for off-site backup.
+    
+That's it.  Every night the SQL database is backed up, and git gives us a
+revision history that is also very space efficient, as the gc step ensures that
+days with no real changes don't take any extra space on disk (I tested this).
+A regular rsync off-site ensures that I have the entire site state and history
+safely stored, should anything happen at Dreamhost.
+
+
 Final comments
 ==============
 
@@ -474,3 +624,11 @@ Git-daemon
     is only needed if you want to provide anonymous access to your
     repositories.  This is not my case (I use github.com for all my public
     code), so I didn't look further into this topic.
+
+
+.. links
+
+.. _idf_install: http://projects.ceondo.com/p/indefero/page/Installation
+.. _idf_dream_hg: http://projects.ceondo.com/p/indefero/page/Installation-Dreamhost-Mercurial
+.. _idf_git: http://projects.ceondo.com/p/indefero/page/InstallationScmGit
+.. _dream_git: http://wiki.dreamhost.com/Git
