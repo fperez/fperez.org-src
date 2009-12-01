@@ -443,13 +443,14 @@ normally leads to the new account page.  Just surround the relevant line with
 
      <p><input type="submit" value="{trans 'Sign in'}" />
 
-If you want to *really* disable creation in full, it's probably safer to also
-replace the ``indefero/src/IDF/templates/idf/register/index.html`` template
-with an empty page, since otherwise people can still just navigate to the
-``site.example.com/register`` url and will get the registration page.  *Note:*
-for some reason the changes I made to this file aren't showing up, not sure
-what's going on there...
-     
+If you want to *really* disable creation in full, you should also replace the
+``indefero/src/IDF/templates/idf/register/index.html`` template with a mostly
+page, since otherwise people can still just navigate to the
+``site.example.com/register`` url and will get the registration page.  This is
+what I did for my actual site.
+
+If you make changes to the html templates, remember to flush the temporary and
+cache directories to force a refresh of the public pages.     
 
 Final comments
 ==============
