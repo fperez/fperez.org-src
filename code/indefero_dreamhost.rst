@@ -184,14 +184,14 @@ Local user for Git management
 
 We need a user to manage the git transactions.  All tutorials I've found
 suggest the creation of a dedicated user called ``git``.  On dreamhost this
-username is already taken, so I made ``fpgit``, and also created a custom group
-called ``fpproj`` to which ``fpgit`` will belong, as well as my normal user.
-As long as this information is given to the proper config flags, the actual
-name of the user is irrelevant.
+username is already taken, so I made another user (call it ``git2``), and also
+created a custom group to which both ``git2`` and my normal user will belong.
+As long as this information is given to the proper InDefero config variables,
+the actual name of the user is irrelevant.
 
-In the git user's home directory, don't forget to make the .ssh directory with
-the proper permissions and make an empty authorized_keys file.  This is
-explained in the InDefero instructions for the SyncGit plugin.
+In the git user's home directory, don't forget to make the ``.ssh`` directory
+with the proper permissions and make an empty ``authorized_keys`` file.  This
+is explained in the InDefero instructions for the SyncGit plugin.
 
 .. Note::
 
@@ -330,7 +330,7 @@ most of my configuration::
     $fp = 'example.com';
     $fp_home = '$HOME';
     $fp_site = '$HOME/example.com/site';
-    $fp_git_user_home = '/home/fpgit';
+    $fp_git_user_home = '/home/git2';
     $fp_git_repos = "$fp_site/git_repos";
     $fp_site_url = 'site.example.com';
     $fp_mail_user = 'nobody@nowhere';
