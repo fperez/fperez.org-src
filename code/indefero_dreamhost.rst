@@ -445,7 +445,7 @@ normally leads to the new account page.  Just surround the relevant line with
 
 If you want to *really* disable creation in full, you should also replace the
 ``indefero/src/IDF/templates/idf/register/index.html`` template with a mostly
-page, since otherwise people can still just navigate to the
+empty page, since otherwise people can still just navigate to the
 ``site.example.com/register`` url and will get the registration page.  This is
 what I did for my actual site.
 
