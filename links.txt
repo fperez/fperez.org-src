@@ -98,3 +98,7 @@
 .. _enthought: http://www.enthought.com
 .. _kitware: http://www.kitware.com
 .. _netlib: http://netlib.org
+
+
+.. Other tools and projects
+.. _indefero: http://www.indefero.net

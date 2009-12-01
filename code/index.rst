@@ -14,6 +14,15 @@ me back all the great improvements you'll undoubtedly make.
 
 __ github_fperez_
 
+InDefero on Dreamhost
+=====================
+
+If you are interested in hosting your own projects privately using Git, but
+with some facilities for project management (web interface to git, source
+listings, issue tracking, etc), you may find `these notes
+<indefero_dreamhost.html>`_ on configuring the InDefero system on a shared host
+useful.
+
 .. _this_site:
 
 How this site is built
@@ -198,7 +207,7 @@ keyboard under X11.  My use for it is to take advantage of the special keys in
 my Microsoft Wireless keyboards under Linux, so I can control XMMS, call up
 Mozilla, Konqueror, gthumb, etc.
 
-It's a simple module which you can find here_, and I call it via this_ little
+It's a simple module which you can `find here`_, and I call it via this_ little
 script which you can modify for your particular usage case. It should be very
 easy to customize it for any keyboard and any behavior you want.
 
@@ -207,7 +216,7 @@ Note that you'll need the `Xlib python`_ module.
 .. links:
 
 .. _great little script: http://www.larsen-b.com/Article/184.html
-.. _here: x11kbd.py
+.. _find here: x11kbd.py
 .. _this: mskbd
 .. _Xlib python: http://python-xlib.sourceforge.net
 
@@ -230,6 +239,7 @@ looks awful today, even for the dubious standards of Perl code.
 .. toctree::
    :hidden:
 
+   indefero_dreamhost
    lyxport/index
 
 .. include:: links.txt

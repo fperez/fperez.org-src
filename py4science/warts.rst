@@ -81,13 +81,14 @@ Lack of native rationals
   I *really* wish Python had native rationals and that integer division
   produced rational results as needed.  Python's native numerical types are
   pretty good for a general purpose language, as it includes out of the box
-  arbitrary-length integers, floats, complex numbers (over the 'field' of the
-  floats) and even arbitrary-precision decimals_.  But the integers divide into
-  the floats (they used to do integer truncating division, a la C).  Since this
-  is part of the very core of the language, no amount of GMP wrappers will make
-  it easier (this is why Sage_ has to preparse its input and convert input like
-  ``1+2`` into ``ZZ(1)+ZZ(2)``, so that all integer operations are done in a
-  proper manner without burdening the user with that syntax all the time).
+  arbitrary-length integers, floats, complex numbers (over the 'field' of
+  the floats) and even arbitrary-precision decimals_.  But the integers
+  divide into the floats (they used to do integer truncating division, a la
+  C).  Since this is part of the very core of the language, no amount of GMP
+  wrappers will make it easier (this is why Sage_ has to preparse its input
+  and convert input like ``1+2`` into ``Integer(1)+Integer(2)``, so that all
+  integer operations are done in a proper manner without burdening the user
+  with that syntax all the time).
 
 Array multiplication operator
   I also wish that `PEP 225`_ or something like it were accepted, so that we

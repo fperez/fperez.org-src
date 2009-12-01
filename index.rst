@@ -26,6 +26,7 @@ for scientific research.  If you are interested in using Python in your
 research, would like to learn more about it or have developed something you'd
 like feedback on, please stop by!
 
+.. _scipy stack: scipy_
 .. _seminar: py4science_ucb_
 
 .. include:: news.rst
