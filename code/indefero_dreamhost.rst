@@ -4,23 +4,25 @@
  Sharing Git repositories on Dreamhost with InDefero
 =====================================================
 
-This is a set of notes on how to install the InDefero_ project management
-system on a shared host like Dreamhost. They should also be useful for any
-other self-contained deployment with minor adjustments, as I've tried to
-explain in detail a number of points that weren't too clear in the original
-documentation.
+This document explains how to install the InDefero_ project management system
+on a shared host like Dreamhost. They should also be useful for any other
+self-contained deployment with minor adjustments, as I've tried to explain in
+detail a number of points that weren't too clear in the original documentation.
+While these notes focus on Git, InDefero also supports Mercurial and SVN
+backends; the installation part of this document may still be useful to you
+even if you intend to use either of those backends.
 
 I wanted to have a way of hosting my own Git repositories and projects for
 collaboration with colleagues.  While I already use github_ for open source
 projects, I wanted an easy solution for private collaboration.  For this type
-of work (writing a paper or grant proposal together) I don't need all the bells
-and whistles of Github, my requirements are pretty simple:
+of work I don't need all the bells and whistles of Github, my requirements are
+pretty simple:
 
 * Hosting multiple git repositories.
 * Open source code I can run on my own server.
 * The ability to add users and have different users on different projects,
   without needing to give each user a real shell account on the server.
-* *Basic* code management features: source viewing, change log and commits.
+* Basic code management features: source viewing, change log and commits.
 * A few project documentation and ticket managemet features are welcome, but
   not a deal breaker.
 
@@ -31,8 +33,8 @@ about the plugin), Redmine looks neat but it requires a full Rails stack, which
 I'm not really interested in getting into, and gitosis may be just a tad too
 bare bones for what I wanted.  But InDefero kept appearing as a good balance of
 the above, so I decided to give it a try.  I'd summarize it as a lightweight,
-google-code-like project management system whose git backend is very similar to
-gitosis.  It also supports Hg and SVN backends, though I'm not interested in
+google-code-like project management system whose git backend design is inspired
+by gitosis.  It also supports Hg and SVN backends, though I'm not interested in
 those and won't discuss their configuration here (I turned them off).
 
 So far I have been very satisfied in that I think it does precisely what I
@@ -46,6 +48,10 @@ documents, and a number of key steps are not explained at all (not even
 mentioned), so it took me a fair amount of time to get the whole thing working.
 I am putting together these notes in the hope they save someone else time, and
 the InDefero team is welcome to use any or all of this in their own documents.
+I estimate that with a document like this one, you should be able to start from
+scratch and configure an entire setup in 2-4 hours, assuming you are
+comfortable working in a Linux command-line environment and are used to
+building software from source.
 
 Please let me know of any inaccuracies in this document so I can correct them
 for the benefit of others.
@@ -510,13 +516,12 @@ understanding how the keys are managed.
 Your InDefero users do not have shell access to your server; in order to use
 the repositories they must upload their SSH public key through the web
 interface.  Every time a user's SSH key is uploaded, InDefero leaves a little
-temporary file (its name is stored as
-``$cf$cfg['idf_plugin_syncgit_sync_file']``) and InDefero ships with a php
-script that detects this file and syncs the SSH key from the database over to
-the ``~/.ssh/authorized_keys`` file of the special git user.  You can run this
-script manually to sync users, and it's a good idea to leave it as a cron job
-in case users update their SSH keys later; the script is
-``indefero/scripts/gitcron.php``.
+temporary file (its name is stored as ``$cfg['idf_plugin_syncgit_sync_file']``)
+and InDefero ships with a php script that detects this file and syncs the SSH
+key from the database over to the ``~/.ssh/authorized_keys`` file of the
+special git user.  You can run this script manually to sync users, and it's a
+good idea to leave it as a cron job in case users update their SSH keys later;
+the script is ``indefero/scripts/gitcron.php``.
 
 An important point is that when these keys are uploaded, they do *not* give
 your InDefero users unrestricted login access, as this would defeat the
@@ -534,13 +539,15 @@ Backing things up
 =================
 
 OK, you now have a system up and running.  How do you back it up?  Most of the
-state of the project lives on the file system, except for the SQL database.  A
-simple way to handle this is to back it up manually once, and then to store
-this backup into a git repository.  We can then run a cron job on the server
-that periodically runs a backup again, and then commits the changes to the
-repo.  By storing an uncompressed dump of the backup, we make it easy for git
-to compute diffs and to later compress the entire repository efficiently.  We
-start by running a manual backup once:
+state of the project lives on the file system (and can thus be backed up with a
+simple ``rsync`` call), except for the SQL database.  A simple way to handle
+this is to back it up manually once, and then to store this backup into a git
+repository.  We can then run a cron job on the server that periodically runs a
+backup again, and then commits the changes to the repo.  By storing an
+uncompressed dump of the backup, we make it easy for git to compute diffs and
+to later compress the entire repository efficiently.
+
+We start by running a manual backup once:
 
 .. code-block:: bash
 
@@ -564,17 +571,17 @@ And now, we can add a cron job that runs every night a script like:
 
     #######################################################
     # Configure here with your information
-    user=USER
+    user=YOUR_SQL_USERNAME
     hostname=YOUR_SQL_HOSTNAME
     passwd="????"
-    dbname=YOUR_DB_HOSTNAME
+    dbname=YOUR_DATABASE_NAME
     outdir=$HOME/example.com/site/mysql-dumps
 
     # Make sure we use our own git
     git=$HOME/usr/local/bin/git
+    
     #######################################################
     # Code below
-
     dumpfile=$dbname.sql
 
     cd $outdir
