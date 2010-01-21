@@ -22,80 +22,56 @@ development of the major tools in a way that improves them for your own
 research.
 
 
-What to download
-================
+What to download (the quick version)
+====================================
 
-If you think of Python as a 'Matlab/IDL replacement', you probably want at the
-very least (before you download any of these individually, continue reading
-below):
+Here are quick instructions on what to download to get started, especially if
+you will be soon attending a class or workshop I may be teaching.  :ref:`At the
+end of this page <download_long>` there is a longer description of the various
+tools and distributions available, with some context to inform your decision.
 
-- A basic interactive environment: IPython_ (disclosure: I'm biased since this
-  is a project I started years ago, but many people seem to like it).
+On Linux
+--------
 
-- Multidimensional array support: NumPy_ is the core library that most other
-  scientific Python projects depend on and which allows it to efficiently
-  manipulate large amounts of homogeneous numerical data in a manner similar to
-  Matlab, IDL or any other array language.
+On a reasonably recent Linux distribution, all the tools you need are available
+via the package management system.  On Ubuntu or other Debian-based
+distributions, type at the shell (tested on Ubuntu 9.10 Karmic)::
 
-- Linear algebra and other numerical libraries: SciPy_ is a set of libraries
-  that add to NumPy access to all of LAPACK, FFTs, numerical integration,
-  optimization, special functions, and much more.  This is a large combination
-  of old and well known codes in C and FORTRAN (many from netlib_) with lots of
-  new Python code both to expose those libraries and to provide new
-  functionality.
+    sudo apt-get install ipython python-scipy python-matplotlib mayavi2 \
+      python-sympy cython python-pexpect python-nose python-setuptools \
+      python-sphinx python-pygments python-twisted python-foolscap
 
-- Data visualization: Matplotlib_ is my tool of choice for high quality 2d
-  plotting (it recently also has developed basic 3d support), while Mayavi_ is
-  a powerful system that builds on top of the VTK_ toolkit to provide
-  sophisticated 3d visualization.
+    sudo apt-get build-dep python python-scipy python-matplotlib mayavi2 cython
 
-These are probably the raw basics, and a `community maintained page`_ at the
-SciPy site lists a vast array of other tools you may find useful in your
-specific problem domain, all of them free.
+These two commands give you all the core packages to get started with
+scientific Python work, including development tools like compilers.  On Fedora,
+the equivalent commands are (tested on Fedora 12)::
 
-In terms of actually downloading and installing tools, there are a few
-alternatives, partly depending on your operating system of choice:
+    sudo yum install yum-utils
+    
+    sudo yum install ipython scipy python-matplotlib Mayavi sympy Cython \
+      pexpect python-nose python-setuptools python-sphinx python-pygments \
+      python-twisted python-foolscap 
 
-- Linux: On most modern Linux distributions, the above tools (and many more)
-  are one click or command away, though you might not get by default the very
-  latest versions.  As a starting point you will probably be fine.
+    sudo yum-builddep python scipy python-matplotlib Mayavi Cython
 
-- The `Enthought Python Distribution`_ (EPD) is a self-contained installer with
-  the above and many other tools.  EPD is a very easy solution that is
-  particularly appealing for Windows and Mac OSX, and it also exists for
-  several Linux distributions and Solaris.
 
-- `Python(x,y)`_ provides a single-click installer for Windows of a number of
-  useful libraries, though unfortunately it does not ship the very useful
-  Enthought tools (that include the powerful Mayavi 3d visualizer, the 2d
-  plotting library Chaco and much more).
+On Mac OSX or Windows
+---------------------
 
-As an alternative approach, the Sage_ project also ships most of these tools,
-and then adds others (like GMP and Pari) to provide a new numerical foundation,
-as well as its own original libraries for many tasks.  It also extends the
-Python language syntax and modifies its core numerical type system with one
-based on more structured mathematical abstractions (all integer arithmetic is
-performed over the rationals, floating point numbers can always be arbitrary
-precision ones, etc).  Sage provides a web-based interactive notebook
-environment (as well as a customized IPython command-line one) but does not by
-default build the graphical user interface components for Matplotlib and
-Mayavi.  It's worth noting that since Sage has its own numerical type system
-and matrix classes, by default most normal numpy/scipy examples will not work
-in exactly the same way in Sage.  Depending on your needs, you can either use
-the Sage notebook in 'pure python mode' where it will not load Sage's native
-types, or use 'Sage mode' where its objects provide mathematical computing
-capabilities not available in Python or NumPy.
+Install the `Enthought Python Distribution`_ (I'm assuming here you are an
+academic user who can use the free license).  This has all of the above, and
+much more, in a single installer.
 
-Whether you choose to use the integrated Sage environment or the individual
-libraries is up to you [#]_; I personally do most of my development on top of
-'bare' Python using only the libraries I need for each problem, but I always
-keep an updated Sage installation available and use it as needed.  Sage is
-available in source and binary form for many different Unix-like operating
-systems, and can be used in Windows as a VMWare Linux image.
+On the Mac, you will also want to have:
 
-.. _Enthought Python Distribution: _EPD
-.. _community maintained page: http://www.scipy.org/Topical_Software
-.. _Python(x,y): _pythonxy
+* The Apple Xcode_ development toolkit.  Once you register, it's a free (but
+  fairly large) download.
+
+* The GNU Fortran compiler, available for download `here
+  <http://r.research.att.com/tools>`_.
+
+.. _xcode: http://developer.apple.com/technology/xcode.html
 
 
 What to read and view
@@ -137,15 +113,29 @@ useful:
   *excellent resource* which you can download for reading but also with
   examples you can execute.
 
-These are a few good links about Python and computational literacy:
-  
-- `Code Like a Pythonista: Idiomatic Python <http://python.net/%7Egoodger/projects/pycon/2007/idiomatic/handout.html>`_.
+These are a few good links about how to write good Python code:
 
-- `The Importance of Programming Literacy (PyCon 2007)
-  <http://advocacy.python.org/podcasts/pycon/PyCon2007-ProgrammingLiteracy.mp3>`_
-  (this is an audio file in MP3).
+- Philip J. Guo's `Python idoms
+  <http://www.stanford.edu/~pgbovine/python-idioms.htm>`_.
 
-  
+- Rob Knight runs a stellar research group at CU Boulder, whose computational
+  tools use Python heavily and has a great `collection of tips and idioms
+  <http://jaynes.colorado.edu/PythonIdioms.html>`_.
+
+- David Goodger's `Code Like a Pythonista: Idiomatic Python
+  <http://python.net/%7Egoodger/projects/pycon/2007/idiomatic/handout.html>`_.
+
+
+At some point you'll need to debug your code, and `this page
+<http://pythonconquerstheuniverse.wordpress.com/category/the-python-debugger/>`_
+is the cleanest introduction to the Python debugger I've read.  In IPython, you
+can run scripts under the control of the debugger by typing ``%run -d
+script.py``, and you can debug post-mortem by typing ``%debug`` after any
+exception (or type ``%pdb`` to make this happen automatically anytime there is
+an exception).  The IPython debugger is an extended version of the one
+described in this page, with syntax highlighting and tab completion.
+
+
 Books
 -----
 
@@ -161,7 +151,7 @@ In terms of books for scientists, I recommend the following:
 
   
 These books are of general value and freely available online, though they can
-also be purchased in paper form
+also be purchased in paper form:
 
 - `Dive into Python`_: an outstanding book, if you only read one general python
   book, make it this one.
@@ -215,6 +205,9 @@ OpenCourseware system.  In particular, `lecture 18`_ covers Matplotlib.
 
 __ http://ocw.mit.edu/OcwWeb/Electrical-Engineering-and-Computer-Science/6-00Fall-2008/CourseHome/index.htm
 .. _lecture 18: http://ocw.mit.edu/OcwWeb/Electrical-Engineering-and-Computer-Science/6-00Fall-2008/LectureVideos/detail/embed18.htm
+
+And there is a series of `basic Python tutorials on YouTube
+<http://www.youtube.com/watch?v=4Mf0h3HphEA>`_.
 
 These are a few extra video lectures you may find useful:
 
@@ -309,13 +302,91 @@ for meeting announcements that anyone can subscribe to.
 .. _Planet SciPy: http://planet.scipy.org
 .. _conference: http://conference.scipy.org
 
+
+.. _download_long:
+
+What to download (the longer version)
+=====================================
+
+If you think of Python as a 'Matlab/IDL replacement', you probably want at the
+very least (before you download any of these individually, continue reading
+below):
+
+- A basic interactive environment: IPython_ (disclosure: I'm biased since this
+  is a project I started years ago, but many people seem to like it).
+
+- Multidimensional array support: NumPy_ is the core library that most other
+  scientific Python projects depend on and which allows it to efficiently
+  manipulate large amounts of homogeneous numerical data in a manner similar to
+  Matlab, IDL or any other array language.
+
+- Linear algebra and other numerical libraries: SciPy_ is a set of libraries
+  that add to NumPy access to all of LAPACK, FFTs, numerical integration,
+  optimization, special functions, and much more.  This is a large combination
+  of old and well known codes in C and FORTRAN (many from netlib_) with lots of
+  new Python code both to expose those libraries and to provide new
+  functionality.
+
+- Data visualization: Matplotlib_ is my tool of choice for high quality 2d
+  plotting (it recently also has developed basic 3d support), while Mayavi_ is
+  a powerful system that builds on top of the VTK_ toolkit to provide
+  sophisticated 3d visualization.
+
+These are probably the raw basics, and a `community maintained page`_ at the
+SciPy site lists a vast array of other tools you may find useful in your
+specific problem domain, all of them free.
+
+In terms of actually downloading and installing tools, there are a few
+alternatives, partly depending on your operating system of choice:
+
+- Linux: On most modern Linux distributions, the above tools (and many more)
+  are one click or command away, though you might not get by default the very
+  latest versions.  As a starting point you will probably be fine.
+
+- The `Enthought Python Distribution`_ (EPD) is a self-contained installer with
+  the above and many other tools.  EPD is a very easy solution that is
+  particularly appealing for Windows and Mac OSX, and it also exists for
+  several Linux distributions and Solaris.
+
+- `Python(x,y)`_ provides a single-click installer for Windows of a number of
+  useful libraries, though unfortunately it does not ship the very useful
+  Enthought tools (that include the powerful Mayavi 3d visualizer, the 2d
+  plotting library Chaco and much more).
+
+As an alternative approach, the Sage_ project also ships most of these tools,
+and then adds others (like GMP and Pari) to provide a new numerical foundation,
+as well as its own original libraries for many tasks.  It also extends the
+Python language syntax and modifies its core numerical type system with one
+based on more structured mathematical abstractions (all integer arithmetic is
+performed over the rationals, floating point numbers can always be arbitrary
+precision ones, etc).  Sage provides a web-based interactive notebook
+environment (as well as a customized IPython command-line one) but does not by
+default build the graphical user interface components for Matplotlib and
+Mayavi.  It's worth noting that since Sage has its own numerical type system
+and matrix classes, by default most normal numpy/scipy examples will not work
+in exactly the same way in Sage.  Depending on your needs, you can either use
+the Sage notebook in 'pure python mode' where it will not load Sage's native
+types, or use 'Sage mode' where its objects provide mathematical computing
+capabilities not available in Python or NumPy.
+
+Whether you choose to use the integrated Sage environment or the individual
+libraries is up to you [#]_; I personally do most of my development on top of
+'bare' Python using only the libraries I need for each problem, but I always
+keep an updated Sage installation available and use it as needed.  Sage is
+available in source and binary form for many different Unix-like operating
+systems, and can be used in Windows as a VMWare Linux image.
+
+.. _Enthought Python Distribution: EPD_
+.. _community maintained page: http://www.scipy.org/Topical_Software
+.. _Python(x,y): pythonxy_
+
+
 Acknowledgments
 ===============
 
 Thanks to Chris Burns from UC Berkeley for a useful set of links and resources,
 to Stefan van der Walt from U. Stellenbosch for notes on Sage and numerics, and
 to Gokhan Sever for a number of useful links.
-
 
 --------------
 
