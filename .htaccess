@@ -1,0 +1,9 @@
+# By default, Dreamhost will treat .py files as cgi scripts, whereas I'm not
+# running any python CGI code here.  It's therefore OK to set .py to be plain
+# text everywhere, by making this the site top-level .htaccess file.
+#
+# If I ever start using .py cgi scripts, I can always make a directory-specific
+# .htaccess file that makes the .py handler be the cgi one.
+
+AddHandler default-handler .py
+AddType text/plain .py
