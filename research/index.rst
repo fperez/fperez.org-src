@@ -35,12 +35,13 @@ another component of nipy.  The following is a preprint of our recent paper on
 this topic from the SciPy'09 conference (you can also see the slides_ of
 Ariel's talk):
 
-.. admonition:: Preprint
+.. admonition:: Paper
 
    A. Rokem, M. Trumpis, F. Pérez, `Nitime: time-series analysis for
-   neuroimaging data <../papers/nitime09_ro-tr-pe.pdf>`_, Proceedings of the 2009
-   SciPy Conference (2009 - submitted).
-
+   neuroimaging data <../papers/nitime09_ro-tr-pe.pdf>`_, Proceedings of the
+   8th Python in Science Conference (SciPy 2009). `Bibtex
+   <../papers/nitime09_ro-tr-pe.bib>`_.
+   
 .. _slides: http://conference.scipy.org/static/wiki/rokem_timeseries.pdf
 
 These computational projects are part of my interest in the development of
@@ -131,7 +132,7 @@ theoretical and numerical progress on this front as well.
 
    G. Beylkin, M. J. Mohlenkamp and F. Pérez, `Preliminary results on
    approximating a wavefunction as an unconstrained sum of Slater determinants
-   <freeslater07_be-mo-pe.pdf>`_, Proc. Appl. Math. Mech., 7, (2007).
+   <../papers/freeslater07_be-mo-pe.pdf>`_, Proc. Appl. Math. Mech., 7, (2007).
 
 The attic
 =========

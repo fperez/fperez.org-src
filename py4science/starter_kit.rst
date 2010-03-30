@@ -1,25 +1,26 @@
+.. _starter_kit:
+
 ===========================
  Py4Science: a Starter Kit
 ===========================
 
 This document is meant to gather resources for the scientist interested in
-starting to use Python for scientific computing.  Most of the information here
-should be of general use, though a few pointers are specific to resources at UC
-Berkeley.  Please `email me <Fernando.Perez@berkeley.edu>`_ with feedback,
-corrections or suggestions.
+starting to use the Python programming language for scientific computing.  Most
+of the information here should be of general use, though a few pointers are
+specific to resources at UC Berkeley.  Please `email me
+<Fernando.Perez@berkeley.edu>`_ with feedback, corrections or suggestions.
 
 The landscape of Python tools for scientific computing is varied and rapidly
-growing.  The Python language wasn't originally designed as a numerical
-computing tool but instead as a general purpose, high level language.  For this
-reason, as a scientist you will need to install a set of tools on top of the
-basic language download to provide support for numerics, array manipulations,
-numerical algorithms and data visualization.  All of the tools mentioned here
-are free and developed as open source software in a collaborative manner by
-other scientists; I encourage you to not only use these tools but to get
-involved with the groups that develop them.  You will find not only help with
-questions and problems, but likely also the opportunity to shape the
-development of the major tools in a way that improves them for your own
-research.
+growing.  Python wasn't originally designed specifically for numerical
+computing but instead as a general purpose, high level language.  For this
+reason, as a scientist you will need to install some extra tools on top of the
+basic language download to provide support for array manipulations, numerical
+algorithms and data visualization.  All of the tools mentioned here are free
+and developed as open source software in a collaborative manner by other
+scientists; I encourage you to not only use these tools but to get involved
+with the groups that develop them.  You will find not only help with questions
+and problems, but likely also the opportunity to shape the development of the
+major tools in a way that improves them for your own research.
 
 
 What to download (the quick version)
@@ -30,6 +31,13 @@ you will be soon attending a class or workshop I may be teaching.  :ref:`At the
 end of this page <download_long>` there is a longer description of the various
 tools and distributions available, with some context to inform your decision.
 
+For a basic verification that you have a functioning installation of the core
+tools on your system, simply download and run `this checklist script`_ as per
+the instructions at the top of the file.
+
+.. _this checklist script: workshop_checklist.py
+
+
 On Linux
 --------
 
@@ -38,8 +46,9 @@ via the package management system.  On Ubuntu or other Debian-based
 distributions, type at the shell (tested on Ubuntu 9.10 Karmic)::
 
     sudo apt-get install ipython python-scipy python-matplotlib mayavi2 \
-      python-sympy cython python-pexpect python-nose python-setuptools \
-      python-sphinx python-pygments python-twisted python-foolscap
+      python-sympy cython python-networkx python-pexpect python-nose \
+      python-setuptools python-sphinx python-pygments \
+      python-twisted python-foolscap python-tk
 
     sudo apt-get build-dep python python-scipy python-matplotlib mayavi2 cython
 
@@ -50,8 +59,8 @@ the equivalent commands are (tested on Fedora 12)::
     sudo yum install yum-utils
     
     sudo yum install ipython scipy python-matplotlib Mayavi sympy Cython \
-      pexpect python-nose python-setuptools python-sphinx python-pygments \
-      python-twisted python-foolscap 
+      python-networkx pexpect python-nose python-setuptools \
+      python-sphinx python-pygments python-twisted python-foolscap
 
     sudo yum-builddep python scipy python-matplotlib Mayavi Cython
 
@@ -68,11 +77,28 @@ On the Mac, you will also want to have:
 * The Apple Xcode_ development toolkit.  Once you register, it's a free (but
   fairly large) download.
 
-* The GNU Fortran compiler, available for download `here
-  <http://r.research.att.com/tools>`_.
+* `The GNU Fortran compiler <http://r.research.att.com/tools>`_.
 
 .. _xcode: http://developer.apple.com/technology/xcode.html
 
+
+Editing code
+------------
+
+Python is a programming language, so at some point you'll need to type code.
+Learning how to use a good, powerful text editor is one of the best investments
+of time you can make in terms of computing-related skills.  I'm a life emacs
+user, but vi is equally sophisticated (in a very different style).  These
+editors, however, aren't the easiest to get started with (if you're serious
+about computing though, I strongly recommend you do learn how to use them).
+
+If you want something with a slightly easier learning curve to begin with, the
+following are all free, good options:
+
+* Linux: gedit (typically installed by default).
+* OSX: `Text Wrangler <http://www.barebones.com/products/TextWrangler>`_.
+* Windows: `Notepad ++ <http://notepad-plus.sourceforge.net/uk/site.htm>`_.
+ 
 
 What to read and view
 =====================
@@ -113,6 +139,21 @@ useful:
   *excellent resource* which you can download for reading but also with
   examples you can execute.
 
+- `An introduction to Python and LaTeX
+  <http://radiantbytes.com/books/python-latex>`_: still (as of early 2010) a
+  work in-progress, but already a useful introduction to Python programming
+  targeted at students in science, math and engineering.  This is part of the
+  remarkable `FOSSEE India <http://fossee.in>`_ project.
+
+With a slightly broader view, I *very strongly* recommend you spend some time
+with Greg Wilson's excellent `Software Carpentry`_ materials.  As of early 2010
+he is restructuring them and I'm sure the new version will be even better, but
+even the archives have a lot of value; Greg addresses the real problems that
+exist at the intersection of software engineering and scientific computing and
+tries to offer not only practical solutions, but more importantly, a set of
+approaches that hopefully lead to the creation of a more robust computational
+culture in scientific work.
+  
 These are a few good links about how to write good Python code:
 
 - Philip J. Guo's `Python idoms
@@ -125,15 +166,22 @@ These are a few good links about how to write good Python code:
 - David Goodger's `Code Like a Pythonista: Idiomatic Python
   <http://python.net/%7Egoodger/projects/pycon/2007/idiomatic/handout.html>`_.
 
+Quick reference: use `Richard Gruet's excellent Python Quick Reference
+<http://rgruet.free.fr>`_, available in html and pdf formats for several Python
+versions.
 
 At some point you'll need to debug your code, and `this page
 <http://pythonconquerstheuniverse.wordpress.com/category/the-python-debugger/>`_
-is the cleanest introduction to the Python debugger I've read.  In IPython, you
-can run scripts under the control of the debugger by typing ``%run -d
-script.py``, and you can debug post-mortem by typing ``%debug`` after any
-exception (or type ``%pdb`` to make this happen automatically anytime there is
-an exception).  The IPython debugger is an extended version of the one
-described in this page, with syntax highlighting and tab completion.
+is the cleanest introduction to the Python debugger I've read.
+
+.. note::
+
+  In IPython, you can run scripts under the control of the debugger by typing
+  ``%run -d script.py``, and you can debug post-mortem by typing ``%debug``
+  after any exception (or type ``%pdb`` to make this happen automatically
+  anytime there is an exception).  The IPython debugger is an extended version
+  of the one described in this page, with syntax highlighting and tab
+  completion, but otherwise works identically.
 
 
 Books
@@ -149,6 +197,9 @@ In terms of books for scientists, I recommend the following:
   scientific computing contexts, available online from the author (`Amazon
   link`_).
 
+- `Matplotlib for Python Developers`_ by Sandro Tosi: everything you need to
+  know about producing meaningful and aesthetic data visualizations with
+  Matplotlib.
   
 These books are of general value and freely available online, though they can
 also be purchased in paper form:
@@ -159,13 +210,10 @@ also be purchased in paper form:
 - `Building Python Skills`_: a series, in particular the second book has been
   very well recommended to me.
 
-.. _Dive into Python: http://diveintopython.org
-.. _Building Python Skills: http://homepage.mac.com/s_lott/books/index.html
-  
-The following Python books are freely available to UC Berkeley via the O'Reilly
-Safari system.  These are books I have personally found to be useful and can
-recommend; they are general-purpose books without content specific to
-scientific use.
+The following Python books (except for David Beazley's) are freely available to
+UC Berkeley via the O'Reilly Safari system.  These are books I have personally
+found to be useful and can recommend; they are general-purpose books without
+content specific to scientific use.
 
 - `Learning Python, 3rd Edition
   <http://proquest.safaribooksonline.com/9780596513986>`_ by Mark Lutz.
@@ -180,12 +228,28 @@ scientific use.
   <http://proquest.safaribooksonline.com/0596007973>`_ by Alex Martelli; Anna
   Martelli Ravenscroft; David Ascher.
 
+- `Python Essential Reference (4th Edition)`_ by David M. Beazley.  Not for the
+  raw beginner, but if you have some programming experience, this is probably
+  the most useful general-purpose Python book you can own.
+
 .. note::
 
    U.C. Berkeley users can access Safari for free.  For this you need to be
    either on campus or browsing with the `Berkeley Library Proxy
    <http://lib.berkeley.edu/Help/proxy.html>`_.
 
+
+.. _Dive into Python: http://diveintopython.org
+.. _Building Python Skills: http://homepage.mac.com/s_lott/books/index.html
+.. _User Guide:      http://docs.scipy.org/doc/numpy/user
+.. _Reference Guide: http://docs.scipy.org/doc/numpy/reference
+.. _Beginning Python Visualization: http://www.apress.com/book/view/9781430218432
+.. _Python Scripting for Computational Science: http://folk.uio.no/hpl/scripting
+.. _Amazon link: http://www.amazon.com/Python-Scripting-Computational-Science-Engineering/dp/3540739157/ref=sr_1_1?ie=UTF8&s=books&qid=1248306847&sr=8-1
+.. _Matplotlib for Python Developers:
+    http://www.packtpub.com/matplotlib-python-development/book
+.. _Python Essential Reference (4th Edition): http://www.amazon.com/Python-Essential-Reference-David-Beazley/dp/0672329786/ref=sr_1_1?ie=UTF8&s=books&qid=1264128825&sr=1-1
+ 
 
 Videos and webinars
 -------------------
@@ -265,11 +329,6 @@ These are a few extra video lectures you may find useful:
   <http://www.youtube.com/watch?v=3DbDgD9whDfEY&feature=3Dchannel>`_, `II
   <http://www.youtube.com/watch?v=3Dy7vwZ20SDzc&feature=3Dchannel>`_. 
 
-.. _User Guide:      http://docs.scipy.org/doc/numpy/user
-.. _Reference Guide: http://docs.scipy.org/doc/numpy/reference
-.. _Beginning Python Visualization: http://www.apress.com/book/view/9781430218432
-.. _Python Scripting for Computational Science: http://folk.uio.no/hpl/scripting
-.. _Amazon link: http://www.amazon.com/Python-Scripting-Computational-Science-Engineering/dp/3540739157/ref=sr_1_1?ie=UTF8&s=books&qid=1248306847&sr=8-1
 .. _video is available: http://www.archive.org/search.php?query=Fernando+Perez+scientific+python
 .. _webinar series: http://www.enthought.com/training/webinars.php
 

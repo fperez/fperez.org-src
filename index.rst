@@ -39,6 +39,7 @@ like feedback on, please stop by!
 
    research/index
    talks/index
+   teaching/index
    py4science/index
    code/index
    personal

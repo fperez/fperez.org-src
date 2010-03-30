@@ -101,6 +101,7 @@ __ http://www.archive.org/search.php?query=Fernando+Perez+scientific+python
    decorators
    ucb/index
    profiling/index
+   git
    expert_python_programming_review
    2008_siam/index
    2009_siam_cse/index
