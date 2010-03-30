@@ -169,3 +169,37 @@ idiom, the `Git - SVN Crash Course <http://git-scm.org/course/svn.html>`_ can
 be handy.
 
 .. include:: links.txt
+
+Tips
+====
+
+Better shell support
+--------------------
+(Sent by Nate Vack to the nipy mailing list)
+
+Adding git branch info to your bash prompt and tab completion for git commands
+and branches; they make git life really brilliant:
+
+- http://github.com/slawcup/dotfiles/blob/master/.git-completion.bash
+
+- http://railstips.org/blog/archives/2009/02/02/bedazzle-your-bash-prompt-with-git-info
+
+Embedding Git information in LaTeX documents
+--------------------------------------------
+
+(Sent by `Yaroslav Halchenko <http://www.onerussian.com>`_)
+
+I use a Make rule::
+
+    # Helper if interested in providing proper version tag within the manuscript
+    revision.tex: ../misc/revision.tex.in ../.git/index
+	   GITID=$$(git log -1 | grep -e '^commit' -e '^Date:' | sed  -e 's/^[^ ]* *//g' | tr '\n' ' '); \
+	   echo $$GITID; \
+	   sed -e "s/GITID/$$GITID/g" $< >| $@
+
+in the top level ``Makefile.common`` which is included in all subdirectories
+which actually contain papers (hence all those ``../.git``).
+
+And then the corresponding ``paper.pdf`` depends on ``revision.tex.in`` and in
+``.tex`` includes :doc:`draft-mark.tex` which I am attaching as well for
+completeness (as well as :doc:`revision.tex`)
