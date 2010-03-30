@@ -1,0 +1,171 @@
+.. _git_resources:
+
+=====================================
+ Version control with Git: resources
+=====================================
+
+If you are not using a version control system for all your software
+development, paper writing, research code execution and tracking of the
+generated results, you should.  There is simply no excuse today for not using
+version control as a mechanism for tracking what you are doing with your source
+materials and data (be they programming language files, LaTeX/LyX files, plain
+text, even data results!).  Using version control frees you from the madness of
+having directories with files named
+``mypaper_version2_20100202_revisions_jim_v3_new_new2.tex``, for one thing.
+It gives you a mechanism to synchronize your work with colleagues without
+tracking who attached what version when, and a way to seamlessly replicate your
+work, including its history, across computers.  Using a version control system
+is much, much easier than you think, and today's best systems are powerful,
+well documented and free.
+
+This page isn't meant to be a tutorial, but rather a summary of useful
+resources on using the Git_ software for version control.  Of the systems
+available today (as of 2010) for version control, I only recommend people use
+either git or mercurial; I've personally chosen git and find it to be an
+extraordinary tool, though I have also used mercurial lightly and from what I
+see regarding its development and uptake it is also a very good system.  Git
+and mercurial are ultimately `quite similar in their architecture`_, and likely
+to become even more alike in everyday use so over time, as each team learns
+from the other.
+
+.. _quite similar in their architecture: http://mercurial.selenic.com/wiki/GitConcepts
+
+I will not go here into historical details about other version control systems,
+nor is this meant to encourage a comparison or discussion: I have extensive
+experience with CVS, SVN and Bazaar, and only use those systems today
+reluctantly when imposed by external constraints; git is simply that much
+better for what *I* need.  Should you feel the urge to comment on this, please
+send your message to one of the many online forums where debates on *this vs
+that* are welcome, not to me.
+
+
+Introductory materials
+======================
+
+There are lots of good tutorials and introductions for Git_, which you can
+easily find yourself; this is just a short list of things I've found
+useful.
+
+For a beginner, I would recommend reading the start of the excellent `Pro Git`_
+online book, or similarly the early parts of the `Git community book`_.  Pro
+Git's chapters are very short and well illustrated; the community book tends to
+have more detail and has nice screencasts at the end of some sections.
+
+.. _Pro Git: http://progit.org/book
+.. _Git community book: http://book.git-scm.com
+
+For a quick start, this `visual git tutorial`_ is sufficient and it's nicely
+illustrated with diagrams that show what happens on the filesystem.
+
+.. _Visual git tutorial: http://www.ralfebert.de/blog/tools/visual_git_tutorial_1
+
+`Understanding Git Conceptually`_ is an excellent document that I found
+invaluable once I understood the basics.  Git has a reputation for being hard
+to use, but I have found that with a clear view of what is actually a *very
+simple* internal design, its behavior is remarkably consistent, simple and
+comprehensible.  The user interface can be sometimes opaque (though it's
+getting better), but I think the problems most people have arise from thinking
+with a Subversion-type model and trying to simply find the corresponding
+mimicking commands in git.  Since this often makes a mess, you will be far
+better served by understanding a tiny bit of the underlying ideas: a little
+time invested in this understanding will pay off in hassle-free work later.
+
+.. _Understanding Git Conceptually: http://www.eecs.harvard.edu/~cduan/technical/git/
+
+For windows users, `an Illustrated Guide to Git on Windows`_ is useful in that
+it contains also some information about handling SSH (necessary to interface
+with git hosted on remote servers when collaborating) as well as screenshots of
+the Windows interface.
+
+.. _An Illustrated Guide to Git on Windows: http://nathanj.github.com/gitguide/tour.html
+
+
+
+Other resources
+===============
+
+Cheat sheets
+  Two different cheat_ sheets_ in PDF format that can be printed for frequent
+  reference.
+
+.. _cheat: http://zrusin.blogspot.com/2007/09/git-cheat-sheet.html
+.. _sheets: http://jan-krueger.net/development/git-cheat-sheet-extended-edition
+
+`Git ready`_
+  A great website of posts on specific git-related topics, organized by
+  difficulty.
+
+.. _git ready: http://www.gitready.com
+
+QGit_: an excellent Git GUI
+  Git ships by default with gitk and git-gui, a pair of Tk graphical clients to
+  browse a repo and to operate in it.  I persoanlly have found qgit_ to be
+  nicer and easier to use.  It is available on modern linux distros, and since
+  it is based on Qt, it should run on OSX and Windows.
+
+.. _qgit: http://sourceforge.net/projects/qgit/
+
+`Git Magic`_
+  Another book-size guide that has useful snippets.
+
+The `learning center`_ at Github_
+  Guides on a number of topics, some specific to github hosting but much of it
+  of general value.
+
+.. _Git Magic: http://www-cs-students.stanford.edu/~blynn/gitmagic/index.html
+
+.. _learning center: http://learn.github.com
+
+
+Collaboration: sharing repositories
+===================================
+
+While Git can be used strictly in 'private' mode, where you only keep
+repositories in one computer, you will often want to share your work with
+others.  The most natural way to do this is to have a repository located on a
+system that is always online and to which both parties have access, this
+central location hosts a repository that can be read from and written to by
+both, and acts as a synchronization point.
+
+The resources above have sections explaining how to configure a server to
+publish Git repositories, but for open source projects (or for private ones by
+paying a fee), there are websites that provide this service with minimal
+hassle.  I am most familiar with Github_, but Gitorious_ offers similar
+services.
+
+.. _Gitorious: http://gitorious.org
+
+A noteworthy hosting service is Indefero_: while less well-known than Github
+and Gitorious, its special feature is that the source code behind the website
+is itself open source and it contains support for SVN, mercurial and git as
+well as a wiki and a bug tracker.  This means that you can run on your own
+server your own Indefero installation, with as many private repositories as you
+wish and the typical amenities of a project (Gitorious is also open source, but
+has no bug tracker).  I use this for my own `private projects`_, and I have
+:doc:`some notes </code/indefero_dreamhost>` that you may find useful on
+configuring Indefero on your own server.
+
+.. _open source: http://www.indefero.net/open-source/
+.. _private projects: http://projects.fperez.org
+.. _some notes:
+
+For SVN users
+=============
+
+If you want a bit more background on why the model of version control used by
+Git and Mercurial (known as distributed version control) is such a good idea, I
+encourage you to read this very well written post_ by Joel Spolsky on the
+topic.  After that post, Joel created a very nice Mercurial tutorial, whose
+`first page`_ applies equally well to git and is a very good 're-education' for
+anyone coming from an SVN (or similar) background.
+
+.. _post: http://www.joelonsoftware.com/items/2010/03/17.html
+.. _first page: http://hginit.com/00.html
+
+In practice, I think you are better off following Joel's advice and
+understanding git on its own merits instead of trying to bang SVN concepts into
+git shapes.  But for the occasional translation from SVN to Git of a specific
+idiom, the `Git - SVN Crash Course <http://git-scm.org/course/svn.html>`_ can
+be handy.
+
+.. include:: links.txt
