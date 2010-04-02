@@ -34,6 +34,9 @@ Resources
 Blog_
   I (occasionally) post items related to this topic.
 
+`Git resources <git.html>`_
+  Not specific to Python, but rather a set of resources on how to use a good
+  version control system as part of your daily workflow.
 
   
 News and events

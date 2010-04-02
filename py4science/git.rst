@@ -116,7 +116,21 @@ The `learning center`_ at Github_
 
 .. _learning center: http://learn.github.com
 
+A port_ of the Hg book's beginning
+  The `Mercurial book`_ has a reputation for clarity, so Carl Worth decided to
+  port_ its introductory chapter to Git.  It's a nicely written intro, which is
+  possible in good measure because of how similar the underlying models of Hg
+  and Git ultimately are.
 
+.. _port: http://cworth.org/hgbook-git/tour
+.. _Mercurial book: http://hgbook.red-bean.com
+
+`Intermediate tips`_
+  A set of tips that contains some very valuable nuggets, once you're past
+  the basics.
+
+.. _Intermediate tips: http://andyjeffries.co.uk/articles/25-tips-for-intermediate-git-users
+  
 Collaboration: sharing repositories
 ===================================
 
@@ -198,8 +212,88 @@ I use a Make rule::
 	   sed -e "s/GITID/$$GITID/g" $< >| $@
 
 in the top level ``Makefile.common`` which is included in all subdirectories
-which actually contain papers (hence all those ``../.git``).
+which actually contain papers (hence all those ``../.git``).  The
+``revision.tex.in`` file is simply::
 
-And then the corresponding ``paper.pdf`` depends on ``revision.tex.in`` and in
-``.tex`` includes :doc:`draft-mark.tex` which I am attaching as well for
-completeness (as well as :doc:`revision.tex`)
+    % Embed GIT ID revision and date
+    \def\revision{GITID}
+
+The corresponding ``paper.pdf`` depends on ``revision.tex`` and includes the
+line ``\input{revision}`` to load up the actual revision mark.
+
+
+Automatically make local branches track remotes
+-----------------------------------------------
+
+When checking out a remote branch with a local one, adding --track will ensure
+that the new local branch is automatically a tracking branch.  But if you have
+an existing local branch and you decide you want to push it remotely, you can
+do it once by saying::
+
+  git push <remote> <branchname>
+
+or you can configure things (so the local branch becomes a tracking one with)::
+
+  git config branch.<branchname>.remote <remote>
+  git config branch.<branchname>.merge refs/heads/<branchname>
+
+Note that as of git 1.7, this can be done with the simpler command::
+
+  git branch --set-upstream <branchname> <remote>/<branchname>
+
+and in all of these, it's possible to set the remote and local branch names to
+be different, in case there's a conflict with your local name already existing
+in the remote.
+
+Using::
+
+    git config branch.autosetupmerge true
+    
+Tells ``git-branch`` and ``git-checkout`` to setup new branches so that
+``git-pull`` will appropriately merge from that remote
+branch. Recommended. Without this, you will have to add ``--track`` to your
+branch command or manually merge remote tracking branches with "fetch" and then
+"merge".
+
+
+git export
+----------
+
+Git doesn't have a native export command, but this works just fine::
+
+  git archive --prefix=fperez.org/  master | gzip > ~/tmp/source.tgz
+
+Setting default push/pull::
+
+    (master)maqroll[0203_lecture2]> git push
+    fatal: The current branch master is not tracking anything.
+
+So do this::
+    
+    git config branch.master.merge refs/heads/master
+    git config branch.master.remote origin
+
+and now things work::
+
+    (master)maqroll[0203_lecture2]> git push
+    Counting objects: 8, done.
+    Delta compression using up to 2 threads.
+    Compressing objects: 100% (6/6), done.
+    Writing objects: 100% (6/6), 84.82 KiB, done.
+    Total 6 (delta 0), reused 0 (delta 0)
+    To git@gfif.udea.edu.co:mscomp-2010.git
+       807d520..0a8e2d2  master -> master
+
+
+Interactive Rebase
+------------------
+
+One of the neat things about git is that you can modify your commits before you
+push them up to the SVN server. Let's say you've made 10 commits to your local
+git repository, but you want it to look like two when it gets pushed up to
+SVN. All you need to do is type::
+
+    git rebase -i HEAD~10
+
+And git will launch your $EDITOR and allow you to perform what's referred to as
+an "interactive rebase."
