@@ -48,7 +48,7 @@ distributions, type at the shell (tested on Ubuntu 9.10 Karmic)::
     sudo apt-get install ipython python-scipy python-matplotlib mayavi2 \
       python-sympy cython python-networkx python-pexpect python-nose \
       python-setuptools python-sphinx python-pygments \
-      python-twisted python-foolscap python-tk
+      python-twisted python-foolscap python-tk build-essential
 
     sudo apt-get build-dep python python-scipy python-matplotlib mayavi2 cython
 

@@ -17,10 +17,10 @@ Contact
      left.
      
    Post
+     | 10 Giannini Hall, MC 3190
      | Henry H. Wheeler, Jr. Brain Imaging Center
-     | Helen Wills Neuroscience Institute
-     | 132 Barker Hall MC 3190
      | University of California, Berkeley
      | Berkeley, CA 94720-3192
+
 
 .. _west facing building door: map_

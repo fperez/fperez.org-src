@@ -25,16 +25,16 @@ either git or mercurial; I've personally chosen git and find it to be an
 extraordinary tool, though I have also used mercurial lightly and from what I
 see regarding its development and uptake it is also a very good system.  Git
 and mercurial are ultimately `quite similar in their architecture`_, and likely
-to become even more alike in everyday use so over time, as each team learns
-from the other.
+to become even more alike in everyday use over time, as each team learns from
+the other.
 
 .. _quite similar in their architecture: http://mercurial.selenic.com/wiki/GitConcepts
 
 I will not go here into historical details about other version control systems,
 nor is this meant to encourage a comparison or discussion: I have extensive
-experience with CVS, SVN and Bazaar, and only use those systems today
-reluctantly when imposed by external constraints; git is simply that much
-better for what *I* need.  Should you feel the urge to comment on this, please
+experience with CVS, SVN and Bazaar, and only use those systems today *very*
+reluctantly, when imposed by external constraints.  Git is simply that much
+better for *my needs*.  Should you feel the urge to comment on this, please
 send your message to one of the many online forums where debates on *this vs
 that* are welcome, not to me.
 
@@ -46,16 +46,32 @@ There are lots of good tutorials and introductions for Git_, which you can
 easily find yourself; this is just a short list of things I've found
 useful.
 
-For a beginner, I would recommend reading the start of the excellent `Pro Git`_
-online book, or similarly the early parts of the `Git community book`_.  Pro
-Git's chapters are very short and well illustrated; the community book tends to
-have more detail and has nice screencasts at the end of some sections.
+For a beginner, I would recommend the following 'core' reading list, and below
+I mention a few extra resources:
 
+1. The concise GitRef_ reference: written by one of the authors of the
+   excellent GitHub.com site, it's very compact but contains all the key ideas
+   with the right approach.  If you only read one document, make it this one.
+
+2. For a bit more detail, see the start of the excellent `Pro Git`_ online
+   book, or similarly the early parts of the `Git community book`_.  Pro Git's
+   chapters are very short and well illustrated; the community book tends to
+   have more detail and has nice screencasts at the end of some sections.
+
+3. For a different take, the `Git parable`_ is an easy read that walks you
+   through how you would go about building a version control system with a
+   little story.  By the end of this gentle document, you realize that Git's
+   model is a very sound and clean one for the issues of source history
+   control, management and collaboration.
+   
 .. _Pro Git: http://progit.org/book
 .. _Git community book: http://book.git-scm.com
+.. _GitRef: http://gitref.org
+.. _Git parable: http://tom.preston-werner.com/2009/05/19/the-git-parable.html
 
-For a quick start, this `visual git tutorial`_ is sufficient and it's nicely
-illustrated with diagrams that show what happens on the filesystem.
+If you are really impatient and just want a quick start, this `visual git
+tutorial`_ may be sufficient.  It is nicely illustrated with diagrams that show
+what happens on the filesystem.
 
 .. _Visual git tutorial: http://www.ralfebert.de/blog/tools/visual_git_tutorial_1
 
@@ -99,7 +115,7 @@ Cheat sheets
 
 QGit_: an excellent Git GUI
   Git ships by default with gitk and git-gui, a pair of Tk graphical clients to
-  browse a repo and to operate in it.  I persoanlly have found qgit_ to be
+  browse a repo and to operate in it.  I personally have found qgit_ to be
   nicer and easier to use.  It is available on modern linux distros, and since
   it is based on Qt, it should run on OSX and Windows.
 
@@ -137,7 +153,7 @@ Collaboration: sharing repositories
 While Git can be used strictly in 'private' mode, where you only keep
 repositories in one computer, you will often want to share your work with
 others.  The most natural way to do this is to have a repository located on a
-system that is always online and to which both parties have access, this
+system that is always online and to which both parties have access.  This
 central location hosts a repository that can be read from and written to by
 both, and acts as a synchronization point.
 
@@ -152,12 +168,12 @@ services.
 A noteworthy hosting service is Indefero_: while less well-known than Github
 and Gitorious, its special feature is that the source code behind the website
 is itself open source and it contains support for SVN, mercurial and git as
-well as a wiki and a bug tracker.  This means that you can run on your own
-server your own Indefero installation, with as many private repositories as you
-wish and the typical amenities of a project (Gitorious is also open source, but
-has no bug tracker).  I use this for my own `private projects`_, and I have
-:doc:`some notes </code/indefero_dreamhost>` that you may find useful on
-configuring Indefero on your own server.
+well as a wiki and a bug tracker.  This means that you can run Indefero on your
+own server, with as many private repositories as you wish and the typical
+amenities of a project (Gitorious is also open source, but has no bug tracker).
+I use this for my own `private projects`_, and I have :doc:`some notes
+</code/indefero_dreamhost>` that you may find useful on configuring Indefero on
+your own server.
 
 .. _open source: http://www.indefero.net/open-source/
 .. _private projects: http://projects.fperez.org
@@ -289,9 +305,9 @@ Interactive Rebase
 ------------------
 
 One of the neat things about git is that you can modify your commits before you
-push them up to the SVN server. Let's say you've made 10 commits to your local
-git repository, but you want it to look like two when it gets pushed up to
-SVN. All you need to do is type::
+push them up to a public, shared repository. Let's say you've made 10 commits
+to your local git repository, but you want it to look like two when it gets
+pushed up. All you need to do is type::
 
     git rebase -i HEAD~10
 
