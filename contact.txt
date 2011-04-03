@@ -4,7 +4,7 @@ Contact
 .. admonition:: Fernando Perez
 
    Email
-     first.last@berkeley.edu
+     fernando.perez@berkeley.edu
      
    Office
      | 10 Giannini Hall
@@ -20,7 +20,6 @@ Contact
      | 10 Giannini Hall, MC 3190
      | Henry H. Wheeler, Jr. Brain Imaging Center
      | University of California, Berkeley
-     | Berkeley, CA 94720-3192
-
+     | Berkeley, CA 94720-3190
 
 .. _west facing building door: map_

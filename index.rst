@@ -32,6 +32,8 @@ like feedback on, please stop by!
 .. include:: news.rst
    :end-before: stop-recent-news
 
+`Older news ... <news.html>`_
+   
 .. include:: contact.txt
 
 .. toctree::
@@ -39,6 +41,7 @@ like feedback on, please stop by!
 
    research/index
    talks/index
+   events/index
    teaching/index
    py4science/index
    code/index

@@ -1,6 +1,6 @@
-==================================================
- Python for Scientific Computing at SIAM: Slides
-==================================================
+==========================================================
+ Python for Scientific Computing at SIAM CSE 2009: Slides
+==========================================================
 
 At the `2009 SIAM CSE meeting`_ held in Miami on March 2-6, Randy LeVeque from
 U. Washington, Hans-Petter Langtangen from the Simula Research Laboratory in

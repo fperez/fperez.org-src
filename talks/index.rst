@@ -6,6 +6,46 @@
 
 Some talks and presentations, in reverse chronological order:
 
+`Python: a view from the floating-point side <1103_uwashington.pdf>`_
+    March 2001, a talk presented at the `Sage Days 29`_ workshop, on the use of
+    python for numerical work, with some historical personal background.
+
+    William Stein recorded the talk and posted it online, as well as posting
+    `some pictures from the last day`_ (for those who have asked, the anecdote
+    about how I unplugged Colombia from the internet when I was a physics
+    undergrad is from 0:11:20 to 0:14:12):
+
+.. raw:: html
+
+   <div align="center"> <iframe title="YouTube video player" width="640"
+   height="390" src="http://www.youtube.com/embed/1j_HxD4iLn8" frameborder="0"
+   allowfullscreen></iframe></div>
+
+.. _sage days 29: http://wiki.sagemath.org/days29
+.. _some pictures from the last day: http://www.facebook.com/album.php?aid=296597&id=504538681&l=399cb27a8c
+
+`Reproducible software vs. reproducible research <1102_aaas_reproducibility_fperez_slides.pdf>`_
+    February 2011, a talk presented at the panel_ titled *The Digitization of
+    Science: Reproducibility and Interdisciplinary Knowledge Transfer*, during
+    the 2011 annual meeting of the AAAS.  An `extended abstract`_ is available
+    that spells out some of the ideas I presented in the talk; I hope to
+    complete this writeup into something a little more formal soon.
+
+.. _panel: http://aaas.confex.com/aaas/2011/webprogram/Session3166.html
+.. _extended abstract: 1102_aaas_reproducibility_fperez_extabs.pdf
+
+
+`IPython: beyond the simple shell <1012_scipy_india.pdf>`_
+    December 2010, invited talk at the SciPy India 2010 conference.  A longer
+    overview of the IPython project, from its start to the recent developments.
+
+`IPython: a quick overview <1010_ipython_overview.pdf>`_
+    October 2010, short summary of the state of the IPython project.
+    
+`Python: performance and parallelism <1011_berkeley_cse.pdf>`_
+    November 2010, guest lecture delivered for UC Berkeley's *CSE: Science
+    Research Computing with Python* (CCN 06180) graduate course.
+    
 `The state of IPython <0908_scipy_state_ipython.pdf>`_
     August 2009, a short update on the project, delivered as a lightning talk
     at the `SciPy'09 conference`__.

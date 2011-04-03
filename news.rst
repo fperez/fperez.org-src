@@ -1,6 +1,56 @@
 News
 ====
 
+March 2011
+  The `Sage Days 29`_ workshop was a success on multiple fronts, and in
+  particular for IPython we made a `ton of progress`_.
+
+.. _sage days 29: http://wiki.sagemath.org/days29
+.. _ton of progress: http://blog.fperez.org/2011/03/ipython-and-scientific-python-go-to.html
+
+February 2011
+  During the I spoke during the `2011 AAAS annual meeting`_ at a symposium
+  titled `The Digitization of Science: Reproducibility and Interdisciplinary
+  Knowledge Transfer <http://www.stanford.edu/~vcs/AAAS2011/>`_ organized by
+  Columbia's `Victoria Stodden`_.  I have put up a short `blog post`_ about the
+  event as well as `my slides`_ and an `extended abstract`_.
+
+.. _2011 AAAS annual meeting: http://www.aaas.org/meetings/2011/
+.. _blog post: http://blog.fperez.org/2011/02/reproducible-research-at-aaas-2011.html
+.. _Victoria Stodden: http://stodden.net
+.. _my slides: http://fperez.org/talks/1102_aaas_reproducibility_fperez_slides.pdf
+.. _extended abstract: http://fperez.org/talks/1102_aaas_reproducibility_fperez_extabs.pdf
+
+February 2011
+  I'm thrilled to have been invited to present the keynote at this year's
+  EuroScipy_ conference.  I haven't had a chance yet to attend the European
+  version of the SciPy conferences, so I'm very much looking forward to it.
+
+.. _euroscipy: http://www.euroscipy.org/conference/euroscipy2011
+
+December 2010
+  My recent trip to `Scipy India 2010`_ was a very interesting experience; I'm
+  really impressed by the Indian government's vision with their FOSSEE.in_
+  project.  Here are the slides_ for my invited talk and some general
+  pictures_, but I have yet to write a proper post summarizing things.  Stay
+  tuned.
+
+.. _scipy india 2010: http://scipy.in/scipyin/2010
+.. _fossee.in: http://fossee.in
+.. _slides: talks/1012_scipy_india.pdf
+.. _pictures: https://picasaweb.google.com/fdo.perez/IndiaMumbaiAndHyderabad
+
+.. stop-recent-news
+
+July 2010
+  Our paper `Double dissociation of two cognitive control networks in patients
+  with focal brain lesions`__ is out in PNAS_ (PDF_ version).
+
+.. __: http://www.pnas.org/content/107/26/12017.short
+.. _pnas: http://www.pnas.org
+.. _pdf: papers/doubledis10_net_pnas.pdf
+
+
 January 2010
   I'm very excited to visit Colombia for a month, to teach an intensive course
   on scientific computing using Python and a practical, modern and hopefully
@@ -24,8 +74,6 @@ November 2009, a discussion with Guido van Rossum
   of the Python language.  :ref:`Read more... <ucb_py4science_guido>`
 
 .. _py4science seminar: py4science_ucb_
-
-.. stop-recent-news
 
 September 2009, PyDy
   At our meeting series, Luke Peterson from UC Davis gave a very interesting

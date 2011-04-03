@@ -74,7 +74,7 @@ March 2009, *Expert Python Programming* book review
 March 2009, SIAM CSE09
   I co-organized another Python mini-symposium at a SIAM meeting, this time the
   Computational Science and Engineering one.  I've `posted`_ a summary report
-  on my blog, and `this page <2009_siam_cse>`__ has all the slides I have so
+  on my blog, and `this page <2009_siam_cse>`_ has all the slides I have so
   far.
 
 October 2008, 2-day hands-on workshop at UC Berkeley
