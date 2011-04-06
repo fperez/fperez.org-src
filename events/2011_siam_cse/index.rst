@@ -15,7 +15,10 @@ discussions.
 Our minisymposium was divided in two parts, and I am posting here links to the
 original program pages as well as all the slides I have so far from the
 speakers, along with any links they may have provided to their personal or
-project pages.
+project pages.  A `short narrative is my blog 
+<http://blog.fperez.org/2011/04/python-goes-to-reno-siam-cse-2011.html>`_ and I
+also put
+`some pictures <https://picasaweb.google.com/fdo.perez/SIAMCSE2011InReno#>`_ up.
 
 As a sign of the healthy growth of the scientific python ecosystem, this year
 there were also other python-focused minisymposia at this conference, as well

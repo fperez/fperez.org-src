@@ -2,6 +2,13 @@ News
 ====
 
 March 2011
+  I've finally gathered the `slides for our minisymposium on Python for
+  Scientific computing <events/2011_siam_cse>`_ at the SIAM CSE 2011 conference
+  (`blog post
+  <http://blog.fperez.org/2011/04/python-goes-to-reno-siam-cse-2011.html>`_ and
+  `pictures <https://picasaweb.google.com/fdo.perez/SIAMCSE2011InReno#>`_).
+
+March 2011
   The `Sage Days 29`_ workshop was a success on multiple fronts, and in
   particular for IPython we made a `ton of progress`_.
 
