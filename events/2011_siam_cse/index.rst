@@ -138,10 +138,10 @@ MS: `FEniCS: Automated Solution of Differential Equations
 MS: `CSE Education
 <http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=12747>`_
 
-`Sculpture, Geometry and Computer Science <siam-cse11-heiland-final.pdf>`_
-    Randy Heiland, Indiana University, USA; Charles Perry,
-    www.charlesperry.com, USA; Barbara Ream, International School of Columbus,
-    USA; Andrew Lumsdaine, Indiana University, USA
+`Sculpture, Geometry and Computer Science <siam-cse11-IndianaArc.pdf>`_
+    `Randy Heiland <http://mypage.iu.edu/~heiland>`_, Indiana University, USA;
+    Charles Perry, www.charlesperry.com, USA; Barbara Ream, International
+    School of Columbus, USA; Andrew Lumsdaine, Indiana University, USA
 
 MS: `Verifiable, Reproducible Research and Computational Science
 <http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=11844>`_
