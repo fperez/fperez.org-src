@@ -34,7 +34,7 @@
 .. _cirl: http://cirl.berkeley.edu
 .. _hwni: http://neuroscience.berkeley.edu
 .. _ParLab: http://parlab.eecs.berkeley.edu
-.. _py4science_ucb: https://cirl.berkeley.edu/view/Py4Science
+.. _py4science_ucb: http://wiki.ipython.org/Py4Science
 .. _despolab: http://bic.berkeley.edu/despolab
 .. _silverlab: http://argentum.ucbso.berkeley.edu
 .. _arokem: http://argentum.ucbso.berkeley.edu/ariel.html
@@ -67,8 +67,8 @@
 .. _numpy: http://numpy.scipy.org
 .. _scipy: http://www.scipy.org
 .. _scipy_conference: http://conference.scipy.org
-.. _ipython: http://ipython.scipy.org
-.. _`ipython manual`: http://ipython.scipy.org/doc/manual/html
+.. _ipython: http://ipython.org
+.. _`ipython manual`: http://ipython.org/ipython-doc/stable/index.html
 .. _matplotlib: http://matplotlib.sourceforge.net
 .. _pythonxy: http://www.pythonxy.com
 .. _ETS: http://code.enthought.com/projects/tool-suite.php

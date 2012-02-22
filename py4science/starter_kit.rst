@@ -96,7 +96,9 @@ If you want something with a slightly easier learning curve to begin with, the
 following are all free, good options:
 
 * Linux: gedit (typically installed by default).
-* OSX: `Text Wrangler <http://www.barebones.com/products/TextWrangler>`_.
+* OSX: `Text Wrangler <http://www.barebones.com/products/TextWrangler>`_,
+  `TextMate (free for UC Berkeley affiliates)
+  <http://software-central.berkeley.edu/software/92-TextMate>`_
 * Windows: `Notepad ++ <http://notepad-plus.sourceforge.net/uk/site.htm>`_.
  
 
@@ -126,7 +128,7 @@ useful:
 - The `Matplotlib manual <http://matplotlib.sourceforge.net/contents.html>`_:
   this is the Matlab-like plotting library most of us use regularly.
 
-- The `IPython documentation <http://ipython.scipy.org/moin/Documentation>`_:
+- The `IPython documentation <http://ipython.org/documentation.html>`_:
   handy resources about making the most of your interactive environment.
 
 - The `SciPy documentation page
@@ -352,7 +354,7 @@ teaching tutorials, formal presentations and development sprints.
 
 If you are a UC Berkeley (or other Bay Area person for whom coming to campus is
 feasible), I encourage you to stop by any of the regular `Py4Science meetings
-on campus <https://cirl.berkeley.edu/view/Py4Science>`_.  This informal group
+on campus <https://wiki.ipython.org/Py4Science>`_.  This informal group
 meets to discuss tools, problems and solutions regarding the use of Python in
 scientific research; we have a very low-traffic `mailing list
 <https://calmail.berkeley.edu/manage/list/listinfo/py4science@lists.berkeley.edu>`_
