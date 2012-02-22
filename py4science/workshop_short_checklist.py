@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 """Minimal test script to check for modules needed in python workshop.
 
 Execute this code at the command line by typing:
@@ -72,32 +71,17 @@ def test_imports():
                'numpy',
                'scipy',
                #'scipy.weave',
-               'scipy.io',
+               #'scipy.io',
                'matplotlib','pylab',
-               'nose',
-               'Cython',
+               #'nose',
+               #'Cython',
                'sympy',
-               'networkx',
-               'mayavi.mlab',
+               #'networkx',
+               #'enthought.mayavi.mlab',
                ]
 
     for mname in modules:
         yield check_import,mname
-
-
-def test_weave():
-    "Simple code compilation and execution via scipy's weave"
-    from scipy import weave
-
-    weave.inline('int x=1;x++;')
-    
-    n,m=1,2
-    code="""
-    int m=%s;
-    return_val=m+n;
-    """ % m
-    val = weave.inline(code,['n'])
-    nt.assert_equal(val,m+n)
 
 
 # Test generator, don't put a docstring in it
@@ -178,3 +162,4 @@ and send the *entire* output (all info above and summary below) to the
 instructor for help.
 """
     sys_info()
+    cleanup_pngs()
