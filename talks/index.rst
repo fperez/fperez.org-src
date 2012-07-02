@@ -4,10 +4,36 @@
  Talks
 =======
 
-Some talks and presentations, in reverse chronological order:
+Some talks and presentations, in reverse chronological order (don't be
+surprised to find repeated material/slides as the topics do overlap):
+
+`IPython & StarCluster: Scalable Cloud Computing for the rest of us(a Qiime
+illustration) <1204_nih_cloud_ipython.pdf>`_
+    Short slides introducing a demo presented at the NIH cloud workshop.
+
+`IPython: Python at your fingertips <1203_ipython_pycon.pdf>`_
+    Talk delivered at the PyCon 2012 conference in Santa Clara, CA.  It
+    combines a rapid overview of the IPython project with hands-on demos using
+    the new HTML notebook interface.  This is the full video:
+
+.. raw:: html
+
+   <div align="center"> <iframe title="YouTube video player2" width="600"
+   height="390" src="http://www.youtube.com/embed/26wgEsg9Mcc" frameborder="0"
+   allowfullscreen></iframe></div>
+
+
+`Ten years of (interactive) scientific Python <1108_euroscipy_keynote.pdf>`_
+    August 2011, the slides for my keynote presentation at EuroSciPy (I don't
+    have video available).  Many thanks to the awesome organizing team, in
+    particular `Gaël Varoquaux <http://gael-varoquaux.info>`_ and `Emanuelle
+    Gouillart
+    <http://www.svi.cnrs-bellevue.fr/wikimedia/index.php/Emmanuelle_Gouillart>`_
+    for the invitation, hospitality, and amazing work they've done with
+    EuroSciPy and Scientific Python in general.
 
 `Python: a view from the floating-point side <1103_uwashington.pdf>`_
-    March 2001, a talk presented at the `Sage Days 29`_ workshop, on the use of
+    March 2011, a talk presented at the `Sage Days 29`_ workshop, on the use of
     python for numerical work, with some historical personal background.
 
     William Stein recorded the talk and posted it online, as well as posting
@@ -17,7 +43,7 @@ Some talks and presentations, in reverse chronological order:
 
 .. raw:: html
 
-   <div align="center"> <iframe title="YouTube video player" width="640"
+   <div align="center"> <iframe title="YouTube video player" width="600"
    height="390" src="http://www.youtube.com/embed/1j_HxD4iLn8" frameborder="0"
    allowfullscreen></iframe></div>
 

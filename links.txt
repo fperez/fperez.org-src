@@ -16,7 +16,7 @@
 .. _blog: http://blog.fperez.org
 .. _picasa_fperez: http://photo.fperez.org
 .. _github_fperez: http://github.fperez.org
-.. _map: http://office.fperez.org
+.. _map: http://g.co/maps/v4tz5
 .. _calendar: http://pubcalendar.fperez.org
 .. real links (some above are redirects)
 .. _map2: http://maps.google.com/maps/place?cid=1511778024603995956&q=cirl&hl=en
@@ -56,7 +56,8 @@
 .. _docutils: http://docutils.sourceforge.net
 .. _lyx: http://www.lyx.org
 .. _pep8: http://www.python.org/dev/peps/pep-0008
-.. _numpy_coding_guide: http://projects.scipy.org/numpy/wiki/CodingStyleGuidelines
+.. _numpy_coding_guide: https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt
+
 
 .. Licenses
 .. _GPL: http://www.gnu.org/licenses/gpl.html
