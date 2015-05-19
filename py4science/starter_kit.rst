@@ -45,10 +45,11 @@ On a reasonably recent Linux distribution, all the tools you need are available
 via the package management system.  On Ubuntu or other Debian-based
 distributions, type at the shell (tested on Ubuntu 9.10 Karmic)::
 
-    sudo apt-get install ipython python-scipy python-matplotlib mayavi2 \
+    sudo apt-get install ipython ipython-notebook ipython-qtconsole \
+      python-scipy python-matplotlib mayavi2 python-pandas \
       python-sympy cython python-networkx python-pexpect python-nose \
       python-setuptools python-sphinx python-pygments \
-      python-twisted python-foolscap python-tk build-essential
+      python-tk build-essential
 
     sudo apt-get build-dep python python-scipy python-matplotlib mayavi2 cython
 
@@ -58,9 +59,10 @@ the equivalent commands are (tested on Fedora 12)::
 
     sudo yum install yum-utils
     
-    sudo yum install ipython scipy python-matplotlib Mayavi sympy Cython \
+    sudo yum install python-ipython-notebook \
+      scipy python-matplotlib Mayavi sympy Cython \
       python-networkx pexpect python-nose python-setuptools \
-      python-sphinx python-pygments python-twisted python-foolscap
+      python-sphinx python-pygments python-pandas
 
     sudo yum-builddep python scipy python-matplotlib Mayavi Cython
 

@@ -14,12 +14,13 @@
 .. _email me: Fernando.Perez@berkeley.edu
 .. _site: http://fperez.org
 .. _blog: http://blog.fperez.org
+.. _twitter: http://twitter.com/fperez_org
 .. _picasa_fperez: http://photo.fperez.org
 .. _github_fperez: http://github.fperez.org
-.. _map: http://g.co/maps/v4tz5
+.. _map: http://goo.gl/JjWSe
 .. _calendar: http://pubcalendar.fperez.org
 .. real links (some above are redirects)
-.. _map2: http://maps.google.com/maps/place?cid=1511778024603995956&q=cirl&hl=en
+.. _map2: https://maps.google.com/maps?q=barker+hall,+berkeley,+ca&hl=en&sll=37.8486,-122.279749&sspn=0.007616,0.007403&gl=us&hnear=Barker+Hall,+Berkeley,+Alameda,+California+94720&t=m&z=17
 .. _calendar2: http://www.google.com/calendar/embed?src=fdo.perez%40gmail.com
 .. fperez - other related sites
 .. _datarray: http://github.fperez.org/datarray
@@ -30,11 +31,13 @@
 .. _beylkin: http://amath.colorado.edu/faculty/beylkin
 
 .. Berkeley
+.. _bids: http://bids.berkeley.edu
 .. _bic: http://bic.berkeley.edu
 .. _cirl: http://cirl.berkeley.edu
 .. _hwni: http://neuroscience.berkeley.edu
 .. _ParLab: http://parlab.eecs.berkeley.edu
-.. _py4science_ucb: http://wiki.ipython.org/Py4Science
+.. _py4science_ucb: http://profjsb.github.com/python-seminar
+.. _pyboot_ucb: http://www.pythonbootcamp.info
 .. _despolab: http://bic.berkeley.edu/despolab
 .. _silverlab: http://argentum.ucbso.berkeley.edu
 .. _arokem: http://argentum.ucbso.berkeley.edu/ariel.html
@@ -102,7 +105,7 @@
 .. _enthought: http://www.enthought.com
 .. _kitware: http://www.kitware.com
 .. _netlib: http://netlib.org
-
+.. _numfocus: http://numfocus.org
 
 .. Other tools and projects
 .. _indefero: http://www.indefero.net

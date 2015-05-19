@@ -42,12 +42,14 @@ that* are welcome, not to me.
 Introductory materials
 ======================
 
-There are lots of good tutorials and introductions for Git_, which you can
-easily find yourself; this is just a short list of things I've found
-useful.
+I suggest you start with my `interactive tutorial aimed squarely at
+scientists`__ who want to collaborate with a few colleagues on a manuscript,
+grant proposal or data analysis project.
 
-For a beginner, I would recommend the following 'core' reading list, and below
-I mention a few extra resources:
+.. __: http://nbviewer.ipython.org/urls/github.com/fperez/reprosw/raw/master/Version%2520Control.ipynb
+
+In addition, I would recommend the following 'core' reading list, and below I
+mention a few extra resources:
 
 1. The concise GitRef_ reference: written by one of the authors of the
    excellent GitHub.com site, it's very compact but contains all the key ideas

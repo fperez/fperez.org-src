@@ -7,7 +7,17 @@
 #-----------------------------------------------------------------------------
 from __future__ import print_function
 
-import __builtin__
+try:
+    import __builtin__
+except ImportError:
+    pass
+else:
+    def print(*args, **kw):
+        verb = kw.pop('verbose', verbose)
+        if verb:
+            __builtin__.print(*args, **kw)
+        
+
 import os
 import sys
 
@@ -19,7 +29,7 @@ from os.path import join as pjoin
 
 # From sphinx conf.py
 sphinx_conf = {}
-execfile('conf.py',{},sphinx_conf)
+exec(open('conf.py').read(), {}, sphinx_conf)
 
 # Local
 verbose = False
@@ -46,10 +56,6 @@ top_files = ['links.txt']
 # Functions
 #-----------------------------------------------------------------------------
 
-def print(*args, **kw):
-    verb = kw.pop('verbose', verbose)
-    if verb:
-        __builtin__.print(*args, **kw)
 
 
 def keep_filename(f, skip_ext=skip_extensions):
@@ -96,7 +102,7 @@ def main():
 
         files = filter(keep_filename, files)
         print('  dirs:', dirs)
-        print('   files:', files)
+        print('   files:', list(files))
         # Now, create the list of subdirs and files in the output
         for subdir in dirs:
             new_dir = pjoin(out_dir, root, subdir)

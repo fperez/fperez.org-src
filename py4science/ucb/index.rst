@@ -4,10 +4,14 @@
  Python for science at UC Berkeley
 ===================================
 
-This is an open, informal `seminar series`_ open to anyone interested in using,
-learning about or contributing to Python-based tools for scientific research.
+.. Note::
 
-.. _seminar series: py4science_ucb_
+   **January 2014:** please see the new `Berkeley Python portal
+   <http://python.berkeley.edu>`_ for all new information regarding Py4Science
+   on campus, which is now coordinated by the `DLab
+   <http://dlab.berkeley.edu>`_.  The rest of this page is kept for reference
+   purposes, with material and slides about old meetings.
+
 
 Past meetings
 =============

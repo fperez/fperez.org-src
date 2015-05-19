@@ -1,6 +1,15 @@
 News
 ====
 
+March 2013
+  I was awarded the 2012 `Award for the Advancement of Free Software`_ for the
+  creation of IPython and my contributions to the Open Source Scientific Python
+  ecosystem.  UC Berkeley also put out a `more detailed release`_.
+
+.. _Award for the Advancement of Free Software: http://www.fsf.org/news/2012-free-software-award-winners-announced-2
+.. _more detailed release: http://vcresearch.berkeley.edu/news/wresting-new-tricks-python-fernando-perez-wins-2012-award-advancement-free-software
+
+
 March 2011
   I've finally gathered the `slides for our minisymposium on Python for
   Scientific computing <events/2011_siam_cse>`_ at the SIAM CSE 2011 conference
@@ -15,12 +24,14 @@ March 2011
 .. _sage days 29: http://wiki.sagemath.org/days29
 .. _ton of progress: http://blog.fperez.org/2011/03/ipython-and-scientific-python-go-to.html
 
+.. stop-recent-news
+
 February 2011
-  During the I spoke during the `2011 AAAS annual meeting`_ at a symposium
-  titled `The Digitization of Science: Reproducibility and Interdisciplinary
-  Knowledge Transfer <http://www.stanford.edu/~vcs/AAAS2011/>`_ organized by
-  Columbia's `Victoria Stodden`_.  I have put up a short `blog post`_ about the
-  event as well as `my slides`_ and an `extended abstract`_.
+  During the `2011 AAAS annual meeting`_ I spoke at a symposium titled `The
+  Digitization of Science: Reproducibility and Interdisciplinary Knowledge
+  Transfer <http://www.stanford.edu/~vcs/AAAS2011/>`_ organized by Columbia's
+  `Victoria Stodden`_.  I have put up a short `blog post`_ about the event as
+  well as `my slides`_ and an `extended abstract`_.
 
 .. _2011 AAAS annual meeting: http://www.aaas.org/meetings/2011/
 .. _blog post: http://blog.fperez.org/2011/02/reproducible-research-at-aaas-2011.html
@@ -46,8 +57,6 @@ December 2010
 .. _fossee.in: http://fossee.in
 .. _slides: talks/1012_scipy_india.pdf
 .. _pictures: https://picasaweb.google.com/fdo.perez/IndiaMumbaiAndHyderabad
-
-.. stop-recent-news
 
 July 2010
   Our paper `Double dissociation of two cognitive control networks in patients

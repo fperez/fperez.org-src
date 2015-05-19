@@ -6,9 +6,33 @@ Execute this code at the command line by typing:
 
 python workshop_checklist.py
 
-If it does NOT say 'OK' at the end, copy the *entire* output of the run and
-send it to the course instructor for help.
+How to get a command line:
+
+- On OSX run this with the Terminal application.
+
+- On Windows, go to the Start menu, select 'Run' and type 'cmd' (without the
+quotes) to run the cmd.exe Windows Command Prompt.
+
+Run the script and follow the instructions it prints at the end.
 """
+
+##############################################################################
+# Config here
+
+# Modules whose imports we're going to validate
+MODULES = ['IPython', 'IPython.html.notebookapp',
+           'numpy',
+           'scipy',
+           'matplotlib',
+           'nose',
+           'pandas',
+           'sympy',
+           # 'statsmodels', 'sklearn', 'scikits.image',
+           # 'Cython', 'networkx', 'mayavi.mlab',
+           ]
+
+##############################################################################
+# Code begins
 
 # Standard library imports
 import glob
@@ -22,9 +46,6 @@ from StringIO import StringIO
 import nose
 import nose.tools as nt
 
-##############################################################################
-# Code begins
-
 #-----------------------------------------------------------------------------
 # Generic utility functions
 def sys_info():
@@ -34,7 +55,10 @@ def sys_info():
     print 'System information'
     print '=================='
     print 'os.name      :',os.name
-    print 'os.uname     :',os.uname()
+    try:
+        print 'os.uname     :',os.uname()
+    except:
+        pass
     print 'platform     :',sys.platform
     print 'platform+    :',platform.platform()
     print 'prefix       :',sys.prefix
@@ -67,37 +91,8 @@ def check_import(mname):
 # Test generators are best written without docstrings, because nose can then
 # show the parameters being used.
 def test_imports():
-    modules = ['setuptools',
-               'IPython',
-               'numpy',
-               'scipy',
-               #'scipy.weave',
-               'scipy.io',
-               'matplotlib','pylab',
-               'nose',
-               'Cython',
-               'sympy',
-               'networkx',
-               'mayavi.mlab',
-               ]
-
-    for mname in modules:
-        yield check_import,mname
-
-
-def test_weave():
-    "Simple code compilation and execution via scipy's weave"
-    from scipy import weave
-
-    weave.inline('int x=1;x++;')
-    
-    n,m=1,2
-    code="""
-    int m=%s;
-    return_val=m+n;
-    """ % m
-    val = weave.inline(code,['n'])
-    nt.assert_equal(val,m+n)
+    for mname in MODULES:
+        yield check_import, mname
 
 
 # Test generator, don't put a docstring in it
@@ -166,8 +161,7 @@ def cleanup_pngs():
 if __name__ == '__main__':
     print "Running tests:"
     # This call form is ipython-friendly
-    nose.runmodule(argv=[__file__,'-vvs'],
-                   exit=False)
+    nose.runmodule(argv=[__file__, '-vvs'], exit=False)
     print """
 ***************************************************************************
                            TESTS FINISHED
@@ -178,3 +172,4 @@ and send the *entire* output (all info above and summary below) to the
 instructor for help.
 """
     sys_info()
+    cleanup_pngs()

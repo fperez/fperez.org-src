@@ -2,32 +2,39 @@
  Welcome
 =========
 
-I am a research scientist at the `Helen Wills Neuroscience Institute`__ at
-U.C. Berkeley.  My work involves the development and implementation of new
-algorithms and tools for neuroimaging, with a special interest in functional
-MRI.  I am also actively involved with the development of new tools for
-high-level scientific computing, mostly using the Python_ language.  In this
-site, you can find more `<research>`_ details, including publications, as well
-as a subset of `<talks>`_ presented at various venues.
+I am a staff scientist at the `Data Science and Technology Division`__ of
+Lawrence Berkeley National Laboratory, as well as a researcher at the Berkeley
+Institute for Data Science (BIDS_, an Institute where I am a founding
+co-investigator).  My research interests, shaped over years of working on a
+number of applied problems in physics, mathematics and neuroscience, revolve
+around the question of building tools for computational research across all
+scientific domains.
 
-__ hwni_
+I am convinced that we need better tools for scientific computing, and that our
+efforts to build them based on the Python_ language can make a significant
+difference to how scientific research is conducted and disseminated.  I created
+the IPython_ project while a graduate student in 2001 and continue to lead the
+project, now as a collaborative effort with a talented team_ that does all the
+hard work.  I am an active member of the community that creates freely
+available scientific computing tools around the `SciPy stack`_, I regularly
+lecture about scientific computing in Python and I am a founding board member
+of the NumFOCUS_ foundation.  The `Py4Science <py4science>`_ page contains more
+details on this.
 
-I am convinced that we need better tools for scientific computing and that the
-efforts of many to build them based on the Python_ language are starting to pay
-off in a way that will have significant benefits in the long run.  I try to do
-my part on that front by working on IPython_, the development of neuroimaging
-tools such as nipy_ (and especially its nitime_ component), and my
-contributions to various projects affiliated with the `scipy stack`_.  The
-`Py4Science <py4science>`_ page contains details and material on this topic.
 
-On campus, I coordinate an informal seminar_ every 2 weeks that is
-open to all, where we cover topics related to the use and development of Python
-for scientific research.  If you are interested in using Python in your
-research, would like to learn more about it or have developed something you'd
-like feedback on, please stop by!
+You can contact me via email or Twitter_.
 
+__ http://bic.berkeley.edu
+
+.. _team: https://github.com/ipython?tab=members
 .. _scipy stack: scipy_
-.. _seminar: py4science_ucb_
+.. _bootcamps: py4science_ucb_
+.. _courses: pyboot_ucb_
+
+.. note::
+
+   As should be obvious from the dates below, this site is sadly in a horrible
+   sate of maintenance and badly outdated at this point in time.
 
 .. include:: news.rst
    :end-before: stop-recent-news

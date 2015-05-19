@@ -4,8 +4,11 @@
  Fernando Pérez
 ================
 
-.. image:: _static/fperez_photo_sm.jpg
-   :alt: Fernando Pérez
+.. raw:: html
+
+   <div align="center"> <a href="_static/fperez_headshot_lg.jpg"><img
+   src="_static/fperez_headshot_sm.jpg" border="2" style="border:2px #42708F"
+   alt="Fernando Pérez"></a></div>
 
 A brief summary of where I come from... I was born in Medellín, Colombia [*]_,
 where I did my undergraduate studies in Physics_ at the Universidad de

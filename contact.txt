@@ -4,21 +4,14 @@ Contact
 .. admonition:: Fernando Perez
 
    Email
-     fernando.perez@berkeley.edu
-     
+     | fperez@lbl.gov
+     | fernando.perez@berkeley.edu (still works)
+   
    Office
-     | 10 Giannini Hall
-     | Henry H. Wheeler Jr. Brain Imaging Center.
-     | +1 510.642.2839 (voice)
-     
-   Map
-     Enter the `West facing building door`_, then ring the first door on the
-     left.
+     | 050B-2270A
      
    Post
-     | 10 Giannini Hall, MC 3190
-     | Henry H. Wheeler, Jr. Brain Imaging Center
-     | University of California, Berkeley
-     | Berkeley, CA 94720-3190
+     | Lawrence Berkeley National Laboratory
+     | 1 Cyclotron Road Mailstop 50B2239
+     | Berkeley, CA 94720
 
-.. _west facing building door: map_
