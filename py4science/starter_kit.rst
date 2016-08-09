@@ -4,6 +4,13 @@
  Py4Science: a Starter Kit
 ===========================
 
+.. note::
+
+  Unfortunately, this page is woefully out of date and I currently have very
+  little time to keep it updated.  Fortunately the quality of other resources
+  has greatly improved since I originally wrote it years ago, so hopefully
+  Google will be your friend this time around.
+
 This document is meant to gather resources for the scientist interested in
 starting to use the Python programming language for scientific computing.  Most
 of the information here should be of general use, though a few pointers are
@@ -193,6 +200,18 @@ Books
 
 In terms of books for scientists, I recommend the following:
 
+- `Python for Data Analysis
+  <http://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1449319793>`_
+  by Wes McKinney: an excellent all-around data analysis book, with emphasis on
+  understanding and using Pandas.
+
+- `IPython Interactive Computing and Visualization Cookbook
+  <http://ipython-books.github.io/cookbook/>`_ and `Learning IPython for
+  Interactive Computing and Data Visualization
+  <http://ipython-books.github.io/minibook/>`_ by Cyrille Rossant: both cover
+  IPython and the surrounding scientific Python ecosystem, the latter being a
+  short "mini-book" while the former is more comprehensive.
+
 - `Beginning Python Visualization`_ by Shai Vaingast: this is a great practical
   introduction to numerical data processing and visualization.
 
@@ -205,14 +224,6 @@ In terms of books for scientists, I recommend the following:
   know about producing meaningful and aesthetic data visualizations with
   Matplotlib.
   
-These books are of general value and freely available online, though they can
-also be purchased in paper form:
-
-- `Dive into Python`_: an outstanding book, if you only read one general python
-  book, make it this one.
-
-- `Building Python Skills`_: a series, in particular the second book has been
-  very well recommended to me.
 
 The following Python books (except for David Beazley's) are freely available to
 UC Berkeley via the O'Reilly Safari system.  These are books I have personally

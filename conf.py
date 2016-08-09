@@ -26,13 +26,13 @@ extensions = ['sphinx.ext.doctest',
               'sphinx.ext.todo',
               'sphinx.ext.pngmath',
               'sphinx.ext.ifconfig',
-              
+
               # math dollar is causing problems in pages with code like
               # PREFIX = $HOME/usr
               # by converting that $ sign.  Disabled for now.
               #'math_dollar',
-              
-              'ipython_console_highlighting',
+
+              #'ipython_console_highlighting',
               ]
 
 # Add any paths that contain templates here, relative to this directory.

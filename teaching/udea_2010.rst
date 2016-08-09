@@ -63,7 +63,7 @@ Miercoles 3 de Febrero
   Para el seguimiento del material del curso, vamos a usar el sistema de
   control de versiones git.  Los usuarios de Windows lo pueden encontrar `aquí
   <http://code.google.com/p/msysgit/wiki/InstallMSysGit>`_, y bajo Linux basta
-  instalar el paquete ``git``.  `Aquí <http://learn.github.com/p/intro.html>`_
+  instalar el paquete ``git``.  `Aquí <https://services.github.com/training/>`_
   pueden encontrar un tutorial introductrio, y buscando en Google salen
   muchísimos más.
 
