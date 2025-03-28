@@ -30,7 +30,8 @@ do that is to scrutinize the code with the same peer-review process that we use
 for results within a lab before we put them out in a paper sent for publication
 (where they do get further reviewed).
 
-.. _Rob Knight: http://www.colorado.edu/chem/people/knightr.html
+.. _Rob Knight: https://knightlab.ucsd.edu
+
 
 Presentation guidelines
 =======================
@@ -59,7 +60,7 @@ Here's some general guidelines for making your code review go smoothly:
   about architecture/implementation/algorithm/requirements, etc.  Make sure
   everyone has enough time to read the code beforehand, and don't send a series
   of updated versions immediately before code review.
-  
+
 - Don't try to present too much. 200 lines is an absolute maximum -- 50 is
   usually more reasonable.
 
@@ -105,13 +106,13 @@ rigorous and friendly.
 - Keep it a safe environment, i.e. make sure chastising is relatively gentle
   even when deserved (but do point out when code doesn't meet the required
   standard -- frame it as a learning experience though).
-  
+
 - Make sure there's a core of vocal participants so it isn't always you.
 
 - Make it clear when you're presenting yourself that your code isn't perfect,
   point out some of those imperfections yourself if audience is slow to do so,
   *do* present yourself.
-  
+
 - Patiently explain when things are not wrong but just stylistic differences
   (but make it clear that *some* styles are bad, often helpful to e.g. ask
   people to guess what a function returns from its name).
